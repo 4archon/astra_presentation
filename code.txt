@@ -1,0 +1,2707 @@
+$$$
+func combineLineMatch(src, dst LineMatch) LineMatch {
+     ^
+$$$
+const backupTime = 8000
+      ^
+$$$
+func contains(s []string, e string) bool {
+     ^
+$$$
+	autosave chan bool
+	^
+$$$
+	r, _, _, _ := Screen.GetContent(x, y)
+	^
+$$$
+func importNet() *lua.LTable {
+	pkg := L.NewTable()
+
+	L.SetField(pkg, "CIDRMask", luar.New(L, net.CIDRMask))
+	L.SetField(pkg, "Dial", luar.New(L, net.Dial))
+	L.SetField(pkg, "DialIP", luar.New(L, net.DialIP))
+	L.SetField(pkg, "DialTCP", luar.New(L, net.DialTCP))
+	L.SetField(pkg, "DialTimeout", luar.New(L, net.DialTimeout))
+	L.SetField(pkg, "DialUDP", luar.New(L, net.DialUDP))
+	L.SetField(pkg, "DialUnix", luar.New(L, net.DialUnix))
+	L.SetField(pkg, "ErrWriteToConnected", luar.New(L, net.ErrWriteToConnected))
+	L.SetField(pkg, "FileConn", luar.New(L, net.FileConn))
+	L.SetField(pkg, "FileListener", luar.New(L, net.FileListener))
+	L.SetField(pkg, "FilePacketConn", luar.New(L, net.FilePacketConn))
+	L.SetField(pkg, "FlagBroadcast", luar.New(L, net.FlagBroadcast))
+	L.SetField(pkg, "FlagLoopback", luar.New(L, net.FlagLoopback))
+	L.SetField(pkg, "FlagMulticast", luar.New(L, net.FlagMulticast))
+	L.SetField(pkg, "FlagPointToPoint", luar.New(L, net.FlagPointToPoint))
+	L.SetField(pkg, "FlagUp", luar.New(L, net.FlagUp))
+	L.SetField(pkg, "IPv4", luar.New(L, net.IPv4))
+	L.SetField(pkg, "IPv4Mask", luar.New(L, net.IPv4Mask))
+	L.SetField(pkg, "IPv4allrouter", luar.New(L, net.IPv4allrouter))
+	L.SetField(pkg, "IPv4allsys", luar.New(L, net.IPv4allsys))
+	L.SetField(pkg, "IPv4bcast", luar.New(L, net.IPv4bcast))
+	L.SetField(pkg, "IPv4len", luar.New(L, net.IPv4len))
+	L.SetField(pkg, "IPv4zero", luar.New(L, net.IPv4zero))
+	L.SetField(pkg, "IPv6interfacelocalallnodes", luar.New(L, net.IPv6interfacelocalallnodes))
+	L.SetField(pkg, "IPv6len", luar.New(L, net.IPv6len))
+	L.SetField(pkg, "IPv6linklocalallnodes", luar.New(L, net.IPv6linklocalallnodes))
+	L.SetField(pkg, "IPv6linklocalallrouters", luar.New(L, net.IPv6linklocalallrouters))
+	L.SetField(pkg, "IPv6loopback", luar.New(L, net.IPv6loopback))
+	L.SetField(pkg, "IPv6unspecified", luar.New(L, net.IPv6unspecified))
+	L.SetField(pkg, "IPv6zero", luar.New(L, net.IPv6zero))
+	L.SetField(pkg, "InterfaceAddrs", luar.New(L, net.InterfaceAddrs))
+	L.SetField(pkg, "InterfaceByIndex", luar.New(L, net.InterfaceByIndex))
+	L.SetField(pkg, "InterfaceByName", luar.New(L, net.InterfaceByName))
+	L.SetField(pkg, "Interfaces", luar.New(L, net.Interfaces))
+	L.SetField(pkg, "JoinHostPort", luar.New(L, net.JoinHostPort))
+	L.SetField(pkg, "Listen", luar.New(L, net.Listen))
+	L.SetField(pkg, "ListenIP", luar.New(L, net.ListenIP))
+	L.SetField(pkg, "ListenMulticastUDP", luar.New(L, net.ListenMulticastUDP))
+	L.SetField(pkg, "ListenPacket", luar.New(L, net.ListenPacket))
+	L.SetField(pkg, "ListenTCP", luar.New(L, net.ListenTCP))
+	L.SetField(pkg, "ListenUDP", luar.New(L, net.ListenUDP))
+	L.SetField(pkg, "ListenUnix", luar.New(L, net.ListenUnix))
+	L.SetField(pkg, "ListenUnixgram", luar.New(L, net.ListenUnixgram))
+	L.SetField(pkg, "LookupAddr", luar.New(L, net.LookupAddr))
+	L.SetField(pkg, "LookupCNAME", luar.New(L, net.LookupCNAME))
+	L.SetField(pkg, "LookupHost", luar.New(L, net.LookupHost))
+	L.SetField(pkg, "LookupIP", luar.New(L, net.LookupIP))
+	L.SetField(pkg, "LookupMX", luar.New(L, net.LookupMX))
+	L.SetField(pkg, "LookupNS", luar.New(L, net.LookupNS))
+	L.SetField(pkg, "LookupPort", luar.New(L, net.LookupPort))
+	L.SetField(pkg, "LookupSRV", luar.New(L, net.LookupSRV))
+	L.SetField(pkg, "LookupTXT", luar.New(L, net.LookupTXT))
+	L.SetField(pkg, "ParseCIDR", luar.New(L, net.ParseCIDR))
+	L.SetField(pkg, "ParseIP", luar.New(L, net.ParseIP))
+	L.SetField(pkg, "ParseMAC", luar.New(L, net.ParseMAC))
+	L.SetField(pkg, "Pipe", luar.New(L, net.Pipe))
+	L.SetField(pkg, "ResolveIPAddr", luar.New(L, net.ResolveIPAddr))
+	L.SetField(pkg, "ResolveTCPAddr", luar.New(L, net.ResolveTCPAddr))
+	L.SetField(pkg, "ResolveUDPAddr", luar.New(L, net.ResolveUDPAddr))
+	L.SetField(pkg, "ResolveUnixAddr", luar.New(L, net.ResolveUnixAddr))
+	L.SetField(pkg, "SplitHostPort", luar.New(L, net.SplitHostPort))
+
+	return pkg
+}
+$$$
+func importMath() *lua.LTable {
+	pkg := L.NewTable()
+
+	L.SetField(pkg, "Abs", luar.New(L, math.Abs))
+	L.SetField(pkg, "Acos", luar.New(L, math.Acos))
+	L.SetField(pkg, "Acosh", luar.New(L, math.Acosh))
+	L.SetField(pkg, "Asin", luar.New(L, math.Asin))
+	L.SetField(pkg, "Asinh", luar.New(L, math.Asinh))
+	L.SetField(pkg, "Atan", luar.New(L, math.Atan))
+	L.SetField(pkg, "Atan2", luar.New(L, math.Atan2))
+	L.SetField(pkg, "Atanh", luar.New(L, math.Atanh))
+	L.SetField(pkg, "Cbrt", luar.New(L, math.Cbrt))
+	L.SetField(pkg, "Ceil", luar.New(L, math.Ceil))
+	L.SetField(pkg, "Copysign", luar.New(L, math.Copysign))
+	L.SetField(pkg, "Cos", luar.New(L, math.Cos))
+	L.SetField(pkg, "Cosh", luar.New(L, math.Cosh))
+	L.SetField(pkg, "Dim", luar.New(L, math.Dim))
+	L.SetField(pkg, "Erf", luar.New(L, math.Erf))
+	L.SetField(pkg, "Erfc", luar.New(L, math.Erfc))
+	L.SetField(pkg, "Exp", luar.New(L, math.Exp))
+	L.SetField(pkg, "Exp2", luar.New(L, math.Exp2))
+	L.SetField(pkg, "Expm1", luar.New(L, math.Expm1))
+	L.SetField(pkg, "Float32bits", luar.New(L, math.Float32bits))
+	L.SetField(pkg, "Float32frombits", luar.New(L, math.Float32frombits))
+	L.SetField(pkg, "Float64bits", luar.New(L, math.Float64bits))
+	L.SetField(pkg, "Float64frombits", luar.New(L, math.Float64frombits))
+	L.SetField(pkg, "Floor", luar.New(L, math.Floor))
+	L.SetField(pkg, "Frexp", luar.New(L, math.Frexp))
+	L.SetField(pkg, "Gamma", luar.New(L, math.Gamma))
+	L.SetField(pkg, "Hypot", luar.New(L, math.Hypot))
+	L.SetField(pkg, "Ilogb", luar.New(L, math.Ilogb))
+	L.SetField(pkg, "Inf", luar.New(L, math.Inf))
+	L.SetField(pkg, "IsInf", luar.New(L, math.IsInf))
+	L.SetField(pkg, "IsNaN", luar.New(L, math.IsNaN))
+	L.SetField(pkg, "J0", luar.New(L, math.J0))
+	L.SetField(pkg, "J1", luar.New(L, math.J1))
+	L.SetField(pkg, "Jn", luar.New(L, math.Jn))
+	L.SetField(pkg, "Ldexp", luar.New(L, math.Ldexp))
+	L.SetField(pkg, "Lgamma", luar.New(L, math.Lgamma))
+	L.SetField(pkg, "Log", luar.New(L, math.Log))
+	L.SetField(pkg, "Log10", luar.New(L, math.Log10))
+	L.SetField(pkg, "Log1p", luar.New(L, math.Log1p))
+	L.SetField(pkg, "Log2", luar.New(L, math.Log2))
+	L.SetField(pkg, "Logb", luar.New(L, math.Logb))
+	L.SetField(pkg, "Max", luar.New(L, math.Max))
+	L.SetField(pkg, "Min", luar.New(L, math.Min))
+	L.SetField(pkg, "Mod", luar.New(L, math.Mod))
+	L.SetField(pkg, "Modf", luar.New(L, math.Modf))
+	L.SetField(pkg, "NaN", luar.New(L, math.NaN))
+	L.SetField(pkg, "Nextafter", luar.New(L, math.Nextafter))
+	L.SetField(pkg, "Pow", luar.New(L, math.Pow))
+	L.SetField(pkg, "Pow10", luar.New(L, math.Pow10))
+	L.SetField(pkg, "Remainder", luar.New(L, math.Remainder))
+	L.SetField(pkg, "Signbit", luar.New(L, math.Signbit))
+	L.SetField(pkg, "Sin", luar.New(L, math.Sin))
+	L.SetField(pkg, "Sincos", luar.New(L, math.Sincos))
+	L.SetField(pkg, "Sinh", luar.New(L, math.Sinh))
+	L.SetField(pkg, "Sqrt", luar.New(L, math.Sqrt))
+	L.SetField(pkg, "Tan", luar.New(L, math.Tan))
+	L.SetField(pkg, "Tanh", luar.New(L, math.Tanh))
+	L.SetField(pkg, "Trunc", luar.New(L, math.Trunc))
+	L.SetField(pkg, "Y0", luar.New(L, math.Y0))
+	L.SetField(pkg, "Y1", luar.New(L, math.Y1))
+	L.SetField(pkg, "Yn", luar.New(L, math.Yn))
+
+	return pkg
+}
+$$$
+		if i == start.Y && start.Y == end.Y {
+			nchars := util.CharacterCount(l)
+			start.X = util.Clamp(start.X, 0, nchars)
+			end.X = util.Clamp(end.X, 0, nchars)
+			l = util.SliceStart(l, end.X)
+			l = util.SliceEnd(l, start.X)
+			charpos = start.X
+		} else if i == start.Y {
+			nchars := util.CharacterCount(l)
+			start.X = util.Clamp(start.X, 0, nchars)
+			l = util.SliceEnd(l, start.X)
+			charpos = start.X
+		} else if i == end.Y {
+			nchars := util.CharacterCount(l)
+			end.X = util.Clamp(end.X, 0, nchars)
+			l = util.SliceStart(l, end.X)
+		}
+$$$
+		if i == start.Y && start.Y == end.Y {
+			nchars := util.CharacterCount(l)
+			start.X = util.Clamp(start.X, 0, nchars)
+			end.X = util.Clamp(end.X, 0, nchars)
+			l = util.SliceStart(l, end.X)
+			l = util.SliceEnd(l, start.X)
+			charpos = start.X
+		} else if i == start.Y {
+			nchars := util.CharacterCount(l)
+			start.X = util.Clamp(start.X, 0, nchars)
+			l = util.SliceEnd(l, start.X)
+			charpos = start.X
+		} else if i == end.Y {
+			nchars := util.CharacterCount(l)
+			end.X = util.Clamp(end.X, 0, nchars)
+			l = util.SliceStart(l, end.X)
+		}
+$$$
+func (h *BufPane) FindNext() bool {
+	// If the cursor is at the start of a selection and we search we want
+	// to search from the end of the selection in the case that
+	// the selection is a search result in which case we wouldn't move at
+	// at all which would be bad
+	searchLoc := h.Cursor.Loc
+	if h.Cursor.HasSelection() {
+		searchLoc = h.Cursor.CurSelection[1]
+	}
+	match, found, err := h.Buf.FindNext(h.Buf.LastSearch, h.Buf.Start(), h.Buf.End(), searchLoc, true, h.Buf.LastSearchRegex)
+	if err != nil {
+		InfoBar.Error(err)
+	}
+	if found {
+		h.Cursor.SetSelectionStart(match[0])
+		h.Cursor.SetSelectionEnd(match[1])
+		h.Cursor.OrigSelection[0] = h.Cursor.CurSelection[0]
+		h.Cursor.OrigSelection[1] = h.Cursor.CurSelection[1]
+		h.GotoLoc(h.Cursor.CurSelection[1])
+	} else {
+		h.Cursor.ResetSelection()
+	}
+	return true
+}
+$$$
+func (h *BufPane) FindPrevious() bool {
+	// If the cursor is at the end of a selection and we search we want
+	// to search from the beginning of the selection in the case that
+	// the selection is a search result in which case we wouldn't move at
+	// at all which would be bad
+	searchLoc := h.Cursor.Loc
+	if h.Cursor.HasSelection() {
+		searchLoc = h.Cursor.CurSelection[0]
+	}
+	match, found, err := h.Buf.FindNext(h.Buf.LastSearch, h.Buf.Start(), h.Buf.End(), searchLoc, false, h.Buf.LastSearchRegex)
+	if err != nil {
+		InfoBar.Error(err)
+	}
+	if found {
+		h.Cursor.SetSelectionStart(match[0])
+		h.Cursor.SetSelectionEnd(match[1])
+		h.Cursor.OrigSelection[0] = h.Cursor.CurSelection[0]
+		h.Cursor.OrigSelection[1] = h.Cursor.CurSelection[1]
+		h.GotoLoc(h.Cursor.CurSelection[1])
+	} else {
+		h.Cursor.ResetSelection()
+	}
+	return true
+}
+$$$
+	RegisterCommonOption(p.Name, true)
+	                    ^
+$$$
+	os.MkdirAll(dest, 0755)
+	           ^
+$$$
+			os.MkdirAll(path, f.Mode())
+			           ^
+$$$
+			os.MkdirAll(filepath.Dir(path), f.Mode())
+			           ^
+$$$
+	reader.ReadString('\n')
+	                 ^
+$$$
+		Init()
+		    ^
+$$$
+	screen.Screen.GetClipboard(reg)
+	                          ^
+$$$
+				b.Backup()
+				        ^
+$$$
+		os.Mkdir(backupdir, os.ModePerm)
+		        ^
+$$$
+		config.InitLocalSettings(settings, absPath)
+		                        ^
+$$$
+		b.UpdateModTime()
+		               ^
+$$$
+	config.InitLocalSettings(b.Settings, b.Path)
+	                        ^
+$$$
+		os.Mkdir(filepath.Join(config.ConfigDir, "buffers"), os.ModePerm)
+		        ^
+$$$
+			calcHash(b, &b.origHash)
+			        ^
+$$$
+		b.Serialize()
+		           ^
+$$$
+	config.InitGlobalSettings()
+	                         ^
+$$$
+			clipboard.WriteMulti(string(c.GetSelection()), target, c.Num, c.buf.NumCursors())
+			                    ^
+$$$
+			cmd.Process.Kill()
+			                ^
+$$$
+		config.InitLocalSettings(b.Settings, b.Path)
+		                        ^
+$$$
+						pl.Load()
+						       ^
+$$$
+		proc.Run()
+		        ^
+$$$
+	j.Process.Kill()
+	              ^
+$$$
+	j.Stdin.Write([]byte(data))
+	             ^
+$$$
+			cmd.Process.Kill()
+			                ^
+$$$
+	cmd.Start()
+	         ^
+$$$
+				Term.Write([]byte("Press enter to close"))
+				          ^
+$$$
+	t.Term.File().WriteString(str)
+	                         ^
+$$$
+		b.Save()
+		      ^
+$$$
+				clipboard.WriteMulti(clip+string(h.Cursor.GetSelection()), clipboard.ClipboardReg, h.Cursor.Num, h.Buf.NumCursors())
+				                    ^
+$$$
+		h.openHelp("help")
+		          ^
+$$$
+			shell.RunInteractiveShell(resp, true, false)
+			                         ^
+$$$
+		ioutil.WriteFile(fname, []byte("{}"), 0644)
+		                ^
+$$$
+	config.RunPluginFn("onBufPaneOpen", luar.New(ulua.L, h))
+	                  ^
+$$$
+					h.Buf.UpdateModTime()
+					                   ^
+$$$
+					h.Buf.ReOpen()
+					            ^
+$$$
+			h.Buf.ReOpen()
+			            ^
+$$$
+				h.Buf.ReOpen()
+				            ^
+$$$
+		h.openHelp("help")
+		          ^
+$$$
+			config.InitColorscheme()
+			                      ^
+$$$
+						pl.Load()
+						       ^
+$$$
+		b.SetOptionNative(option, nativeValue)
+		                 ^
+$$$
+		h.Buf.SetOptionNative(option, defaultLocals[option])
+		                     ^
+$$$
+		h.Buf.SaveAs(args[0])
+		            ^
+$$$
+			clipboard.Write(t.GetSelection(t.GetView().Width), clipboard.ClipboardReg)
+			               ^
+$$$
+	config.WriteSettings(filepath.Join(config.ConfigDir, "settings.json"))
+	                    ^
+$$$
+		config.LoadAllPlugins()
+		                     ^
+$$$
+				b.Backup()
+				        ^
+$$$
+			b.Save()
+			      ^
+$$$
+				b.Backup()
+				        ^
+$$$
+	fmt.Println(root.String())
+	^
+$$$
+	L.SetField(pkg, "Print", luar.New(L, fmt.Print))
+	                                     ^
+$$$
+	L.SetField(pkg, "Printf", luar.New(L, fmt.Printf))
+	                                      ^
+$$$
+	L.SetField(pkg, "Println", luar.New(L, fmt.Println))
+	                                       ^
+$$$
+		fmt.Println("Invalid version: ", Version, err)
+		^
+$$$
+	fmt.Print("\nPress enter to continue")
+	^
+$$$
+		fmt.Print(prompt)
+		^
+$$$
+	fmt.Printf("Please consider backing up %s before continuing\n", config.ConfigDir)
+	^
+$$$
+			fmt.Printf("%s (value: %v)\n", s, config.GlobalSettings[s])
+			^
+$$$
+func (h *Highlighter) highlightRegion(highlights LineMatch, start int, canMatchEnd bool, lineNum int, line []byte, curRegion *region, statesOnly bool) LineMatch {
+$$$
+func parseRegion(group string, regionInfo map[interface{}]interface{}, prevRegion *region) (r *region, err error) {
+$$$
+func importOs() *lua.LTable {
+$$$
+func importStrings() *lua.LTable {
+$$$
+func StringToColor(str string) (tcell.Color, bool) {
+$$$
+func (pv *PluginVersion) DownloadAndInstall(out io.Writer) error {
+$$$
+func PluginCommand(out io.Writer, cmd string, args []string) {
+$$$
+func InitRuntimeFiles() {
+$$$
+func NewBuffer(r io.Reader, size int64, path string, startcursor Loc, btype BufType) *Buffer {
+$$$
+func (b *Buffer) UpdateRules() {
+$$$
+func (b *Buffer) FindMatchingBrace(braceType [2]rune, start Loc) (Loc, bool, bool) {
+$$$
+func (eh *EventHandler) DoTextEvent(t *TextEvent, useUndo bool) {
+$$$
+func NewLineArray(size uint64, endings FileFormat, reader io.Reader) *LineArray {
+$$$
+func (b *Buffer) saveToFile(filename string, withSudo bool) error {
+$$$
+func (b *Buffer) SetOptionNative(option string, nativeValue interface{}) error {
+$$$
+func check(t *testing.T, before []string, operations []operation, after []string) {
+$$$
+func (w *BufWindow) displayBuffer() {
+$$$
+func (i *InfoWindow) displayBuffer() {
+$$$
+func (i *InfoWindow) Display() {
+$$$
+func (w *BufWindow) getVLocFromLoc(loc buffer.Loc) VLoc {
+$$$
+func (w *BufWindow) getLocFromVLoc(svloc VLoc) buffer.Loc {
+$$$
+func (s *StatusLine) Display() {
+$$$
+func (w *TabWindow) Display() {
+$$$
+func findSingleEvent(k string) (b Event, ok bool) {
+$$$
+func bufMapKey(k Event, action string) {
+$$$
+func (h *BufPane) HandleEvent(event tcell.Event) {
+$$$
+func SetGlobalOptionNative(option string, nativeValue interface{}) error {
+$$$
+func (h *BufPane) ReplaceCmd(args []string) {
+$$$
+func (h *BufPane) TermCmd(args []string) {
+$$$
+func OptionValueComplete(b *buffer.Buffer) ([]string, []string) {
+$$$
+func (t *TermPane) HandleEvent(event tcell.Event) {
+$$$
+func CleanConfig() {
+$$$
+func InitFlags() {
+$$$
+func LoadInput(args []string) []*buffer.Buffer {
+$$$
+func main() {
+$$$
+func DoEvent() {
+$$$
+func startup(args []string) (tcell.SimulationScreen, error) {
+$$$
+						if ((endLoc == nil) || (m[0] < endLoc[0])) {
+$$$
+	Default bool          // pre-installed plugin
+$$$
+
+$$$
+func init() {
+^
+$$$
+func init() {
+^
+$$$
+func init() {
+^
+$$$
+func InitLocalSettings(settings map[string]interface{}, path string) error {
+^
+$$$
+func (t *Tab) HandleEvent(event tcell.Event) {
+^
+$$$
+func (h *BufPane) SaveAsCB(action string, callback func()) bool {
+^
+$$$
+			if link == "default" {
+			           ^
+$$$
+			reterr = errors.New("Plugin " + p.Name + ": " + err.Error())
+			                    ^
+$$$
+			return errors.New("Error writing settings.json file: " + err.Error())
+			                  ^
+$$$
+			screen.TermMessage("Error parsing syntax file " + f.Name() + ": " + err.Error())
+			                   ^
+$$$
+				case "dos":
+				     ^
+$$$
+				case "unix":
+				     ^
+$$$
+			InfoBar.YNPrompt("Save changes to "+h.Buf.GetName()+" before closing? (y,n,esc)", func(yes, canceled bool) {
+			                 ^
+$$$
+			screen.TermMessage("Error reading bindings.json file: " + err.Error())
+			                   ^
+$$$
+func NewNode(Kind SplitType, x, y, w, h int, parent *Node, id uint64) *Node {
+             ^
+$$$
+		if h {
+		^
+$$$
+		if i == 0 {
+		^
+$$$
+			if !isID(p.Name) || len(p.Srcs) <= 0 {
+			                    ^
+$$$
+				if !isID(p.Name) || len(p.Srcs) <= 0 {
+				                    ^
+$$$
+	if kind == reflect.Bool {
+	^
+$$$
+	switch m {
+	^
+$$$
+				if choice%3 == 0 {
+				^
+$$$
+		b.lines[i].data = append(ws, l...)
+		                  ^
+$$$
+	if len(execCmd) <= 0 {
+	   ^
+$$$
+	if strings.Contains("-+", string([]byte{args[0][0]})) {
+	   ^
+$$$
+	if len(args) <= 0 {
+	   ^
+$$$
+	if len(args) <= 0 {
+	   ^
+$$$
+	if len(args[0]) <= 0 {
+	   ^
+$$$
+			if strings.HasPrefix("doas", input) {
+			   ^
+$$$
+			if strings.HasPrefix("dos", input) {
+			   ^
+$$$
+			if strings.HasPrefix("external", input) {
+			   ^
+$$$
+		} else if strings.HasPrefix("false", input) {
+		          ^
+$$$
+			if strings.HasPrefix("internal", input) {
+			   ^
+$$$
+		if strings.HasPrefix("off", input) {
+		   ^
+$$$
+		if strings.HasPrefix("on", input) {
+		   ^
+$$$
+			if strings.HasPrefix("sudo", input) {
+			   ^
+$$$
+			if strings.HasPrefix("terminal", input) {
+			   ^
+$$$
+		} else if strings.HasPrefix("true", input) {
+		          ^
+$$$
+			if strings.HasPrefix("unix", input) {
+			   ^
+$$$
+	switch e := event.(type) {
+	^
+$$$
+	switch e := event.(type) {
+	^
+$$$
+			log.Fatal("error creating CPU profile: ", err)
+			^
+$$$
+// It will return the corresponding syntax definition for the filetype
+                                                                      ^
+$$$
+// This could cause problems if the byte index is between code points
+                                                                     ^
+$$$
+// A State represents the region at the end of a line
+                                                     ^
+$$$
+// TODO: maybe can be more efficient with utf8 package
+$$$
+	// TODO: add to log?
+$$$
+	// TODO: maybe make this based on the actual keybindings
+$$$
+		// TODO: fix problem when complex bindings have these
+$$$
+		// TODO
+$$$
+	// TODO
+$$$
+	// TODO
+$$$
+	// TODO
+$$$
+	// TODO: map mouse
+$$$
+	// TODO: map mouse
+$$$
+	// TODO
+$$$
+	// TODO
+$$$
+var Groups map[string]Group
+var numGroups Group
+$$$
+}
+$$$
+var L *lua.LState
+var Lock sync.Mutex
+$$$
+	} else {
+	       ^
+$$$
+	} else {
+	       ^
+$$$
+	} else {
+	       ^
+$$$
+	} else {
+	       ^
+$$$
+	Url     string
+	^
+$$$
+		Url     string
+		^
+$$$
+func (all PluginPackages) Resolve(selectedVersions PluginVersions, open PluginDependencies) (PluginVersions, error) {
+^
+$$$
+func (pl PluginPackage) Install(out io.Writer) {
+^
+$$$
+// a list of settings that should only be globally modified and their
+^
+$$$
+func HttpRequest(method string, url string, headers []string) (resp *http.Response, err error) {
+     ^
+$$$
+func BufferComplete(b *Buffer) ([]string, []string) {
+     ^
+$$$
+		return startpos, errors.New("No cursor positions were provided.")
+		                            ^
+$$$
+			} else {
+			       ^
+$$$
+var unicode_txt = `An preost wes on leoden, Laȝamon was ihoten
+    ^
+$$$
+type InfoBuf struct {
+     ^
+$$$
+			} else {
+			       ^
+$$$
+			h.Cursor.CurSelection[sel].Y -= 1
+			^
+go.mod:24:1: replacement are not allowed: github.com/kballard/go-shellquote (gomoddirectives)
+replace github.com/kballard/go-shellquote => github.com/zyedidia/go-shellquote v0.0.0-20200613203517-eccd813c0655
+^
+go.mod:26:1: replacement are not allowed: github.com/mattn/go-runewidth (gomoddirectives)
+replace github.com/mattn/go-runewidth => github.com/zyedidia/go-runewidth v0.0.12
+^
+go.mod:28:1: replacement are not allowed: layeh.com/gopher-luar (gomoddirectives)
+replace layeh.com/gopher-luar => github.com/layeh/gopher-luar v1.0.7
+^
+$$$
+			if _, err = io.Copy(target, content); err != nil {
+			            ^
+$$$
+		path := filepath.Join(dest, f.Name)
+		        ^
+$$$
+			_, err = io.Copy(f, rc)
+			         ^
+$$$
+	"crypto/md5"
+	^
+$$$
+	h := md5.New()
+	     ^
+$$$
+		cmd = exec.Command(config.GlobalSettings["sucmd"].(string), "dd", "bs=4k", "of="+name)
+		      ^
+$$$
+		runes[i] = alphabet[rand.Intn(len(alphabet))]
+		                    ^
+$$$
+		lines[i] = randomString(rand.Intn(maxLineLength + 1))
+		                        ^
+$$$
+		startLine := (i * regionSize) + rand.Intn(regionSize-5)
+		                                ^
+$$$
+	cmd := exec.Command(execCmd[0], execCmd[1:]...)
+	       ^
+$$$
+	cmd := exec.Command(args[0], args[1:]...)
+	       ^
+$$$
+// LineMatch represents the syntax highlighting matches for one line. Each index where the coloring is changed is marked with that
+$$$
+		h.highlightRegion(highlights, start+firstLoc[1], canMatchEnd, lineNum, sliceStart(line, firstLoc[1]), firstRegion, statesOnly)
+$$$
+		h.highlightRegion(highlights, start+loc[1], canMatchEnd, lineNum, sliceStart(line, loc[1]), curRegion.parent, statesOnly)
+$$$
+func (h *Highlighter) highlightEmptyRegion(highlights LineMatch, start int, canMatchEnd bool, lineNum int, line []byte, statesOnly bool) LineMatch {
+$$$
+		h.highlightRegion(highlights, start+firstLoc[1], canMatchEnd, lineNum, sliceStart(line, firstLoc[1]), firstRegion, statesOnly)
+$$$
+				err = fmt.Errorf("Global Error: setting '%s' has incorrect type (%s), using default value: %v (%s)", k, reflect.TypeOf(v), GlobalSettings[k], reflect.TypeOf(GlobalSettings[k]))
+$$$
+							parseError = fmt.Errorf("Error: setting '%s' has incorrect type (%s), using default value: %v (%s)", k, reflect.TypeOf(v1), settings[k1], reflect.TypeOf(settings[k1]))
+$$$
+							parseError = fmt.Errorf("Error: setting '%s' has incorrect type (%s), using default value: %v (%s)", k, reflect.TypeOf(v1), settings[k1], reflect.TypeOf(settings[k1]))
+$$$
+	"statusformatl":  "$(filename) $(modified)($(line),$(col)) $(status.paste)| ft:$(opt:filetype) | $(opt:fileformat) | $(opt:encoding)",
+$$$
+	return fmt.Sprintf("Alloc: %s, Sys: %s, GC: %d, PauseTotalNs: %dns", humanize.Bytes(memstats.Alloc), humanize.Bytes(memstats.Sys), memstats.NumGC, memstats.PauseTotalNs)
+$$$
+		prompt.Message(fmt.Sprintf("Warning: file is readonly - %s will be attempted when saving", config.GlobalSettings["sucmd"].(string)))
+$$$
+		if ((ft == "unknown" || ft == "") && highlight.MatchFiletype(header.FtDetect, b.Path, b.lines[0].data)) || header.FileType == ft {
+$$$
+			return errors.New(err.Error() + "\nYou may want to remove the files in ~/.config/micro/buffers (these files\nstore the information for the 'saveundo' and 'savecursor' options) if\nthis problem persists.\nThis may be caused by upgrading to version 2.0, and removing the 'buffers'\ndirectory will reset the cursor and undo history and solve the problem.")
+$$$
+	assert.Equal(t, []byte("He wonede at Ernleȝe at æH̼̥̯͇͙̕͘͞e̸̦̞̠̣̰͙̼̥̦̼̖̬͕͕̰̯̫͇̕ĺ̜̠̩̯̯͙̼̭̠͕̮̞͜l̶͓̫̞̮͈͞ͅo̸͔͙̳̠͈̮̼̳͙̥̲͜͠ðelen are chirechen,"), sub2)
+$$$
+func JobSpawn(cmdName string, cmdArgs []string, onStdout, onStderr, onExit func(string, []interface{}), userargs ...interface{}) *Job {
+$$$
+func (t *Terminal) Start(execCmd []string, getOutput bool, wait bool, callback func(out string, userargs []interface{}), userargs []interface{}) error {
+$$$
+var keydisplay = []string{"^Q Quit, ^S Save, ^O Open, ^G Help, ^E Command Bar, ^K Cut Line", "^F Find, ^Z Undo, ^Y Redo, ^A Select All, ^D Duplicate Line, ^T New Tab"}
+$$$
+			if l.LessThan(w.Selection[1]) && l.GreaterEqual(w.Selection[0]) || l.LessThan(w.Selection[0]) && l.GreaterEqual(w.Selection[1]) {
+$$$
+		if time.Since(h.lastClickTime)/time.Millisecond < config.DoubleClickThreshold && (mouseLoc.X == h.lastLoc.X && mouseLoc.Y == h.lastLoc.Y) {
+$$$
+			if h.Cursor.X-tabsize >= 0 && util.IsSpaces(line[h.Cursor.X-tabsize:h.Cursor.X]) && util.IsBytesWhitespace(line[0:h.Cursor.X-tabsize]) {
+$$$
+			if h.Cursor.X+tabsize < util.CharacterCount(line) && util.IsSpaces(line[h.Cursor.X:h.Cursor.X+tabsize]) && util.IsBytesWhitespace(line[0:h.Cursor.X]) {
+$$$
+		if h.Buf.Settings["tabstospaces"].(bool) && util.IsSpaces(lineStart) && len(lineStart) != 0 && util.CharacterCount(lineStart)%tabSize == 0 {
+$$$
+					fmt.Sprintf("Permission denied. Do you want to save this file using %s? (y,n)", config.GlobalSettings["sucmd"].(string)),
+$$$
+	match, found, err := h.Buf.FindNext(h.Buf.LastSearch, h.Buf.Start(), h.Buf.End(), searchLoc, true, h.Buf.LastSearchRegex)
+$$$
+	match, found, err := h.Buf.FindNext(h.Buf.LastSearch, h.Buf.Start(), h.Buf.End(), searchLoc, false, h.Buf.LastSearchRegex)
+$$$
+			if h.Buf.Type.Kind != buffer.BTInfo.Kind && h.Buf.Settings["statusline"].(bool) && my >= h.GetView().Y+h.GetView().Height-1 {
+$$$
+func RunTermEmulator(h *BufPane, input string, wait bool, getOutput bool, callback func(out string, userargs []interface{}), userargs []interface{}) error {
+$$$
+	allFiles = append(allFiles, []RuntimeFile{})
+	           ^
+$$$
+	realFiles = append(realFiles, []RuntimeFile{})
+	            ^
+$$$
+type Node struct {
+          ^
+$$$
+type SharedBuffer struct {
+                  ^
+$$$
+type Buffer struct {
+            ^
+$$$
+type searchState struct {
+                 ^
+$$$
+type BufWindow struct {
+               ^
+$$$
+type BufPane struct {
+             ^
+$$$
+	if _, err := testf.Write([]byte(content)); err != nil {
+	             ^
+$$$
+	if !statesOnly {
+	^
+$$$
+	if loc != nil {
+	^
+$$$
+	if _, e := os.Stat(filename); e == nil {
+	^
+$$$
+		if strings.HasPrefix(reflect.TypeOf(v).String(), "map") {
+		^
+$$$
+	if files, err := rt.AssetDir(plugdir); err == nil {
+	^
+$$$
+		if sel.pack.Name != CorePluginName {
+		^
+$$$
+		if stat, err := os.Stat(plugpath); err == nil && stat.IsDir() {
+		^
+$$$
+	if allPluginPackages == nil {
+	^
+$$$
+		if f.FileInfo().IsDir() {
+		^
+$$$
+	if currentRequirement != nil {
+	^
+$$$
+			if pp == nil {
+			^
+$$$
+	if _, e := os.Stat(ConfigDir); e == nil {
+	^
+$$$
+	if startChar == braceType[0] || leftChar == braceType[0] {
+	^
+$$$
+	if b.Settings["backup"].(bool) && !b.Settings["permbackup"].(bool) && len(b.Path) > 0 && b.Type == BTDefault {
+	^
+$$$
+			if t.EventType == TextEventInsert {
+			^
+$$$
+	if syntaxFile != "" && !foundDef {
+	^
+$$$
+	if dirname := filepath.Dir(absFilename); dirname != "." {
+	^
+$$$
+	if !found {
+	^
+$$$
+	if b.SyntaxDef != nil && highlight.HasIncludes(b.SyntaxDef) {
+	^
+$$$
+	if err == nil {
+	^
+$$$
+	if !hadYN {
+	^
+$$$
+	if config.GetGlobalOption("savehistory").(bool) {
+	^
+$$$
+			if nColsBeforeStart <= 0 && vloc.Y >= 0 {
+			^
+$$$
+	if b.Settings["matchbrace"].(bool) {
+	^
+$$$
+	if i.HasSuggestions && len(i.Suggestions) > 1 {
+	^
+$$$
+			if c.Kind == views.STVert {
+			^
+$$$
+	if b.HasSuggestions && len(b.Suggestions) > 1 {
+	^
+$$$
+	if !local {
+	^
+$$$
+	if e, ok := event.(*tcell.EventKey); ok {
+	^
+$$$
+	if err != nil {
+	^
+$$$
+		if !canceled {
+		^
+$$$
+	if _, e = os.Stat(filename); e == nil {
+	^
+$$$
+	if h.mouseReleased {
+	^
+$$$
+	if (!isMulti && cursor == 0) || isMulti {
+	^
+$$$
+	if h.Buf.ExternallyModified() && !h.Buf.ReloadDisabled {
+	^
+$$$
+	if len(args) > 0 {
+	^
+$$$
+	if len(args) > 0 {
+	^
+$$$
+	if _, e = os.Stat(filename); e == nil {
+	^
+$$$
+	if all {
+	^
+$$$
+	if h.Cursor.HasSelection() {
+	^
+$$$
+		if strings.HasPrefix(a, "command:") {
+		^
+$$$
+	if h.Cursor.HasSelection() {
+	^
+$$$
+	if h.Cursor.HasSelection() {
+	^
+$$$
+	if h.Cursor.HasSelection() {
+	^
+$$$
+	if h.Buf.Modified() {
+	^
+$$$
+	if h.freshClip {
+	^
+$$$
+	if h.Cursor.HasSelection() {
+	^
+$$$
+	if len(args) > 0 {
+	^
+$$$
+	if len(args) < 1 {
+	^
+$$$
+		if p.ID() == h.ID() {
+		^
+$$$
+	var cursors []*Cursor
+	^
+$$$
+	len := len(slc)
+	^
+$$$
+	len := len(slc)
+	^
+$$$
+func TestHSplit(t *testing.T) {
+                ^
+$$$
+func validateColorscheme(option string, value interface{}) error {
+                         ^
+$$$
+func validateLineEnding(option string, value interface{}) error {
+                        ^
+$$$
+func validateEncoding(option string, value interface{}) error {
+                      ^
+$$$
+	len := len(slc)
+	^
+$$$
+var CurrentMethod Method = Internal
+                  ^
+$$$
+		} else {
+			la.lines = Append(la.lines, Line{
+				data:        data[:dlen-1],
+				state:       nil,
+				match:       nil,
+				rehighlight: false,
+			})
+		}
+$$$
+				} else {
+					vloc.Y++
+					if vloc.Y >= w.bufHeight {
+						break
+					}
+					wrap()
+				}
+$$$
+				} else {
+					vloc.Y++
+					if vloc.Y >= w.bufHeight {
+						break
+					}
+					wrap()
+				}
+$$$
+		} else {
+			if fn, ok := statusInfo[string(name)]; ok {
+				return []byte(fn(s.win.Buf))
+			}
+			return []byte{}
+		}
+$$$
+func (w *UIWindow) Resize(width, height int) {}
+                          ^
+$$$
+func (w *TabWindow) Resize(width, height int) {
+                                  ^
+$$$
+func (w *UIWindow) SetActive(b bool)         {}
+                             ^
+$$$
+func (i *InfoWindow) SetView(v *View)  {}
+                             ^
+$$$
+func (i *InfoWindow) SetActive(b bool) {}
+                               ^
+$$$
+func (i *InfoWindow) Scroll(s SLoc, n int) SLoc        { return s }
+                                    ^
+$$$
+func (i *InfoWindow) Diff(s1, s2 SLoc) int             { return 0 }
+                          ^
+$$$
+func (i *InfoWindow) SLocFromLoc(loc buffer.Loc) SLoc  { return SLoc{0, 0} }
+                                 ^
+$$$
+	var events []Event = nil
+	                     ^
+$$$
+func BufUnmap(k Event) {
+              ^
+$$$
+func (h *BufPane) RetabCmd(args []string) {
+                           ^
+$$$
+func (k *KeyTree) DeleteBinding(e Event) {
+                                ^
+$$$
+func (h *BufPane) HasKeyEvent(e Event) bool {
+                              ^
+$$$
+func (h *BufPane) RawCmd(args []string) {
+                         ^
+$$$
+func (k *KeyTree) DeleteAllBindings(e Event) {
+                                    ^
+$$$
+func (h *BufPane) MemUsageCmd(args []string) {
+                              ^
+$$$
+	} else if e, ok := event.(*tcell.EventMouse); e != nil && (!ok || t.State.Mode(terminal.ModeMouseMask)) {
+		// t.WriteString(event.EscSeq())
+	} else if e != nil {
+$$$
+func (t *TermPane) HandleCommand(input string) {
+                                 ^
+$$$
+func TestMultiCursor(t *testing.T) {
+                     ^
+$$$
+func TestSettingsPersistence(t *testing.T) {
+                             ^
+$$$
+func (NullWriter) Write(data []byte) (n int, err error) {
+                        ^
+$$$
+			if i == end.Y {
+			   ^
+$$$
+						term(i, false)
+						     ^
+$$$
+						term(i, false)
+						     ^
+$$$
+	origHash [md5.Size]byte
+	^
+$$$
+	diff              map[int]DiffStatus
+	^
+$$$
+	updateDiffTimer   *time.Timer
+	^
+$$$
+	requestedBackup bool
+	^
+$$$
+	diffBase          []byte
+	^
+$$$
+	toStdout bool
+	^
+$$$
+	diffLock          sync.RWMutex
+	^
+$$$
+	diffBaseLineCount int
+	^
+$$$
+	name string
+	^
+$$$
+	lineNum int
+	^
+$$$
+	msg     string
+	^
+$$$
+	kind    int
+	^
+$$$
+func injectMouse(x, y int, buttons tcell.ButtonMask, mod tcell.ModMask) {
+                    ^
+$$$
+type namedFile struct {
+     ^
+$$$
+func (nf namedFile) Name() string {
+                    ^
+$$$
+func (la *LineArray) deleteByte(pos Loc) {
+                     ^
+$$$
+
+			}
+$$$
+	for totalSize < len {
+	^
+$$$
+	for totalSize < len {
+	^
+$$$
+	if p >= len(str) {
+	^
+$$$
+	return CharacterCount(str[:p])
+	^
+$$$
+	return dst
+	^
+$$$
+	return h
+	^
+$$$
+	if start == 0 {
+	^
+$$$
+	firstLoc := []int{lineLen, 0}
+	^
+$$$
+	if endLoc != nil {
+	^
+$$$
+	if searchNesting {
+	^
+$$$
+		h.highlightEmptyRegion(highlights, start+firstLoc[1], canMatchEnd, lineNum, sliceStart(line, firstLoc[1]), statesOnly)
+		^
+$$$
+	if firstRegion != nil && firstLoc[0] != lineLen {
+	^
+$$$
+		for i, h := range fullHighlights {
+		^
+$$$
+			h.highlightEmptyRegion(highlights, start+loc[1], canMatchEnd, lineNum, sliceStart(line, loc[1]), statesOnly)
+			^
+$$$
+	firstLoc := []int{lineLen, 0}
+	^
+$$$
+	for _, r := range h.Def.rules.regions {
+	^
+$$$
+		h.highlightEmptyRegion(highlights, start, false, lineNum, sliceEnd(line, firstLoc[0]), statesOnly)
+		^
+$$$
+	for _, p := range h.Def.rules.patterns {
+	^
+$$$
+		}
+		^
+$$$
+	for i, h := range fullHighlights {
+	^
+$$$
+	var lineMatches []LineMatch
+	^
+$$$
+func (h *Highlighter) ReHighlightStates(input LineStates, startline int) int {
+                                                                             ^
+$$$
+		curState := h.lastRegion
+		^
+$$$
+	for i := startline; i < input.LinesNum(); i++ {
+	^
+$$$
+	var err error
+	^
+$$$
+	if err != nil {
+	^
+$$$
+			if !ok {
+			^
+$$$
+			break
+			^
+$$$
+	for _, r := range d.rules.regions {
+	^
+$$$
+				ru.regions = append(ru.regions, region)
+				^
+$$$
+	if _, ok := Groups[group]; !ok {
+	^
+$$$
+	var c1, c2 *Node
+	^
+$$$
+	for i, c := range n.parent.children {
+	^
+$$$
+			wgQuery.Done()
+			^
+$$$
+	go func() {
+	^
+$$$
+}
+^
+$$$
+		}
+		^
+$$$
+			if pv := currentlyInstalled.find(sel.pack.Name); pv != nil {
+			^
+$$$
+			break
+			^
+$$$
+			plugins = append(plugins, p.Name)
+			^
+$$$
+					continue
+					^
+$$$
+		fmt.Fprintln(out, "The following plugins are currently installed:")
+		^
+$$$
+			Plugins = append(Plugins, p)
+			^
+$$$
+	switch option {
+	^
+$$$
+	for len(str) > 0 {
+	^
+$$$
+	for len(s) > 0 {
+	^
+$$$
+	runtime.ReadMemStats(&memstats)
+	^
+$$$
+		switch r {
+		^
+$$$
+	for len(b) > 0 {
+	^
+$$$
+	defer b.MarkModified(start.Y, end.Y)
+	^
+$$$
+func Import(pkg string) *lua.LTable {
+^
+$$$
+func parseRules(input []interface{}, curRegion *region) (ru *rules, err error) {
+^
+$$$
+func (w *BufWindow) updateDisplayInfo() {
+^
+$$$
+func (w *BufWindow) Relocate() bool {
+^
+$$$
+func (w *TermWindow) Display() {
+^
+$$$
+func (w *UIWindow) GetMouseSplitNode(vloc buffer.Loc) *views.Node {
+^
+$$$
+func InitBindings() {
+^
+$$$
+func TryBindKey(k, v string, overwrite bool) (bool, error) {
+^
+$$$
+func (h *BufPane) execAction(action func(*BufPane) bool, name string, cursor int) bool {
+^
+$$$
+func (k KeyEvent) Name() string {
+^
+$$$
+func (h *InfoPane) HandleEvent(event tcell.Event) {
+^
+$$$
+func (t *TabList) HandleEvent(event tcell.Event) {
+^
+$$$
+func (b *Buffer) Backup() error {
+^
+$$$
+func NewBufferFromFileAtLoc(path string, btype BufType, cursorLoc Loc) (*Buffer, error) {
+^
+$$$
+func (b *Buffer) FindNextDiffLine(startLine int, forward bool) (int, error) {
+^
+$$$
+func (la *LineArray) SearchMatch(b *Buffer, pos Loc) bool {
+^
+$$$
+func overwriteFile(name string, enc encoding.Encoding, fn func(io.Writer) error, withSudo bool) (err error) {
+^
+$$$
+func StringToStyle(str string) tcell.Style {
+^
+$$$
+func WriteSettings(filename string) error {
+^
+$$$
+	humanize "github.com/dustin/go-humanize"
+	^
+$$$
+	lua "github.com/yuin/gopher-lua"
+	^
+$$$
+	luar "layeh.com/gopher-luar"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/config"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/util"
+	^
+$$$
+	"github.com/zyedidia/tcell/v2"
+	^
+$$$
+	"github.com/zyedidia/clipper"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/screen"
+	^
+$$$
+	"github.com/zyedidia/tcell/v2"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/config"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/util"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/buffer"
+	^
+$$$
+	shellquote "github.com/kballard/go-shellquote"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/screen"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/buffer"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/screen"
+	^
+$$$
+	"github.com/zyedidia/terminal"
+	^
+$$$
+	runewidth "github.com/mattn/go-runewidth"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/buffer"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/config"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/util"
+	^
+$$$
+	"github.com/zyedidia/tcell/v2"
+	^
+$$$
+	runewidth "github.com/mattn/go-runewidth"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/info"
+	^
+$$$
+	runewidth "github.com/mattn/go-runewidth"
+	^
+$$$
+	lua "github.com/yuin/gopher-lua"
+	^
+$$$
+	ulua "github.com/zyedidia/micro/v2/internal/lua"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/shell"
+	^
+$$$
+	"github.com/zyedidia/terminal"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/views"
+	^
+$$$
+	shellquote "github.com/kballard/go-shellquote"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/clipboard"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/display"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/shell"
+	^
+$$$
+	"github.com/zyedidia/json5"
+	^
+$$$
+	lua "github.com/yuin/gopher-lua"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/clipboard"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/display"
+	^
+$$$
+	ulua "github.com/zyedidia/micro/v2/internal/lua"
+	^
+$$$
+	shellquote "github.com/kballard/go-shellquote"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/clipboard"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/shell"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/display"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/info"
+	^
+$$$
+	ulua "github.com/zyedidia/micro/v2/internal/lua"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/views"
+	^
+$$$
+	"github.com/zyedidia/terminal"
+	^
+$$$
+	"github.com/zyedidia/micro/v2/internal/action"
+	^
+$$$
+	"github.com/go-errors/errors"
+	^
+$$$
+	isatty "github.com/mattn/go-isatty"
+	^
+$$$
+	// at all which would be bad
+	^
+$$$
+	// at all which would be bad
+	^
+$$$
+var srTestStart = `foo
+                  ^
+$$$
+var srTest2 = `test_string
+              ^
+$$$
+		txt, _ := json.MarshalIndent(parsed, "", "    ")
+		          ^
+$$$
+		txt, _ := json.MarshalIndent(parsed, "", "    ")
+		          ^
+$$$
+		txt, _ := json.MarshalIndent(parsedSettings, "", "    ")
+		          ^
+$$$
+						if err != nil && err != config.ErrNoSuchFunction {
+						                 ^
+$$$
+						if err != nil && err != config.ErrNoSuchFunction {
+						                 ^
+$$$
+	if err == config.ErrInvalidOption {
+	   ^
+$$$
+		if e.Err() == io.EOF {
+		   ^
+$$$
+				if e == ErrFileTooLarge {
+				   ^
+$$$
+					if err != nil && err != config.ErrNoSuchFunction {
+					                 ^
+$$$
+			switch e.Key() {
+			^
+$$$
+var EmptyDef = Def{nil, &rules{}}
+                         ^
+$$$
+		c := buffer.NewCursor(h.Buf, buffer.Loc{})
+		                             ^
+$$$
+			return KeySequenceEvent{}, false, nil
+			       ^
+$$$
+		return KeyEvent{}, false
+		       ^
+$$$
+			return KeyEvent{
+			       ^
+$$$
+		return KeyEvent{
+		       ^
+$$$
+	return KeyEvent{}, false
+	       ^
+$$$
+		ke := KeyEvent{
+		      ^
+$$$
+	tree.cursor = KeyTreeCursor{
+	              ^
+$$$
+	c := &Cursor{
+	      ^
+$$$
+				la.lines = Append(la.lines, Line{
+				                            ^
+$$$
+			la.lines = Append(la.lines, Line{
+			                            ^
+$$$
+	la.lines = append(la.lines, Line{
+	                            ^
+$$$
+	e1 := &TextEvent{
+	       ^
+$$$
+	e2 := &TextEvent{
+	       ^
+$$$
+	pv := &PluginVersion{
+	       ^
+$$$
+	client := http.Client{}
+	          ^
+$$$
+	return util.FakeCursor || config.GetGlobalOption("fakecursor").(bool)
+	                          ^
+$$$
+	if config.GetGlobalOption("xterm").(bool) {
+	   ^
+$$$
+	Screen.SetPaste(config.GetGlobalOption("paste").(bool))
+	                ^
+$$$
+var Lock sync.Mutex
+    ^
+$$$
+var Screen tcell.Screen
+    ^
+$$$
+var Events chan (tcell.Event)
+    ^
+$$$
+var lock sync.Mutex
+    ^
+$$$
+var drawChan chan bool
+    ^
+$$$
+var lastCursor screenCell
+    ^
+$$$
+var clipboard clipper.Clipboard
+    ^
+$$$
+var internal internalClipboard
+    ^
+$$$
+var multi multiClipboard
+    ^
+$$$
+var terminal terminalClipboard
+    ^
+$$$
+var numGroups Group
+    ^
+$$$
+var minMark = rune(unicode.Mark.R16[0].Lo)
+    ^
+$$$
+var Jobs chan JobFunction
+    ^
+$$$
+var CloseTerms chan bool
+    ^
+$$$
+var statusInfo = map[string]func(*buffer.Buffer) string{
+    ^
+$$$
+var recordingMacro bool
+    ^
+$$$
+var Binder = map[string]func(e Event, action string){
+    ^
+$$$
+var mouseEvents = map[string]tcell.ButtonMask{
+    ^
+$$$
+var keyEvents = map[string]tcell.Key{
+    ^
+$$$
+var BufBindings *KeyTree
+    ^
+$$$
+var BufKeyActions = map[string]BufKeyAction{
+    ^
+$$$
+var BufMouseActions = map[string]BufMouseAction{
+    ^
+$$$
+var MultiActions = map[string]bool{
+    ^
+$$$
+var commands map[string]Command
+    ^
+$$$
+var PluginCmds = []string{"install", "remove", "update", "available", "list", "search"}
+    ^
+$$$
+var termdefaults = map[string]string{
+    ^
+$$$
+var bufdefaults = map[string]string{
+    ^
+$$$
+var infodefaults = map[string]string{
+    ^
+$$$
+var InfoBar *InfoPane
+    ^
+$$$
+var LogBufPane *BufPane
+    ^
+$$$
+var InfoBufBindings *KeyTree
+    ^
+$$$
+var InfoKeyActions = map[string]InfoKeyAction{
+    ^
+$$$
+var Tabs *TabList
+    ^
+$$$
+var TermBindings *KeyTree
+    ^
+$$$
+var TermKeyActions = map[string]TermKeyAction{
+    ^
+$$$
+	flagVersion   = flag.Bool("version", false, "Show the version number and information")
+	^
+$$$
+	flagConfigDir = flag.String("config-dir", "", "Specify a custom location for the configuration directory")
+	^
+$$$
+	flagOptions   = flag.Bool("options", false, "Show all option help")
+	^
+$$$
+	flagDebug     = flag.Bool("debug", false, "Enable debug mode (prints debug info to ./log.txt)")
+	^
+$$$
+	flagProfile   = flag.Bool("profile", false, "Enable CPU profiling (writes profile info to ./micro.prof)")
+	^
+$$$
+	flagPlugin    = flag.String("plugin", "", "Plugin command")
+	^
+$$$
+	flagClean     = flag.Bool("clean", false, "Clean configuration directory")
+	^
+$$$
+	optionFlags   map[string]*string
+	^
+$$$
+	sigterm chan os.Signal
+	^
+$$$
+	sighup  chan os.Signal
+	^
+$$$
+var sim tcell.SimulationScreen
+    ^
+$$$
+var srTest3 = `test_foo
+    ^
+$$$
+var backupRequestChan chan *Buffer
+    ^
+$$$
+	OpenBuffers []*Buffer
+	^
+$$$
+	LogBuf *Buffer
+	^
+$$$
+		return nil, errors.New("Failed to get a simulation screen")
+		            ^
+$$$
+			return "", errors.New("No clipboard received from terminal")
+			           ^
+$$$
+		return nil, errors.New("Header file has incorrect format")
+		            ^
+$$$
+				err = fmt.Errorf("pkg: %v", r)
+				      ^
+$$$
+				err = fmt.Errorf("pkg: %v", r)
+				      ^
+$$$
+				err = fmt.Errorf("pkg: %v", r)
+				      ^
+$$$
+				return nil, fmt.Errorf("Bad type %T", object)
+				            ^
+$$$
+		return "", errors.New("No arguments")
+		           ^
+$$$
+		return nil, errors.New("No arguments")
+		            ^
+$$$
+		return "", errors.New("No arguments")
+		           ^
+$$$
+				return KeySequenceEvent{}, false, errors.New("Invalid event " + k[groups[2]:groups[3]])
+				                                  ^
+$$$
+			return nil, errors.New(k + " is not a bindable event")
+			            ^
+$$$
+			return false, errors.New("Error reading bindings.json file: " + err.Error())
+			              ^
+$$$
+			return false, errors.New("Error reading bindings.json: " + err.Error())
+			              ^
+$$$
+			return errors.New("Error reading bindings.json file: " + err.Error())
+			       ^
+$$$
+			return errors.New("Error reading bindings.json: " + err.Error())
+			       ^
+$$$
+		return errors.New(fmt.Sprint("Unable to load help text", page, "\n", err))
+		       ^
+$$$
+		return nil, errors.New("Terminal emulator is not supported on this system")
+		            ^
+$$$
+		return nil, errors.New("Error: " + filename + " is a directory and cannot be opened")
+		            ^
+$$$
+			return nil, errors.New("could not open file")
+			            ^
+$$$
+		return 0, errors.New("no diff data")
+		          ^
+$$$
+			return 0, errors.New("no next diff hunk")
+			          ^
+$$$
+		return errors.New("Cannot save readonly buffer")
+		       ^
+$$$
+		return errors.New("Cannot save scratch buffer")
+		       ^
+$$$
+		return errors.New("Save with sudo not supported on Windows")
+		       ^
+$$$
+				return errors.New("Parent dirs don't exist, enable 'mkparents' for auto creation")
+				       ^
+$$$
+		return errors.New(colorschemeName + " is not a valid colorscheme")
+		       ^
+$$$
+		return errors.New("Error loading colorscheme: " + err.Error())
+		       ^
+$$$
+			err = errors.New("Color-link statement is not valid: " + line)
+			      ^
+$$$
+				return errors.New("Error finding your home directory\nCan't load config files: " + err.Error())
+				       ^
+$$$
+			e = errors.New("Error: " + flagConfigDir + " does not exist. Defaulting to " + ConfigDir + ".")
+			    ^
+$$$
+		return errors.New("Error creating configuration directory: " + err.Error())
+		       ^
+$$$
+			reterr = errors.New("Plugin " + p.Name + ": " + err.Error())
+			         ^
+$$$
+		return errors.New("Plugin " + plugin + " does not exist")
+		       ^
+$$$
+		return errors.New("Plugin " + plugin + " does not exist")
+		       ^
+$$$
+			return errors.New("Error reading settings.json file: " + err.Error())
+			       ^
+$$$
+				return errors.New("Error reading settings.json: " + err.Error())
+				       ^
+$$$
+					parseError = errors.New("Error with glob setting " + k + ": " + err.Error())
+					             ^
+$$$
+			return errors.New("Error writing settings.json file: " + err.Error())
+			       ^
+$$$
+			return errors.New("Error writing settings.json file: " + err.Error())
+			       ^
+$$$
+		return errors.New("Expected numeric type for " + option)
+		       ^
+$$$
+		return errors.New(option + " must be greater than 0")
+		       ^
+$$$
+		return errors.New("Expected numeric type for " + option)
+		       ^
+$$$
+		return errors.New(option + " must be non-negative")
+		       ^
+$$$
+		return errors.New("Expected string type for colorscheme")
+		       ^
+$$$
+		return errors.New(colorscheme + " is not a valid colorscheme")
+		       ^
+$$$
+		return errors.New("Expected string type for clipboard")
+		       ^
+$$$
+		return errors.New(option + " must be 'internal', 'external', or 'terminal'")
+		       ^
+$$$
+		return errors.New("Expected string type for file format")
+		       ^
+$$$
+		return errors.New("File format must be either 'unix' or 'dos'")
+		       ^
+$$$
+	drawChan = make(chan bool, 8)
+	                           ^
+$$$
+	drawChan = make(chan bool, 8)
+	                           ^
+$$$
+	s.SetSize(80, 24)
+	          ^
+$$$
+		case <-time.After(200 * time.Millisecond):
+		                  ^
+$$$
+	if len(lines) < 3 {
+	                ^
+$$$
+			if len(v) > 100 {
+			            ^
+$$$
+		for j := len(h) - 2; j >= 0; j-- {
+		                  ^
+$$$
+				for j := len(h) - 2; j >= 0; j-- {
+				                  ^
+$$$
+	Jobs = make(chan JobFunction, 100)
+	                              ^
+$$$
+				w.hscroll = util.Clamp(x-4, 0, s-w.Width)
+				                         ^
+$$$
+			draw(' ', 2, true, globalTabReverse)
+			          ^
+$$$
+			draw(' ', 2, false, globalTabReverse)
+			          ^
+$$$
+		if util.CharacterCountInString(divchars) != 2 {
+		                                            ^
+$$$
+	if util.CharacterCountInString(divchars) != 2 {
+	                                            ^
+$$$
+		sum += runewidth.StringWidth(n) + 4
+		                                  ^
+$$$
+	v.StartLine = h.Scroll(h.SLocFromLoc(h.Cursor.Loc), -h.BufView().Height/2)
+	                                                                        ^
+$$$
+				events = make([]Event, 0, 3)
+				                          ^
+$$$
+		v.StartLine = h.Scroll(sloc, -height/4)
+		                                     ^
+$$$
+		v.StartLine = h.Scroll(sloc, -height/4)
+		                                     ^
+$$$
+		if len(groups) > 3 {
+		                 ^
+$$$
+	if len(args) < 2 {
+	               ^
+$$$
+	case <-time.After(10 * time.Millisecond):
+	                  ^
+$$$
+		time.Sleep(time.Second * 8)
+		                         ^
+$$$
+	backupRequestChan = make(chan *Buffer, 10)
+	                                       ^
+$$$
+		b.updateDiffTimer = time.AfterFunc(500*time.Millisecond, func() {
+		                                   ^
+$$$
+		newSlice := make([]Line, (l+len(data))+10000)
+		                                       ^
+$$$
+	la.lines = make([]Line, 0, 1000)
+	                           ^
+$$$
+			newSlice := make([]Line, len(la.lines), totalLinesNum+10000)
+			                                                      ^
+$$$
+	b.Grow(int(la.initsize + 4096))
+	                         ^
+$$$
+	} else if lineCount < 30000 {
+	                      ^
+$$$
+	"scrollmargin":   float64(3),
+	                          ^
+$$$
+		if len(matches) == 3 {
+		                   ^
+$$$
+		content = make([]string, ncursors, ncursors)
+		                         ^
+$$$
+	bloc := buffer.Loc{0, lineN}
+	        ^
+$$$
+func (i *InfoWindow) LocFromVLoc(vloc VLoc) buffer.Loc { return buffer.Loc{vloc.VisualX, 0} }
+                                                                ^
+$$$
+	mouseLoc := h.LocFromVisual(buffer.Loc{mx, my})
+	                            ^
+$$$
+	v.StartLine = display.SLoc{0, 0}
+	              ^
+$$$
+	if h.Diff(display.SLoc{0, 0}, sloc) < height {
+	          ^
+$$$
+		v.StartLine = display.SLoc{0, 0}
+		              ^
+$$$
+		for _, l := range b.lines[1:] {
+		       ^
+$$$
+		for _, l := range b.lines[1:] {
+		       ^
+$$$
+		slice[l+i] = c
+		             ^
+$$$
+		for i, l := range b.lines {
+		       ^
+$$$
+	fnameRgx := string(lines[1])
+	^
+$$$
+	count := h.Buf.End()
+	^
+$$$
+	count := h.Buf.End()
+	^
+$$$
+	ok := n.Unsplit()
+	^
+$$$
+	height := h.BufView().Height
+	^
+$$$
+	height := h.BufView().Height
+	^
+$$$
+	_, isMulti := MultiActions[name]
+	   ^
+$$$
+	err := cmd.Run()
+	^
+$$$
+	err := UnbindKey(args[0])
+	^
+$$$
+	inputCmd := args[0]
+	^
+$$$
+	ok := false
+	^
+$$$
+	e := screen.Screen.PollEvent()
+	^
+$$$
+	line := b.LineBytes(loc.Y)
+	^
+$$$
+	teCursor := t.C
+	^
+$$$
+	teCursor := t.C
+	^
+$$$
+	p := pl.Get(name)
+	^
+$$$
+	HandleEvent(tcell.Event)
+	            ^
+$$$
+	HandleCommand(string)
+	              ^
+$$$
+func (p *Plugin) Call(fn string, args ...lua.LValue) (lua.LValue, error) {
+^
+$$$
+func FindRuntimeFile(fileType RTFiletype, name string) RuntimeFile {
+^
+$$$
+func InitSimScreen() (tcell.SimulationScreen, error) {
+^
+$$$
+func findEvent(k string) (Event, error) {
+^
+$$$
+func ConstructEvent(event tcell.Event) (Event, error) {
+^
+$$$
+			return
+			^
+$$$
+		return
+		^
+$$$
+	return
+	^
+$$$
+			return err
+			^
+$$$
+		return L.PCall(0, lua.MultRet, nil)
+		^
+$$$
+	return write(multi.getAllText(r), r, m)
+	^
+$$$
+			return string(b), e
+			^
+$$$
+				break
+				^
+$$$
+				break
+				^
+$$$
+				break
+				^
+$$$
+				continue
+				^
+$$$
+				continue
+				^
+$$$
+			continue
+			^
+$$$
+	resp, err := http.Get(string(pc))
+	                     ^
+$$$
+	resp, err := http.Get(string(pr))
+	                     ^
+$$$
+	resp, err := http.Get(pv.Url)
+	                     ^
+$$$
+	req, err := http.NewRequest(method, url, nil)
+	                           ^
+$$$
+func ParseFile(input []byte) (f *File, err error) {
+^
+$$$
+func ParseDef(f *File, header *Header) (s *Def, err error) {
+^
+$$$
+func findEvents(k string) (b KeySequenceEvent, ok bool, err error) {
+^
+$$$
+	err = overwriteFile(name, encoding.Nop, func(file io.Writer) (e error) {
+	                                        ^
+$$$
+func (b *Buffer) UpdateModTime() (err error) {
+^
+$$$
+func (b *Buffer) Write(bytes []byte) (n int, err error) {
+^
+$$$
+	fwriter := func(file io.Writer) (e error) {
+	           ^
+$$$
+func (s *TEStack) Pop() (value *TextEvent) {
+^
+$$$
+func SearchPlugin(out io.Writer, texts []string) (plugins PluginPackages) {
+^
+$$$
+	L.SetField(pkg, "O_APPEND", luar.New(L, os.O_APPEND))
+	                                           ^
+$$$
+	L.SetField(pkg, "O_CREATE", luar.New(L, os.O_CREATE))
+	                                           ^
+$$$
+	L.SetField(pkg, "O_EXCL", luar.New(L, os.O_EXCL))
+	                                         ^
+$$$
+	L.SetField(pkg, "O_RDONLY", luar.New(L, os.O_RDONLY))
+	                                           ^
+$$$
+	L.SetField(pkg, "O_RDWR", luar.New(L, os.O_RDWR))
+	                                         ^
+$$$
+	L.SetField(pkg, "O_SYNC", luar.New(L, os.O_SYNC))
+	                                         ^
+$$$
+	L.SetField(pkg, "O_TRUNC", luar.New(L, os.O_TRUNC))
+	                                          ^
+$$$
+	L.SetField(pkg, "O_WRONLY", luar.New(L, os.O_WRONLY))
+	                                           ^
+$$$
+	f, err := os.OpenFile(filename, os.O_WRONLY, 0)
+	                                   ^
+$$$
+	reader := strings.NewReader(unicode_txt)
+	                            ^
+$$$
+	la = NewLineArray(uint64(len(unicode_txt)), FFAuto, reader)
+	                             ^
+$$$
+	assert.Equal(t, unicode_txt, string(bytes))
+	                ^
+$$$
+			f, err := os.OpenFile(path, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, f.Mode())
+			                               ^
+$$$
+func TestSimpleEdit(t *testing.T) {
+^
+$$$
+func TestMouse(t *testing.T) {
+^
+$$$
+func TestSearchAndReplace(t *testing.T) {
+^
+$$$
+func TestSplit(t *testing.T) {
+^
+$$$
+func TestJoin(t *testing.T) {
+^
+$$$
+func TestInsert(t *testing.T) {
+^
+$$$
+func TestRemove(t *testing.T) {
+^
+$$$
+func TestStack(t *testing.T) {
+^
+$$$
+func TestSimpleStringToStyle(t *testing.T) {
+^
+$$$
+func TestAttributeStringToStyle(t *testing.T) {
+^
+$$$
+func TestMultiAttributesStringToStyle(t *testing.T) {
+^
+$$$
+func TestColor256StringToStyle(t *testing.T) {
+^
+$$$
+func TestColorHexStringToStyle(t *testing.T) {
+^
+$$$
+func TestColorschemeParser(t *testing.T) {
+^
+$$$
+func TestDependencyResolving(t *testing.T) {
+^
+$$$
+func TestAddFile(t *testing.T) {
+^
+$$$
+func TestFindFile(t *testing.T) {
+^
+$$$
+func TestStringWidth(t *testing.T) {
+^
+$$$
+func TestSliceVisualEnd(t *testing.T) {
+^
+$$$
+func (eh *EventHandler) ApplyDiff(new string) {
+                                  ^
+$$$
+	L.SetField(pkg, "HasPrefix", luar.New(L, filepath.HasPrefix))
+	                                         ^
+$$$
+	ErrFileTooLarge = errors.New("File is too large to hash")
+	                  ^
+$$$
+var ErrNoSuchFunction = errors.New("No such function exists")
+                        ^
+$$$
+	ErrMissingName = errors.New("Missing or empty name field")
+	                 ^
+$$$
+func (pl PluginPackages) Get(name string) *PluginPackage {
+                         ^
+$$$
+	Name string `json:"Name"`
+	            ^
+$$$
+	Desc string `json:"Description"`
+	            ^
+$$$
+	Site string `json:"Website"`
+	            ^
+$$$
+	assert.Equal(false, b.ExternallyModified())
+	^
+$$$
+	assert.Equal(false, b.Modified())
+	^
+$$$
+		assert.Equal(len(lines), b.LinesNum())
+		^
+$$$
+	assert.Equal(t, len(la.lines), 6)
+	^
+$$$
+	assert.Equal(t, len(la.lines), 5)
+	^
+$$$
+	assert.Equal(t, p.EventType, TextEventInsert)
+	^
+$$$
+	assert.Equal(t, p.EventType, TextEventInsert)
+	^
+$$$
+	assert.Equal(t, p.EventType, TextEventReplace)
+	^
+$$$
+	assert.Nil(t, err)
+	^
+$$$
+	assert.Nil(t, err)
+	^
+$$$
+	assert.Nil(t, err)
+	^
+$$$
+	assert.NoError(t, err)
+	^
+$$$
+	assert.True(t, len(entries) > 5)
+	^
+$$$
+package buffer
+        ^
+$$$
+package buffer
+        ^
+$$$
+package buffer
+        ^
+$$$
+package config
+        ^
+$$$
+package config
+        ^
+$$$
+package config
+        ^
+$$$
+package util
+        ^
+$$$
+package views
+        ^
+$$$
+func benchCreateAndClose(testingB *testing.B, nLines int) {
+     ^
+$$$
+func benchRead(testingB *testing.B, nLines int) {
+     ^
+$$$
+func benchEdit(testingB *testing.B, nLines, nCursors int) {
+     ^
+$$$
+func SetContent(x, y int, mainc rune, combc []rune, style tcell.Style) {
+                ^
+$$$
+func read(r Register, m Method) (string, error) {
+          ^
+$$$
+func (c multiClipboard) isValid(r Register, clipboard string, ncursors int) bool {
+                                ^
+$$$
+func write(text string, r Register, m Method) error {
+                        ^
+$$$
+	for i := 0; i < input.LinesNum(); i++ {
+	    ^
+$$$
+	for k, v := range src {
+	    ^
+$$$
+	s := 0
+	^
+$$$
+			for _, p := range curRegion.rules.patterns {
+			    ^
+$$$
+	c, s := utf8.DecodeRuneInString(str)
+	^
+$$$
+	c, s := utf8.DecodeRune(b)
+	^
+$$$
+	r, size := utf8.DecodeRune(b)
+	^
+$$$
+	for i := startline; i <= endline; i++ {
+	    ^
+$$$
+					r, err := regexp.Compile(object)
+					^
+$$$
+	i := 0
+	^
+$$$
+	r, size := utf8.DecodeRuneInString(str)
+	^
+$$$
+	s := 0
+	^
+$$$
+func DecodeCharacter(b []byte) (rune, []rune, int) {
+                     ^
+$$$
+func runePos(p int, str []byte) int {
+             ^
+$$$
+func CharacterCount(b []byte) int {
+                    ^
+$$$
+func resolveIncludesInDef(files []*File, d *Def) {
+                                         ^
+$$$
+				h := i.History[i.PromptType]
+				^
+$$$
+	c := i.Buffer.GetActiveCursor()
+	^
+$$$
+	ib := new(InfoBuf)
+	^
+$$$
+		rc := w.getRowCount(s.Line)
+		^
+$$$
+				c := r
+				^
+$$$
+	w := new(BufWindow)
+	^
+$$$
+	b := w.Buf
+	^
+$$$
+	y := s.win.Height + s.win.Y - 1
+	^
+$$$
+	iw := new(InfoWindow)
+	^
+$$$
+	x := 0
+	^
+$$$
+			c, f, b := w.State.Cell(x, y)
+			^
+$$$
+	x := -w.hscroll
+	^
+$$$
+	n := 0
+	^
+$$$
+	pl := config.FindPlugin(plName)
+	^
+$$$
+		rw := runewidth.RuneWidth(activeC.RuneUnder(activeC.X))
+		^
+$$$
+	for x := 0; x < s.win.Width; x++ {
+	    ^
+$$$
+	vx := svloc.X - w.X - w.gutterOffset
+	^
+$$$
+	b := w.Buf
+	^
+$$$
+		for _, bp := range buffer.BracePairs {
+		    ^
+$$$
+			fg, bg := int(f), int(b)
+			^
+$$$
+			y := i.Y - keymenuOffset - 1
+			^
+$$$
+		cs := n.Children()
+		^
+$$$
+	cs := n.Children()
+	^
+$$$
+	var l buffer.Loc
+	    ^
+$$$
+		cx := activeC.GetVisualX()
+		^
+$$$
+		w := 0
+		^
+$$$
+func (w *BufWindow) scrollDown(s SLoc, n int) SLoc {
+                               ^
+$$$
+func (w *BufWindow) diff(s1, s2 SLoc) int {
+                         ^
+$$$
+func (w *TabWindow) SetActive(a int) {
+                              ^
+$$$
+func (w *BufWindow) Diff(s1, s2 SLoc) int {
+                         ^
+$$$
+			width := 0
+			^
+$$$
+		width := 0
+		^
+$$$
+		width := 0
+		^
+$$$
+	idxTo := 0
+	^
+$$$
+		return err
+		       ^
+$$$
+			return err
+			       ^
+$$$
+		return err
+		       ^
+$$$
+		return nil, err
+		            ^
+$$$
+			return clipboard.WriteAll(clipper.RegClipboard, []byte(text))
+			       ^
+$$$
+			return clipboard.WriteAll(clipper.RegPrimary, []byte(text))
+			       ^
+$$$
+	return screen.Screen.SetClipboard(text, reg)
+	       ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return nil, err
+		            ^
+$$$
+	return f, err
+	          ^
+$$$
+						return nil, err
+						            ^
+$$$
+		return "", err
+		           ^
+$$$
+		return "", err
+		           ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return "", err
+		           ^
+$$$
+	return output, err
+	               ^
+$$$
+		return err
+		       ^
+$$$
+		return err
+		       ^
+$$$
+				return err
+				       ^
+$$$
+	return config.WriteSettings(filepath.Join(config.ConfigDir, "settings.json"))
+	       ^
+$$$
+		return err
+		       ^
+$$$
+		return err
+		       ^
+$$$
+		return buffer.NewBufferFromFile(path, buffer.BTDefault)
+		       ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return "", err
+		           ^
+$$$
+		return "", err
+		           ^
+$$$
+		return "", err
+		           ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return nil, serr
+		            ^
+$$$
+		return nil, err
+		            ^
+$$$
+		return err
+		       ^
+$$$
+		return err
+		       ^
+$$$
+		return err
+		       ^
+$$$
+			return e
+			       ^
+$$$
+				return e
+				       ^
+$$$
+				return e
+				       ^
+$$$
+	return startpos, err
+	                 ^
+$$$
+			return err
+			       ^
+$$$
+					return mkdirallErr
+					       ^
+$$$
+		return err
+		       ^
+$$$
+		return err
+		       ^
+$$$
+			return err
+			       ^

@@ -1,0 +1,2707 @@
+pkg/highlight/highlighter.go:54:6: `combineLineMatch` is unused (deadcode)
+func combineLineMatch(src, dst LineMatch) LineMatch {
+     ^
+internal/buffer/buffer.go:33:7: `backupTime` is unused (deadcode)
+const backupTime = 8000
+      ^
+internal/action/infocomplete.go:80:6: `contains` is unused (deadcode)
+func contains(s []string, e string) bool {
+     ^
+cmd/micro/micro.go:35:2: `autosave` is unused (deadcode)
+	autosave chan bool
+	^
+internal/screen/screen.go:90:2: declaration has 3 blank identifiers (dogsled)
+	r, _, _, _ := Screen.GetContent(x, y)
+	^
+internal/lua/lua.go:149: 149-215 lines are duplicate of `internal/lua/lua.go:217-283` (dupl)
+func importNet() *lua.LTable {
+	pkg := L.NewTable()
+
+	L.SetField(pkg, "CIDRMask", luar.New(L, net.CIDRMask))
+	L.SetField(pkg, "Dial", luar.New(L, net.Dial))
+	L.SetField(pkg, "DialIP", luar.New(L, net.DialIP))
+	L.SetField(pkg, "DialTCP", luar.New(L, net.DialTCP))
+	L.SetField(pkg, "DialTimeout", luar.New(L, net.DialTimeout))
+	L.SetField(pkg, "DialUDP", luar.New(L, net.DialUDP))
+	L.SetField(pkg, "DialUnix", luar.New(L, net.DialUnix))
+	L.SetField(pkg, "ErrWriteToConnected", luar.New(L, net.ErrWriteToConnected))
+	L.SetField(pkg, "FileConn", luar.New(L, net.FileConn))
+	L.SetField(pkg, "FileListener", luar.New(L, net.FileListener))
+	L.SetField(pkg, "FilePacketConn", luar.New(L, net.FilePacketConn))
+	L.SetField(pkg, "FlagBroadcast", luar.New(L, net.FlagBroadcast))
+	L.SetField(pkg, "FlagLoopback", luar.New(L, net.FlagLoopback))
+	L.SetField(pkg, "FlagMulticast", luar.New(L, net.FlagMulticast))
+	L.SetField(pkg, "FlagPointToPoint", luar.New(L, net.FlagPointToPoint))
+	L.SetField(pkg, "FlagUp", luar.New(L, net.FlagUp))
+	L.SetField(pkg, "IPv4", luar.New(L, net.IPv4))
+	L.SetField(pkg, "IPv4Mask", luar.New(L, net.IPv4Mask))
+	L.SetField(pkg, "IPv4allrouter", luar.New(L, net.IPv4allrouter))
+	L.SetField(pkg, "IPv4allsys", luar.New(L, net.IPv4allsys))
+	L.SetField(pkg, "IPv4bcast", luar.New(L, net.IPv4bcast))
+	L.SetField(pkg, "IPv4len", luar.New(L, net.IPv4len))
+	L.SetField(pkg, "IPv4zero", luar.New(L, net.IPv4zero))
+	L.SetField(pkg, "IPv6interfacelocalallnodes", luar.New(L, net.IPv6interfacelocalallnodes))
+	L.SetField(pkg, "IPv6len", luar.New(L, net.IPv6len))
+	L.SetField(pkg, "IPv6linklocalallnodes", luar.New(L, net.IPv6linklocalallnodes))
+	L.SetField(pkg, "IPv6linklocalallrouters", luar.New(L, net.IPv6linklocalallrouters))
+	L.SetField(pkg, "IPv6loopback", luar.New(L, net.IPv6loopback))
+	L.SetField(pkg, "IPv6unspecified", luar.New(L, net.IPv6unspecified))
+	L.SetField(pkg, "IPv6zero", luar.New(L, net.IPv6zero))
+	L.SetField(pkg, "InterfaceAddrs", luar.New(L, net.InterfaceAddrs))
+	L.SetField(pkg, "InterfaceByIndex", luar.New(L, net.InterfaceByIndex))
+	L.SetField(pkg, "InterfaceByName", luar.New(L, net.InterfaceByName))
+	L.SetField(pkg, "Interfaces", luar.New(L, net.Interfaces))
+	L.SetField(pkg, "JoinHostPort", luar.New(L, net.JoinHostPort))
+	L.SetField(pkg, "Listen", luar.New(L, net.Listen))
+	L.SetField(pkg, "ListenIP", luar.New(L, net.ListenIP))
+	L.SetField(pkg, "ListenMulticastUDP", luar.New(L, net.ListenMulticastUDP))
+	L.SetField(pkg, "ListenPacket", luar.New(L, net.ListenPacket))
+	L.SetField(pkg, "ListenTCP", luar.New(L, net.ListenTCP))
+	L.SetField(pkg, "ListenUDP", luar.New(L, net.ListenUDP))
+	L.SetField(pkg, "ListenUnix", luar.New(L, net.ListenUnix))
+	L.SetField(pkg, "ListenUnixgram", luar.New(L, net.ListenUnixgram))
+	L.SetField(pkg, "LookupAddr", luar.New(L, net.LookupAddr))
+	L.SetField(pkg, "LookupCNAME", luar.New(L, net.LookupCNAME))
+	L.SetField(pkg, "LookupHost", luar.New(L, net.LookupHost))
+	L.SetField(pkg, "LookupIP", luar.New(L, net.LookupIP))
+	L.SetField(pkg, "LookupMX", luar.New(L, net.LookupMX))
+	L.SetField(pkg, "LookupNS", luar.New(L, net.LookupNS))
+	L.SetField(pkg, "LookupPort", luar.New(L, net.LookupPort))
+	L.SetField(pkg, "LookupSRV", luar.New(L, net.LookupSRV))
+	L.SetField(pkg, "LookupTXT", luar.New(L, net.LookupTXT))
+	L.SetField(pkg, "ParseCIDR", luar.New(L, net.ParseCIDR))
+	L.SetField(pkg, "ParseIP", luar.New(L, net.ParseIP))
+	L.SetField(pkg, "ParseMAC", luar.New(L, net.ParseMAC))
+	L.SetField(pkg, "Pipe", luar.New(L, net.Pipe))
+	L.SetField(pkg, "ResolveIPAddr", luar.New(L, net.ResolveIPAddr))
+	L.SetField(pkg, "ResolveTCPAddr", luar.New(L, net.ResolveTCPAddr))
+	L.SetField(pkg, "ResolveUDPAddr", luar.New(L, net.ResolveUDPAddr))
+	L.SetField(pkg, "ResolveUnixAddr", luar.New(L, net.ResolveUnixAddr))
+	L.SetField(pkg, "SplitHostPort", luar.New(L, net.SplitHostPort))
+
+	return pkg
+}
+internal/lua/lua.go:217: 217-283 lines are duplicate of `internal/lua/lua.go:149-215` (dupl)
+func importMath() *lua.LTable {
+	pkg := L.NewTable()
+
+	L.SetField(pkg, "Abs", luar.New(L, math.Abs))
+	L.SetField(pkg, "Acos", luar.New(L, math.Acos))
+	L.SetField(pkg, "Acosh", luar.New(L, math.Acosh))
+	L.SetField(pkg, "Asin", luar.New(L, math.Asin))
+	L.SetField(pkg, "Asinh", luar.New(L, math.Asinh))
+	L.SetField(pkg, "Atan", luar.New(L, math.Atan))
+	L.SetField(pkg, "Atan2", luar.New(L, math.Atan2))
+	L.SetField(pkg, "Atanh", luar.New(L, math.Atanh))
+	L.SetField(pkg, "Cbrt", luar.New(L, math.Cbrt))
+	L.SetField(pkg, "Ceil", luar.New(L, math.Ceil))
+	L.SetField(pkg, "Copysign", luar.New(L, math.Copysign))
+	L.SetField(pkg, "Cos", luar.New(L, math.Cos))
+	L.SetField(pkg, "Cosh", luar.New(L, math.Cosh))
+	L.SetField(pkg, "Dim", luar.New(L, math.Dim))
+	L.SetField(pkg, "Erf", luar.New(L, math.Erf))
+	L.SetField(pkg, "Erfc", luar.New(L, math.Erfc))
+	L.SetField(pkg, "Exp", luar.New(L, math.Exp))
+	L.SetField(pkg, "Exp2", luar.New(L, math.Exp2))
+	L.SetField(pkg, "Expm1", luar.New(L, math.Expm1))
+	L.SetField(pkg, "Float32bits", luar.New(L, math.Float32bits))
+	L.SetField(pkg, "Float32frombits", luar.New(L, math.Float32frombits))
+	L.SetField(pkg, "Float64bits", luar.New(L, math.Float64bits))
+	L.SetField(pkg, "Float64frombits", luar.New(L, math.Float64frombits))
+	L.SetField(pkg, "Floor", luar.New(L, math.Floor))
+	L.SetField(pkg, "Frexp", luar.New(L, math.Frexp))
+	L.SetField(pkg, "Gamma", luar.New(L, math.Gamma))
+	L.SetField(pkg, "Hypot", luar.New(L, math.Hypot))
+	L.SetField(pkg, "Ilogb", luar.New(L, math.Ilogb))
+	L.SetField(pkg, "Inf", luar.New(L, math.Inf))
+	L.SetField(pkg, "IsInf", luar.New(L, math.IsInf))
+	L.SetField(pkg, "IsNaN", luar.New(L, math.IsNaN))
+	L.SetField(pkg, "J0", luar.New(L, math.J0))
+	L.SetField(pkg, "J1", luar.New(L, math.J1))
+	L.SetField(pkg, "Jn", luar.New(L, math.Jn))
+	L.SetField(pkg, "Ldexp", luar.New(L, math.Ldexp))
+	L.SetField(pkg, "Lgamma", luar.New(L, math.Lgamma))
+	L.SetField(pkg, "Log", luar.New(L, math.Log))
+	L.SetField(pkg, "Log10", luar.New(L, math.Log10))
+	L.SetField(pkg, "Log1p", luar.New(L, math.Log1p))
+	L.SetField(pkg, "Log2", luar.New(L, math.Log2))
+	L.SetField(pkg, "Logb", luar.New(L, math.Logb))
+	L.SetField(pkg, "Max", luar.New(L, math.Max))
+	L.SetField(pkg, "Min", luar.New(L, math.Min))
+	L.SetField(pkg, "Mod", luar.New(L, math.Mod))
+	L.SetField(pkg, "Modf", luar.New(L, math.Modf))
+	L.SetField(pkg, "NaN", luar.New(L, math.NaN))
+	L.SetField(pkg, "Nextafter", luar.New(L, math.Nextafter))
+	L.SetField(pkg, "Pow", luar.New(L, math.Pow))
+	L.SetField(pkg, "Pow10", luar.New(L, math.Pow10))
+	L.SetField(pkg, "Remainder", luar.New(L, math.Remainder))
+	L.SetField(pkg, "Signbit", luar.New(L, math.Signbit))
+	L.SetField(pkg, "Sin", luar.New(L, math.Sin))
+	L.SetField(pkg, "Sincos", luar.New(L, math.Sincos))
+	L.SetField(pkg, "Sinh", luar.New(L, math.Sinh))
+	L.SetField(pkg, "Sqrt", luar.New(L, math.Sqrt))
+	L.SetField(pkg, "Tan", luar.New(L, math.Tan))
+	L.SetField(pkg, "Tanh", luar.New(L, math.Tanh))
+	L.SetField(pkg, "Trunc", luar.New(L, math.Trunc))
+	L.SetField(pkg, "Y0", luar.New(L, math.Y0))
+	L.SetField(pkg, "Y1", luar.New(L, math.Y1))
+	L.SetField(pkg, "Yn", luar.New(L, math.Yn))
+
+	return pkg
+}
+internal/buffer/search.go:28: 28-44 lines are duplicate of `internal/buffer/search.go:76-92` (dupl)
+		if i == start.Y && start.Y == end.Y {
+			nchars := util.CharacterCount(l)
+			start.X = util.Clamp(start.X, 0, nchars)
+			end.X = util.Clamp(end.X, 0, nchars)
+			l = util.SliceStart(l, end.X)
+			l = util.SliceEnd(l, start.X)
+			charpos = start.X
+		} else if i == start.Y {
+			nchars := util.CharacterCount(l)
+			start.X = util.Clamp(start.X, 0, nchars)
+			l = util.SliceEnd(l, start.X)
+			charpos = start.X
+		} else if i == end.Y {
+			nchars := util.CharacterCount(l)
+			end.X = util.Clamp(end.X, 0, nchars)
+			l = util.SliceStart(l, end.X)
+		}
+internal/buffer/search.go:76: 76-92 lines are duplicate of `internal/buffer/search.go:28-44` (dupl)
+		if i == start.Y && start.Y == end.Y {
+			nchars := util.CharacterCount(l)
+			start.X = util.Clamp(start.X, 0, nchars)
+			end.X = util.Clamp(end.X, 0, nchars)
+			l = util.SliceStart(l, end.X)
+			l = util.SliceEnd(l, start.X)
+			charpos = start.X
+		} else if i == start.Y {
+			nchars := util.CharacterCount(l)
+			start.X = util.Clamp(start.X, 0, nchars)
+			l = util.SliceEnd(l, start.X)
+			charpos = start.X
+		} else if i == end.Y {
+			nchars := util.CharacterCount(l)
+			end.X = util.Clamp(end.X, 0, nchars)
+			l = util.SliceStart(l, end.X)
+		}
+internal/action/actions.go:980: 980-1003 lines are duplicate of `internal/action/actions.go:1006-1029` (dupl)
+func (h *BufPane) FindNext() bool {
+	// If the cursor is at the start of a selection and we search we want
+	// to search from the end of the selection in the case that
+	// the selection is a search result in which case we wouldn't move at
+	// at all which would be bad
+	searchLoc := h.Cursor.Loc
+	if h.Cursor.HasSelection() {
+		searchLoc = h.Cursor.CurSelection[1]
+	}
+	match, found, err := h.Buf.FindNext(h.Buf.LastSearch, h.Buf.Start(), h.Buf.End(), searchLoc, true, h.Buf.LastSearchRegex)
+	if err != nil {
+		InfoBar.Error(err)
+	}
+	if found {
+		h.Cursor.SetSelectionStart(match[0])
+		h.Cursor.SetSelectionEnd(match[1])
+		h.Cursor.OrigSelection[0] = h.Cursor.CurSelection[0]
+		h.Cursor.OrigSelection[1] = h.Cursor.CurSelection[1]
+		h.GotoLoc(h.Cursor.CurSelection[1])
+	} else {
+		h.Cursor.ResetSelection()
+	}
+	return true
+}
+internal/action/actions.go:1006: 1006-1029 lines are duplicate of `internal/action/actions.go:980-1003` (dupl)
+func (h *BufPane) FindPrevious() bool {
+	// If the cursor is at the end of a selection and we search we want
+	// to search from the beginning of the selection in the case that
+	// the selection is a search result in which case we wouldn't move at
+	// at all which would be bad
+	searchLoc := h.Cursor.Loc
+	if h.Cursor.HasSelection() {
+		searchLoc = h.Cursor.CurSelection[0]
+	}
+	match, found, err := h.Buf.FindNext(h.Buf.LastSearch, h.Buf.Start(), h.Buf.End(), searchLoc, false, h.Buf.LastSearchRegex)
+	if err != nil {
+		InfoBar.Error(err)
+	}
+	if found {
+		h.Cursor.SetSelectionStart(match[0])
+		h.Cursor.SetSelectionEnd(match[1])
+		h.Cursor.OrigSelection[0] = h.Cursor.CurSelection[0]
+		h.Cursor.OrigSelection[1] = h.Cursor.CurSelection[1]
+		h.GotoLoc(h.Cursor.CurSelection[1])
+	} else {
+		h.Cursor.ResetSelection()
+	}
+	return true
+}
+internal/config/plugin.go:104:22: Error return value is not checked (errcheck)
+	RegisterCommonOption(p.Name, true)
+	                    ^
+internal/util/util.go:453:13: Error return value of `os.MkdirAll` is not checked (errcheck)
+	os.MkdirAll(dest, 0755)
+	           ^
+internal/util/util.go:471:15: Error return value of `os.MkdirAll` is not checked (errcheck)
+			os.MkdirAll(path, f.Mode())
+			           ^
+internal/util/util.go:473:15: Error return value of `os.MkdirAll` is not checked (errcheck)
+			os.MkdirAll(filepath.Dir(path), f.Mode())
+			           ^
+internal/screen/message.go:24:19: Error return value of `reader.ReadString` is not checked (errcheck)
+	reader.ReadString('\n')
+	                 ^
+internal/screen/screen.go:135:7: Error return value is not checked (errcheck)
+		Init()
+		    ^
+internal/clipboard/terminal.go:16:28: Error return value of `screen.Screen.GetClipboard` is not checked (errcheck)
+	screen.Screen.GetClipboard(reg)
+	                          ^
+internal/buffer/backup.go:43:13: Error return value of `b.Backup` is not checked (errcheck)
+				b.Backup()
+				        ^
+internal/buffer/backup.go:77:11: Error return value of `os.Mkdir` is not checked (errcheck)
+		os.Mkdir(backupdir, os.ModePerm)
+		        ^
+internal/buffer/buffer.go:340:27: Error return value of `config.InitLocalSettings` is not checked (errcheck)
+		config.InitLocalSettings(settings, absPath)
+		                        ^
+internal/buffer/buffer.go:378:18: Error return value of `b.UpdateModTime` is not checked (errcheck)
+		b.UpdateModTime()
+		               ^
+internal/buffer/buffer.go:394:26: Error return value of `config.InitLocalSettings` is not checked (errcheck)
+	config.InitLocalSettings(b.Settings, b.Path)
+	                        ^
+internal/buffer/buffer.go:397:11: Error return value of `os.Mkdir` is not checked (errcheck)
+		os.Mkdir(filepath.Join(config.ConfigDir, "buffers"), os.ModePerm)
+		        ^
+internal/buffer/buffer.go:419:12: Error return value is not checked (errcheck)
+			calcHash(b, &b.origHash)
+			        ^
+internal/buffer/buffer.go:459:14: Error return value of `b.Serialize` is not checked (errcheck)
+		b.Serialize()
+		           ^
+internal/buffer/buffer_test.go:23:27: Error return value of `config.InitGlobalSettings` is not checked (errcheck)
+	config.InitGlobalSettings()
+	                         ^
+internal/buffer/cursor.go:135:24: Error return value of `clipboard.WriteMulti` is not checked (errcheck)
+			clipboard.WriteMulti(string(c.GetSelection()), target, c.Num, c.buf.NumCursors())
+			                    ^
+internal/buffer/save.go:46:20: Error return value of `cmd.Process.Kill` is not checked (errcheck)
+			cmd.Process.Kill()
+			                ^
+internal/buffer/settings.go:32:27: Error return value of `config.InitLocalSettings` is not checked (errcheck)
+		config.InitLocalSettings(b.Settings, b.Path)
+		                        ^
+internal/buffer/settings.go:63:14: Error return value of `pl.Load` is not checked (errcheck)
+						pl.Load()
+						       ^
+internal/shell/job.go:80:11: Error return value of `proc.Run` is not checked (errcheck)
+		proc.Run()
+		        ^
+internal/shell/job.go:90:16: Error return value of `j.Process.Kill` is not checked (errcheck)
+	j.Process.Kill()
+	              ^
+internal/shell/job.go:95:15: Error return value of `j.Stdin.Write` is not checked (errcheck)
+	j.Stdin.Write([]byte(data))
+	             ^
+internal/shell/shell.go:103:20: Error return value of `cmd.Process.Kill` is not checked (errcheck)
+			cmd.Process.Kill()
+			                ^
+internal/shell/shell.go:107:11: Error return value of `cmd.Start` is not checked (errcheck)
+	cmd.Start()
+	         ^
+internal/shell/terminal.go:100:15: Error return value of `Term.Write` is not checked (errcheck)
+				Term.Write([]byte("Press enter to close"))
+				          ^
+internal/shell/terminal.go:145:27: Error return value of `(*os.File).WriteString` is not checked (errcheck)
+	t.Term.File().WriteString(str)
+	                         ^
+internal/action/actions.go:754:9: Error return value of `b.Save` is not checked (errcheck)
+		b.Save()
+		      ^
+internal/action/actions.go:1108:25: Error return value of `clipboard.WriteMulti` is not checked (errcheck)
+				clipboard.WriteMulti(clip+string(h.Cursor.GetSelection()), clipboard.ClipboardReg, h.Cursor.Num, h.Buf.NumCursors())
+				                    ^
+internal/action/actions.go:1477:13: Error return value of `h.openHelp` is not checked (errcheck)
+		h.openHelp("help")
+		          ^
+internal/action/actions.go:1494:29: Error return value of `shell.RunInteractiveShell` is not checked (errcheck)
+			shell.RunInteractiveShell(resp, true, false)
+			                         ^
+internal/action/bindings.go:28:19: Error return value of `ioutil.WriteFile` is not checked (errcheck)
+		ioutil.WriteFile(fname, []byte("{}"), 0644)
+		                ^
+internal/action/bufpane.go:279:20: Error return value of `config.RunPluginFn` is not checked (errcheck)
+	config.RunPluginFn("onBufPaneOpen", luar.New(ulua.L, h))
+	                  ^
+internal/action/bufpane.go:414:25: Error return value of `h.Buf.UpdateModTime` is not checked (errcheck)
+					h.Buf.UpdateModTime()
+					                   ^
+internal/action/bufpane.go:416:18: Error return value of `h.Buf.ReOpen` is not checked (errcheck)
+					h.Buf.ReOpen()
+					            ^
+internal/action/bufpane.go:420:16: Error return value of `h.Buf.ReOpen` is not checked (errcheck)
+			h.Buf.ReOpen()
+			            ^
+internal/action/command.go:366:17: Error return value of `h.Buf.ReOpen` is not checked (errcheck)
+				h.Buf.ReOpen()
+				            ^
+internal/action/command.go:396:13: Error return value of `h.openHelp` is not checked (errcheck)
+		h.openHelp("help")
+		          ^
+internal/action/command.go:488:26: Error return value of `config.InitColorscheme` is not checked (errcheck)
+			config.InitColorscheme()
+			                      ^
+internal/action/command.go:519:14: Error return value of `pl.Load` is not checked (errcheck)
+						pl.Load()
+						       ^
+internal/action/command.go:536:20: Error return value of `b.SetOptionNative` is not checked (errcheck)
+		b.SetOptionNative(option, nativeValue)
+		                 ^
+internal/action/command.go:572:24: Error return value of `h.Buf.SetOptionNative` is not checked (errcheck)
+		h.Buf.SetOptionNative(option, defaultLocals[option])
+		                     ^
+internal/action/command.go:746:15: Error return value of `h.Buf.SaveAs` is not checked (errcheck)
+		h.Buf.SaveAs(args[0])
+		            ^
+internal/action/termpane.go:153:19: Error return value of `clipboard.Write` is not checked (errcheck)
+			clipboard.Write(t.GetSelection(t.GetView().Width), clipboard.ClipboardReg)
+			               ^
+cmd/micro/clean.go:42:22: Error return value of `config.WriteSettings` is not checked (errcheck)
+	config.WriteSettings(filepath.Join(config.ConfigDir, "settings.json"))
+	                    ^
+cmd/micro/micro.go:132:24: Error return value of `config.LoadAllPlugins` is not checked (errcheck)
+		config.LoadAllPlugins()
+		                     ^
+cmd/micro/micro.go:304:13: Error return value of `b.Backup` is not checked (errcheck)
+				b.Backup()
+				        ^
+cmd/micro/micro.go:423:10: Error return value of `b.Save` is not checked (errcheck)
+			b.Save()
+			      ^
+cmd/micro/micro_test.go:59:13: Error return value of `b.Backup` is not checked (errcheck)
+				b.Backup()
+				        ^
+internal/views/splits_test.go:15:2: use of `fmt.Println` forbidden by pattern `^(fmt\.Print(|f|ln)|print|println)$` (forbidigo)
+	fmt.Println(root.String())
+	^
+internal/lua/lua.go:98:39: use of `fmt.Print` forbidden by pattern `^(fmt\.Print(|f|ln)|print|println)$` (forbidigo)
+	L.SetField(pkg, "Print", luar.New(L, fmt.Print))
+	                                     ^
+internal/lua/lua.go:99:40: use of `fmt.Printf` forbidden by pattern `^(fmt\.Print(|f|ln)|print|println)$` (forbidigo)
+	L.SetField(pkg, "Printf", luar.New(L, fmt.Printf))
+	                                      ^
+internal/lua/lua.go:100:41: use of `fmt.Println` forbidden by pattern `^(fmt\.Print(|f|ln)|print|println)$` (forbidigo)
+	L.SetField(pkg, "Println", luar.New(L, fmt.Println))
+	                                       ^
+internal/util/util.go:49:3: use of `fmt.Println` forbidden by pattern `^(fmt\.Print(|f|ln)|print|println)$` (forbidigo)
+		fmt.Println("Invalid version: ", Version, err)
+		^
+internal/screen/message.go:21:2: use of `fmt.Print` forbidden by pattern `^(fmt\.Print(|f|ln)|print|println)$` (forbidigo)
+	fmt.Print("\nPress enter to continue")
+	^
+internal/screen/message.go:41:3: use of `fmt.Print` forbidden by pattern `^(fmt\.Print(|f|ln)|print|println)$` (forbidigo)
+		fmt.Print(prompt)
+		^
+cmd/micro/clean.go:34:2: use of `fmt.Printf` forbidden by pattern `^(fmt\.Print(|f|ln)|print|println)$` (forbidigo)
+	fmt.Printf("Please consider backing up %s before continuing\n", config.ConfigDir)
+	^
+cmd/micro/clean.go:67:4: use of `fmt.Printf` forbidden by pattern `^(fmt\.Print(|f|ln)|print|println)$` (forbidigo)
+			fmt.Printf("%s (value: %v)\n", s, config.GlobalSettings[s])
+			^
+pkg/highlight/highlighter.go:127: Function 'highlightRegion' has too many statements (56 > 40) (funlen)
+func (h *Highlighter) highlightRegion(highlights LineMatch, start int, canMatchEnd bool, lineNum int, line []byte, curRegion *region, statesOnly bool) LineMatch {
+pkg/highlight/parser.go:339: Function 'parseRegion' is too long (64 > 60) (funlen)
+func parseRegion(group string, regionInfo map[interface{}]interface{}, prevRegion *region) (r *region, err error) {
+internal/lua/lua.go:305: Function 'importOs' has too many statements (87 > 40) (funlen)
+func importOs() *lua.LTable {
+internal/lua/lua.go:450: Function 'importStrings' has too many statements (45 > 40) (funlen)
+func importStrings() *lua.LTable {
+internal/config/colorscheme.go:170: Function 'StringToColor' has too many statements (41 > 40) (funlen)
+func StringToColor(str string) (tcell.Color, bool) {
+internal/config/plugin_installer.go:392: Function 'DownloadAndInstall' is too long (74 > 60) (funlen)
+func (pv *PluginVersion) DownloadAndInstall(out io.Writer) error {
+internal/config/plugin_installer.go:640: Function 'PluginCommand' has too many statements (41 > 40) (funlen)
+func PluginCommand(out io.Writer, cmd string, args []string) {
+internal/config/rtfiles.go:162: Function 'InitRuntimeFiles' has too many statements (46 > 40) (funlen)
+func InitRuntimeFiles() {
+internal/buffer/buffer.go:298: Function 'NewBuffer' has too many statements (70 > 40) (funlen)
+func NewBuffer(r io.Reader, size int64, path string, startcursor Loc, btype BufType) *Buffer {
+internal/buffer/buffer.go:680: Function 'UpdateRules' has too many statements (93 > 40) (funlen)
+func (b *Buffer) UpdateRules() {
+internal/buffer/buffer.go:1000: Function 'FindMatchingBrace' is too long (64 > 60) (funlen)
+func (b *Buffer) FindMatchingBrace(braceType [2]rune, start Loc) (Loc, bool, bool) {
+internal/buffer/eventhandler.go:45: Function 'DoTextEvent' is too long (63 > 60) (funlen)
+func (eh *EventHandler) DoTextEvent(t *TextEvent, useUndo bool) {
+internal/buffer/line_array.go:98: Function 'NewLineArray' is too long (71 > 60) (funlen)
+func NewLineArray(size uint64, endings FileFormat, reader io.Reader) *LineArray {
+internal/buffer/save.go:109: Function 'saveToFile' has too many statements (56 > 40) (funlen)
+func (b *Buffer) saveToFile(filename string, withSudo bool) error {
+internal/buffer/settings.go:8: Function 'SetOptionNative' is too long (75 > 60) (funlen)
+func (b *Buffer) SetOptionNative(option string, nativeValue interface{}) error {
+internal/buffer/buffer_test.go:28: Function 'check' is too long (67 > 60) (funlen)
+func check(t *testing.T, before []string, operations []operation, after []string) {
+internal/display/bufwindow.go:365: Function 'displayBuffer' has too many statements (179 > 40) (funlen)
+func (w *BufWindow) displayBuffer() {
+internal/display/infowindow.go:98: Function 'displayBuffer' has too many statements (51 > 40) (funlen)
+func (i *InfoWindow) displayBuffer() {
+internal/display/infowindow.go:227: Function 'Display' has too many statements (48 > 40) (funlen)
+func (i *InfoWindow) Display() {
+internal/display/softwrap.go:70: Function 'getVLocFromLoc' has too many statements (45 > 40) (funlen)
+func (w *BufWindow) getVLocFromLoc(loc buffer.Loc) VLoc {
+internal/display/softwrap.go:145: Function 'getLocFromVLoc' has too many statements (47 > 40) (funlen)
+func (w *BufWindow) getLocFromVLoc(svloc VLoc) buffer.Loc {
+internal/display/statusline.go:103: Function 'Display' has too many statements (52 > 40) (funlen)
+func (s *StatusLine) Display() {
+internal/display/tabwindow.go:94: Function 'Display' has too many statements (43 > 40) (funlen)
+func (w *TabWindow) Display() {
+internal/action/bindings.go:134: Function 'findSingleEvent' is too long (88 > 60) (funlen)
+func findSingleEvent(k string) (b Event, ok bool) {
+internal/action/bufpane.go:83: Function 'bufMapKey' is too long (79 > 60) (funlen)
+func bufMapKey(k Event, action string) {
+internal/action/bufpane.go:404: Function 'HandleEvent' has too many statements (42 > 40) (funlen)
+func (h *BufPane) HandleEvent(event tcell.Event) {
+internal/action/command.go:473: Function 'SetGlobalOptionNative' is too long (66 > 60) (funlen)
+func SetGlobalOptionNative(option string, nativeValue interface{}) error {
+internal/action/command.go:751: Function 'ReplaceCmd' has too many statements (46 > 40) (funlen)
+func (h *BufPane) ReplaceCmd(args []string) {
+internal/action/command.go:891: Function 'TermCmd' is too long (67 > 60) (funlen)
+func (h *BufPane) TermCmd(args []string) {
+internal/action/infocomplete.go:115: Function 'OptionValueComplete' has too many statements (52 > 40) (funlen)
+func OptionValueComplete(b *buffer.Buffer) ([]string, []string) {
+internal/action/termpane.go:122: Function 'HandleEvent' is too long (72 > 60) (funlen)
+func (t *TermPane) HandleEvent(event tcell.Event) {
+cmd/micro/clean.go:32: Function 'CleanConfig' has too many statements (68 > 40) (funlen)
+func CleanConfig() {
+cmd/micro/micro.go:51: Function 'InitFlags' has too many statements (58 > 40) (funlen)
+func InitFlags() {
+cmd/micro/micro.go:148: Function 'LoadInput' is too long (78 > 60) (funlen)
+func LoadInput(args []string) []*buffer.Buffer {
+cmd/micro/micro.go:229: Function 'main' has too many statements (97 > 40) (funlen)
+func main() {
+cmd/micro/micro.go:399: Function 'DoEvent' is too long (80 > 60) (funlen)
+func DoEvent() {
+cmd/micro/micro_test.go:26: Function 'startup' has too many statements (43 > 40) (funlen)
+func startup(args []string) (tcell.SimulationScreen, error) {
+pkg/highlight/highlighter.go:179: File is not `gci`-ed with --skip-generated -s standard -s default (gci)
+						if ((endLoc == nil) || (m[0] < endLoc[0])) {
+internal/config/plugin.go:74: File is not `gci`-ed with --skip-generated -s standard -s default (gci)
+	Default bool          // pre-installed plugin
+internal/config/plugin_installer_test.go:7: File is not `gci`-ed with --skip-generated -s standard -s default (gci)
+
+pkg/highlight/parser.go:90:1: don't use `init` function (gochecknoinits)
+func init() {
+^
+internal/config/autosave.go:14:1: don't use `init` function (gochecknoinits)
+func init() {
+^
+internal/config/globals.go:9:1: don't use `init` function (gochecknoinits)
+func init() {
+^
+internal/config/settings.go:122:1: cognitive complexity 39 of func `InitLocalSettings` is high (> 30) (gocognit)
+func InitLocalSettings(settings map[string]interface{}, path string) error {
+^
+internal/action/tab.go:219:1: cognitive complexity 36 of func `(*Tab).HandleEvent` is high (> 30) (gocognit)
+func (t *Tab) HandleEvent(event tcell.Event) {
+^
+internal/action/actions.go:780:1: cognitive complexity 32 of func `(*BufPane).SaveAsCB` is high (> 30) (gocognit)
+func (h *BufPane) SaveAsCB(action string, callback func()) bool {
+^
+internal/config/colorscheme.go:107:15: string `default` has 4 occurrences, make it a constant (goconst)
+			if link == "default" {
+			           ^
+internal/config/plugin.go:36:24: string `Plugin ` has 4 occurrences, make it a constant (goconst)
+			reterr = errors.New("Plugin " + p.Name + ": " + err.Error())
+			                    ^
+internal/config/settings.go:227:22: string `Error writing settings.json file: ` has 3 occurrences, make it a constant (goconst)
+			return errors.New("Error writing settings.json file: " + err.Error())
+			                  ^
+internal/buffer/buffer.go:706:23: string `Error parsing syntax file ` has 7 occurrences, make it a constant (goconst)
+			screen.TermMessage("Error parsing syntax file " + f.Name() + ": " + err.Error())
+			                   ^
+internal/buffer/buffer.go:368:10: string `dos` has 3 occurrences, make it a constant (goconst)
+				case "dos":
+				     ^
+internal/buffer/buffer.go:366:10: string `unix` has 3 occurrences, make it a constant (goconst)
+				case "unix":
+				     ^
+internal/action/actions.go:1559:21: string `Save changes to ` has 3 occurrences, make it a constant (goconst)
+			InfoBar.YNPrompt("Save changes to "+h.Buf.GetName()+" before closing? (y,n,esc)", func(yes, canceled bool) {
+			                 ^
+internal/action/bindings.go:42:23: string `Error reading bindings.json file: ` has 3 occurrences, make it a constant (goconst)
+			screen.TermMessage("Error reading bindings.json file: " + err.Error())
+			                   ^
+internal/views/splits.go:59:14: captLocal: `Kind' should not be capitalized (gocritic)
+func NewNode(Kind SplitType, x, y, w, h int, parent *Node, id uint64) *Node {
+             ^
+internal/views/splits.go:325:3: dupBranchBody: both branches in if statement have same body (gocritic)
+		if h {
+		^
+internal/config/plugin_installer.go:421:3: ifElseChain: rewrite if-else to switch statement (gocritic)
+		if i == 0 {
+		^
+internal/config/rtfiles.go:211:24: sloppyLen: len(p.Srcs) <= 0 can be len(p.Srcs) == 0 (gocritic)
+			if !isID(p.Name) || len(p.Srcs) <= 0 {
+			                    ^
+internal/config/rtfiles.go:242:25: sloppyLen: len(p.Srcs) <= 0 can be len(p.Srcs) == 0 (gocritic)
+				if !isID(p.Name) || len(p.Srcs) <= 0 {
+				                    ^
+internal/config/settings.go:404:2: ifElseChain: rewrite if-else to switch statement (gocritic)
+	if kind == reflect.Bool {
+	^
+internal/clipboard/clipboard.go:43:2: singleCaseSwitch: should rewrite switch statement to if statement (gocritic)
+	switch m {
+	^
+internal/buffer/backup.go:133:5: ifElseChain: rewrite if-else to switch statement (gocritic)
+				if choice%3 == 0 {
+				^
+internal/buffer/buffer.go:1086:21: appendAssign: append result not assigned to the same slice (gocritic)
+		b.lines[i].data = append(ws, l...)
+		                  ^
+internal/shell/terminal.go:73:5: sloppyLen: len(execCmd) <= 0 can be len(execCmd) == 0 (gocritic)
+	if len(execCmd) <= 0 {
+	   ^
+internal/action/command.go:180:5: argOrder: "-+" and string([]byte{args[0][0]}) arguments order looks reversed (gocritic)
+	if strings.Contains("-+", string([]byte{args[0][0]})) {
+	   ^
+internal/action/command.go:162:5: sloppyLen: len(args) <= 0 can be len(args) == 0 (gocritic)
+	if len(args) <= 0 {
+	   ^
+internal/action/command.go:704:5: sloppyLen: len(args) <= 0 can be len(args) == 0 (gocritic)
+	if len(args) <= 0 {
+	   ^
+internal/action/command.go:167:5: sloppyLen: len(args[0]) <= 0 can be len(args[0]) == 0 (gocritic)
+	if len(args[0]) <= 0 {
+	   ^
+internal/action/infocomplete.go:186:7: argOrder: "doas" and input arguments order looks reversed (gocritic)
+			if strings.HasPrefix("doas", input) {
+			   ^
+internal/action/infocomplete.go:179:7: argOrder: "dos" and input arguments order looks reversed (gocritic)
+			if strings.HasPrefix("dos", input) {
+			   ^
+internal/action/infocomplete.go:190:7: argOrder: "external" and input arguments order looks reversed (gocritic)
+			if strings.HasPrefix("external", input) {
+			   ^
+internal/action/infocomplete.go:168:13: argOrder: "false" and input arguments order looks reversed (gocritic)
+		} else if strings.HasPrefix("false", input) {
+		          ^
+internal/action/infocomplete.go:193:7: argOrder: "internal" and input arguments order looks reversed (gocritic)
+			if strings.HasPrefix("internal", input) {
+			   ^
+internal/action/infocomplete.go:166:6: argOrder: "off" and input arguments order looks reversed (gocritic)
+		if strings.HasPrefix("off", input) {
+		   ^
+internal/action/infocomplete.go:161:6: argOrder: "on" and input arguments order looks reversed (gocritic)
+		if strings.HasPrefix("on", input) {
+		   ^
+internal/action/infocomplete.go:183:7: argOrder: "sudo" and input arguments order looks reversed (gocritic)
+			if strings.HasPrefix("sudo", input) {
+			   ^
+internal/action/infocomplete.go:196:7: argOrder: "terminal" and input arguments order looks reversed (gocritic)
+			if strings.HasPrefix("terminal", input) {
+			   ^
+internal/action/infocomplete.go:163:13: argOrder: "true" and input arguments order looks reversed (gocritic)
+		} else if strings.HasPrefix("true", input) {
+		          ^
+internal/action/infocomplete.go:176:7: argOrder: "unix" and input arguments order looks reversed (gocritic)
+			if strings.HasPrefix("unix", input) {
+			   ^
+internal/action/rawpane.go:30:2: singleCaseSwitch: should rewrite switch statement to if statement (gocritic)
+	switch e := event.(type) {
+	^
+internal/action/tab.go:220:2: singleCaseSwitch: should rewrite switch statement to if statement (gocritic)
+	switch e := event.(type) {
+	^
+cmd/micro/micro.go:244:4: exitAfterDefer: log.Fatal will exit, and `defer func(){...}(...)` will not run (gocritic)
+			log.Fatal("error creating CPU profile: ", err)
+			^
+pkg/highlight/ftdetect.go:7:71: Comment should end in a period (godot)
+// It will return the corresponding syntax definition for the filetype
+                                                                      ^
+pkg/highlight/highlighter.go:43:70: Comment should end in a period (godot)
+// This could cause problems if the byte index is between code points
+                                                                     ^
+pkg/highlight/highlighter.go:67:54: Comment should end in a period (godot)
+// A State represents the region at the end of a line
+                                                     ^
+internal/buffer/buffer.go:996: internal/buffer/buffer.go:996: Line contains TODO/BUG/FIXME: "TODO: maybe can be more efficient with u..." (godox)
+// TODO: maybe can be more efficient with utf8 package
+internal/info/infobuffer.go:90: internal/info/infobuffer.go:90: Line contains TODO/BUG/FIXME: "TODO: add to log?" (godox)
+	// TODO: add to log?
+internal/display/infowindow.go:184: internal/display/infowindow.go:184: Line contains TODO/BUG/FIXME: "TODO: maybe make this based on the actua..." (godox)
+	// TODO: maybe make this based on the actual keybindings
+internal/action/bufpane.go:92: internal/action/bufpane.go:92: Line contains TODO/BUG/FIXME: "TODO: fix problem when complex bindings ..." (godox)
+		// TODO: fix problem when complex bindings have these
+internal/action/bufpane.go:170: internal/action/bufpane.go:170: Line contains TODO/BUG/FIXME: "TODO" (godox)
+		// TODO
+internal/action/bufpane.go:178: internal/action/bufpane.go:178: Line contains TODO/BUG/FIXME: "TODO" (godox)
+	// TODO
+internal/action/bufpane.go:568: internal/action/bufpane.go:568: Line contains TODO/BUG/FIXME: "TODO" (godox)
+	// TODO
+internal/action/bufpane.go:584: internal/action/bufpane.go:584: Line contains TODO/BUG/FIXME: "TODO" (godox)
+	// TODO
+internal/action/infopane.go:44: internal/action/infopane.go:44: Line contains TODO/BUG/FIXME: "TODO: map mouse" (godox)
+	// TODO: map mouse
+internal/action/termpane.go:49: internal/action/termpane.go:49: Line contains TODO/BUG/FIXME: "TODO: map mouse" (godox)
+	// TODO: map mouse
+cmd/micro/micro_test.go:332: cmd/micro/micro_test.go:332: Line contains TODO/BUG/FIXME: "TODO" (godox)
+	// TODO
+cmd/micro/micro_test.go:336: cmd/micro/micro_test.go:336: Line contains TODO/BUG/FIXME: "TODO" (godox)
+	// TODO
+pkg/highlight/parser.go:17: File is not `gofumpt`-ed (gofumpt)
+var Groups map[string]Group
+var numGroups Group
+internal/views/splits.go:163: File is not `gofumpt`-ed (gofumpt)
+}
+internal/lua/lua.go:29: File is not `gofumpt`-ed (gofumpt)
+var L *lua.LState
+var Lock sync.Mutex
+internal/views/splits.go:347:9: `if` block ends with a `return` statement, so drop this `else` and outdent its block (golint)
+	} else {
+	       ^
+internal/views/splits.go:383:9: `if` block ends with a `return` statement, so drop this `else` and outdent its block (golint)
+	} else {
+	       ^
+internal/lua/lua.go:38:9: if block ends with a return statement, so drop this else and outdent its block (move short variable declaration to its own line if necessary) (golint)
+	} else {
+	       ^
+internal/config/colorscheme.go:71:9: if block ends with a return statement, so drop this else and outdent its block (move short variable declaration to its own line if necessary) (golint)
+	} else {
+	       ^
+internal/config/plugin_installer.go:55:2: struct field `Url` should be `URL` (golint)
+	Url     string
+	^
+internal/config/plugin_installer.go:173:3: struct field `Url` should be `URL` (golint)
+		Url     string
+		^
+internal/config/plugin_installer.go:511:1: receiver name all should be consistent with previous receiver name pl for PluginPackages (golint)
+func (all PluginPackages) Resolve(selectedVersions PluginVersions, open PluginDependencies) (PluginVersions, error) {
+^
+internal/config/plugin_installer.go:590:1: receiver name pl should be consistent with previous receiver name pp for PluginPackage (golint)
+func (pl PluginPackage) Install(out io.Writer) {
+^
+internal/config/settings.go:343:1: comment on exported var `DefaultGlobalOnlySettings` should be of the form `DefaultGlobalOnlySettings ...` (golint)
+// a list of settings that should only be globally modified and their
+^
+internal/util/util.go:499:6: func HttpRequest should be HTTPRequest (golint)
+func HttpRequest(method string, url string, headers []string) (resp *http.Response, err error) {
+     ^
+internal/buffer/autocomplete.go:154:6: func name will be used as buffer.BufferComplete by other packages, and that stutters; consider calling this Complete (golint)
+func BufferComplete(b *Buffer) ([]string, []string) {
+     ^
+internal/buffer/buffer.go:1102:31: error strings should not be capitalized or end with punctuation or a newline (golint)
+		return startpos, errors.New("No cursor positions were provided.")
+		                            ^
+internal/buffer/eventhandler.go:92:11: `if` block ends with a `return` statement, so drop this `else` and outdent its block (golint)
+			} else {
+			       ^
+internal/buffer/line_array_test.go:10:5: don't use underscores in Go names; var `unicode_txt` should be `unicodeTxt` (golint)
+var unicode_txt = `An preost wes on leoden, Laȝamon was ihoten
+    ^
+internal/info/infobuffer.go:11:6: type name will be used as info.InfoBuf by other packages, and that stutters; consider calling this Buf (golint)
+type InfoBuf struct {
+     ^
+internal/display/statusline.go:77:11: if block ends with a return statement, so drop this else and outdent its block (move short variable declaration to its own line if necessary) (golint)
+			} else {
+			       ^
+internal/action/actions.go:1195:4: should replace `h.Cursor.CurSelection[sel].Y -= 1` with `h.Cursor.CurSelection[sel].Y--` (golint)
+			h.Cursor.CurSelection[sel].Y -= 1
+			^
+go.mod:24:1: replacement are not allowed: github.com/kballard/go-shellquote (gomoddirectives)
+replace github.com/kballard/go-shellquote => github.com/zyedidia/go-shellquote v0.0.0-20200613203517-eccd813c0655
+^
+go.mod:26:1: replacement are not allowed: github.com/mattn/go-runewidth (gomoddirectives)
+replace github.com/mattn/go-runewidth => github.com/zyedidia/go-runewidth v0.0.12
+^
+go.mod:28:1: replacement are not allowed: layeh.com/gopher-luar (gomoddirectives)
+replace layeh.com/gopher-luar => github.com/layeh/gopher-luar v1.0.7
+^
+internal/config/plugin_installer.go:461:16: G110: Potential DoS vulnerability via decompression bomb (gosec)
+			if _, err = io.Copy(target, content); err != nil {
+			            ^
+internal/util/util.go:463:11: G305: File traversal when extracting zip/tar archive (gosec)
+		path := filepath.Join(dest, f.Name)
+		        ^
+internal/util/util.go:480:13: G110: Potential DoS vulnerability via decompression bomb (gosec)
+			_, err = io.Copy(f, rc)
+			         ^
+internal/buffer/buffer.go:6:2: G501: Blocklisted import crypto/md5: weak cryptographic primitive (gosec)
+	"crypto/md5"
+	^
+internal/buffer/buffer.go:646:7: G401: Use of weak cryptographic primitive (gosec)
+	h := md5.New()
+	     ^
+internal/buffer/save.go:36:9: G204: Subprocess launched with a potential tainted input or cmd arguments (gosec)
+		cmd = exec.Command(config.GlobalSettings["sucmd"].(string), "dd", "bs=4k", "of="+name)
+		      ^
+internal/buffer/buffer_test.go:105:23: G404: Use of weak random number generator (math/rand instead of crypto/rand) (gosec)
+		runes[i] = alphabet[rand.Intn(len(alphabet))]
+		                    ^
+internal/buffer/buffer_test.go:113:27: G404: Use of weak random number generator (math/rand instead of crypto/rand) (gosec)
+		lines[i] = randomString(rand.Intn(maxLineLength + 1))
+		                        ^
+internal/buffer/buffer_test.go:160:35: G404: Use of weak random number generator (math/rand instead of crypto/rand) (gosec)
+		startLine := (i * regionSize) + rand.Intn(regionSize-5)
+		                                ^
+internal/shell/terminal.go:77:9: G204: Subprocess launched with a potential tainted input or cmd arguments (gosec)
+	cmd := exec.Command(execCmd[0], execCmd[1:]...)
+	       ^
+internal/action/command.go:146:9: G204: Subprocess launched with a potential tainted input or cmd arguments (gosec)
+	cmd := exec.Command(args[0], args[1:]...)
+	       ^
+pkg/highlight/highlighter.go:95: line is 130 characters (lll)
+// LineMatch represents the syntax highlighting matches for one line. Each index where the coloring is changed is marked with that
+pkg/highlight/highlighter.go:164: line is 128 characters (lll)
+		h.highlightRegion(highlights, start+firstLoc[1], canMatchEnd, lineNum, sliceStart(line, firstLoc[1]), firstRegion, statesOnly)
+pkg/highlight/highlighter.go:210: line is 123 characters (lll)
+		h.highlightRegion(highlights, start+loc[1], canMatchEnd, lineNum, sliceStart(line, loc[1]), curRegion.parent, statesOnly)
+pkg/highlight/highlighter.go:221: line is 148 characters (lll)
+func (h *Highlighter) highlightEmptyRegion(highlights LineMatch, start int, canMatchEnd bool, lineNum int, line []byte, statesOnly bool) LineMatch {
+pkg/highlight/highlighter.go:246: line is 128 characters (lll)
+		h.highlightRegion(highlights, start+firstLoc[1], canMatchEnd, lineNum, sliceStart(line, firstLoc[1]), firstRegion, statesOnly)
+internal/config/settings.go:109: line is 180 characters (lll)
+				err = fmt.Errorf("Global Error: setting '%s' has incorrect type (%s), using default value: %v (%s)", k, reflect.TypeOf(v), GlobalSettings[k], reflect.TypeOf(GlobalSettings[k]))
+internal/config/settings.go:130: line is 174 characters (lll)
+							parseError = fmt.Errorf("Error: setting '%s' has incorrect type (%s), using default value: %v (%s)", k, reflect.TypeOf(v1), settings[k1], reflect.TypeOf(settings[k1]))
+internal/config/settings.go:146: line is 174 characters (lll)
+							parseError = fmt.Errorf("Error: setting '%s' has incorrect type (%s), using default value: %v (%s)", k, reflect.TypeOf(v1), settings[k1], reflect.TypeOf(settings[k1]))
+internal/config/settings.go:311: line is 135 characters (lll)
+	"statusformatl":  "$(filename) $(modified)($(line),$(col)) $(status.paste)| ft:$(opt:filetype) | $(opt:fileformat) | $(opt:encoding)",
+internal/util/profile.go:16: line is 170 characters (lll)
+	return fmt.Sprintf("Alloc: %s, Sys: %s, GC: %d, PauseTotalNs: %dns", humanize.Bytes(memstats.Alloc), humanize.Bytes(memstats.Sys), memstats.NumGC, memstats.PauseTotalNs)
+internal/buffer/buffer.go:268: line is 134 characters (lll)
+		prompt.Message(fmt.Sprintf("Warning: file is readonly - %s will be attempted when saving", config.GlobalSettings["sucmd"].(string)))
+internal/buffer/buffer.go:710: line is 132 characters (lll)
+		if ((ft == "unknown" || ft == "") && highlight.MatchFiletype(header.FtDetect, b.Path, b.lines[0].data)) || header.FileType == ft {
+internal/buffer/serialize.go:60: line is 356 characters (lll)
+			return errors.New(err.Error() + "\nYou may want to remove the files in ~/.config/micro/buffers (these files\nstore the information for the 'saveundo' and 'savecursor' options) if\nthis problem persists.\nThis may be caused by upgrading to version 2.0, and removing the 'buffers'\ndirectory will reset the cursor and undo history and solve the problem.")
+internal/buffer/line_array_test.go:52: line is 147 characters (lll)
+	assert.Equal(t, []byte("He wonede at Ernleȝe at æH̼̥̯͇͙̕͘͞e̸̦̞̠̣̰͙̼̥̦̼̖̬͕͕̰̯̫͇̕ĺ̜̠̩̯̯͙̼̭̠͕̮̞͜l̶͓̫̞̮͈͞ͅo̸͔͙̳̠͈̮̼̳͙̥̲͜͠ðelen are chirechen,"), sub2)
+internal/shell/job.go:62: line is 135 characters (lll)
+func JobSpawn(cmdName string, cmdArgs []string, onStdout, onStderr, onExit func(string, []interface{}), userargs ...interface{}) *Job {
+internal/shell/terminal.go:72: line is 152 characters (lll)
+func (t *Terminal) Start(execCmd []string, getOutput bool, wait bool, callback func(out string, userargs []interface{}), userargs []interface{}) error {
+internal/display/infowindow.go:181: line is 167 characters (lll)
+var keydisplay = []string{"^Q Quit, ^S Save, ^O Open, ^G Help, ^E Command Bar, ^K Cut Line", "^F Find, ^Z Undo, ^Y Redo, ^A Select All, ^D Duplicate Line, ^T New Tab"}
+internal/display/termwindow.go:86: line is 132 characters (lll)
+			if l.LessThan(w.Selection[1]) && l.GreaterEqual(w.Selection[0]) || l.LessThan(w.Selection[0]) && l.GreaterEqual(w.Selection[1]) {
+internal/action/actions.go:63: line is 141 characters (lll)
+		if time.Since(h.lastClickTime)/time.Millisecond < config.DoubleClickThreshold && (mouseLoc.X == h.lastLoc.X && mouseLoc.Y == h.lastLoc.Y) {
+internal/action/actions.go:195: line is 139 characters (lll)
+			if h.Cursor.X-tabsize >= 0 && util.IsSpaces(line[h.Cursor.X-tabsize:h.Cursor.X]) && util.IsBytesWhitespace(line[0:h.Cursor.X-tabsize]) {
+internal/action/actions.go:221: line is 154 characters (lll)
+			if h.Cursor.X+tabsize < util.CharacterCount(line) && util.IsSpaces(line[h.Cursor.X:h.Cursor.X+tabsize]) && util.IsBytesWhitespace(line[0:h.Cursor.X]) {
+internal/action/actions.go:557: line is 142 characters (lll)
+		if h.Buf.Settings["tabstospaces"].(bool) && util.IsSpaces(lineStart) && len(lineStart) != 0 && util.CharacterCount(lineStart)%tabSize == 0 {
+internal/action/actions.go:850: line is 126 characters (lll)
+					fmt.Sprintf("Permission denied. Do you want to save this file using %s? (y,n)", config.GlobalSettings["sucmd"].(string)),
+internal/action/actions.go:989: line is 122 characters (lll)
+	match, found, err := h.Buf.FindNext(h.Buf.LastSearch, h.Buf.Start(), h.Buf.End(), searchLoc, true, h.Buf.LastSearchRegex)
+internal/action/actions.go:1015: line is 123 characters (lll)
+	match, found, err := h.Buf.FindNext(h.Buf.LastSearch, h.Buf.Start(), h.Buf.End(), searchLoc, false, h.Buf.LastSearchRegex)
+internal/action/bufpane.go:453: line is 128 characters (lll)
+			if h.Buf.Type.Kind != buffer.BTInfo.Kind && h.Buf.Settings["statusline"].(bool) && my >= h.GetView().Y+h.GetView().Height-1 {
+internal/action/terminal_supported.go:17: line is 156 characters (lll)
+func RunTermEmulator(h *BufPane, input string, wait bool, getOutput bool, callback func(out string, userargs []interface{}), userargs []interface{}) error {
+internal/config/rtfiles.go:50:13: append to slice `allFiles` with non-zero initialized length (makezero)
+	allFiles = append(allFiles, []RuntimeFile{})
+	           ^
+internal/config/rtfiles.go:51:14: append to slice `realFiles` with non-zero initialized length (makezero)
+	realFiles = append(realFiles, []RuntimeFile{})
+	            ^
+internal/views/splits.go:34:11: struct of size 104 bytes could be of size 96 bytes (maligned)
+type Node struct {
+          ^
+internal/buffer/buffer.go:75:19: struct of size 312 bytes could be of size 296 bytes (maligned)
+type SharedBuffer struct {
+                  ^
+internal/buffer/buffer.go:187:13: struct of size 112 bytes could be of size 104 bytes (maligned)
+type Buffer struct {
+            ^
+internal/buffer/line_array.go:36:18: struct of size 56 bytes could be of size 48 bytes (maligned)
+type searchState struct {
+                 ^
+internal/display/bufwindow.go:15:16: struct of size 80 bytes could be of size 64 bytes (maligned)
+type BufWindow struct {
+               ^
+internal/action/bufpane.go:192:14: struct of size 160 bytes could be of size 144 bytes (maligned)
+type BufPane struct {
+             ^
+cmd/micro/micro_test.go:158:15: avoid allocations with (*os.File).WriteString (mirror)
+	if _, err := testf.Write([]byte(content)); err != nil {
+	             ^
+pkg/highlight/highlighter.go:168:2: `if !statesOnly` has complex nested blocks (complexity: 7) (nestif)
+	if !statesOnly {
+	^
+pkg/highlight/highlighter.go:196:2: `if loc != nil` has complex nested blocks (complexity: 5) (nestif)
+	if loc != nil {
+	^
+internal/config/settings.go:60:2: `if e == nil` has complex nested blocks (complexity: 14) (nestif)
+	if _, e := os.Stat(filename); e == nil {
+	^
+internal/config/settings.go:125:3: `if strings.HasPrefix(reflect.TypeOf(v).String(), "map")` has complex nested blocks (complexity: 14) (nestif)
+		if strings.HasPrefix(reflect.TypeOf(v).String(), "map") {
+		^
+internal/config/rtfiles.go:220:2: `if err == nil` has complex nested blocks (complexity: 12) (nestif)
+	if files, err := rt.AssetDir(plugdir); err == nil {
+	^
+internal/config/plugin_installer.go:545:3: `if sel.pack.Name != CorePluginName` has complex nested blocks (complexity: 7) (nestif)
+		if sel.pack.Name != CorePluginName {
+		^
+internal/config/rtfiles.go:190:3: `if err == nil && stat.IsDir()` has complex nested blocks (complexity: 7) (nestif)
+		if stat, err := os.Stat(plugpath); err == nil && stat.IsDir() {
+		^
+internal/config/plugin_installer.go:222:2: `if allPluginPackages == nil` has complex nested blocks (complexity: 6) (nestif)
+	if allPluginPackages == nil {
+	^
+internal/config/plugin_installer.go:440:3: `if f.FileInfo().IsDir()` has complex nested blocks (complexity: 6) (nestif)
+		if f.FileInfo().IsDir() {
+		^
+internal/config/plugin_installer.go:516:2: `if currentRequirement != nil` has complex nested blocks (complexity: 6) (nestif)
+	if currentRequirement != nil {
+	^
+internal/config/plugin_installer.go:646:4: `if pp == nil` has complex nested blocks (complexity: 6) (nestif)
+			if pp == nil {
+			^
+internal/config/settings.go:169:2: `if e == nil` has complex nested blocks (complexity: 6) (nestif)
+	if _, e := os.Stat(ConfigDir); e == nil {
+	^
+internal/buffer/buffer.go:1011:2: `if startChar == braceType[0] || leftChar == braceType[0]` has complex nested blocks (complexity: 23) (nestif)
+	if startChar == braceType[0] || leftChar == braceType[0] {
+	^
+internal/buffer/backup.go:123:2: `if b.Settings["backup"].(bool) && !b.Settings["permbackup"].(bool) && len(b.Path) > 0 && b.Type == BTDefault` has complex nested blocks (complexity: 8) (nestif)
+	if b.Settings["backup"].(bool) && !b.Settings["permbackup"].(bool) && len(b.Path) > 0 && b.Type == BTDefault {
+	^
+internal/buffer/eventhandler.go:80:4: `if t.EventType == TextEventInsert` has complex nested blocks (complexity: 8) (nestif)
+			if t.EventType == TextEventInsert {
+			^
+internal/buffer/buffer.go:748:2: `if syntaxFile != "" && !foundDef` has complex nested blocks (complexity: 7) (nestif)
+	if syntaxFile != "" && !foundDef {
+	^
+internal/buffer/save.go:149:2: `if dirname != "."` has complex nested blocks (complexity: 7) (nestif)
+	if dirname := filepath.Dir(absFilename); dirname != "." {
+	^
+internal/buffer/buffer.go:318:2: `if !found` has complex nested blocks (complexity: 6) (nestif)
+	if !found {
+	^
+internal/buffer/buffer.go:775:2: `if b.SyntaxDef != nil && highlight.HasIncludes(b.SyntaxDef)` has complex nested blocks (complexity: 6) (nestif)
+	if b.SyntaxDef != nil && highlight.HasIncludes(b.SyntaxDef) {
+	^
+internal/buffer/serialize.go:54:2: `if err == nil` has complex nested blocks (complexity: 5) (nestif)
+	if err == nil {
+	^
+internal/info/infobuffer.go:142:2: `if !hadYN` has complex nested blocks (complexity: 7) (nestif)
+	if !hadYN {
+	^
+internal/info/history.go:17:2: `if config.GetGlobalOption("savehistory").(bool)` has complex nested blocks (complexity: 6) (nestif)
+	if config.GetGlobalOption("savehistory").(bool) {
+	^
+internal/display/bufwindow.go:492:4: `if nColsBeforeStart <= 0 && vloc.Y >= 0` has complex nested blocks (complexity: 36) (nestif)
+			if nColsBeforeStart <= 0 && vloc.Y >= 0 {
+			^
+internal/display/bufwindow.go:394:2: `if b.Settings["matchbrace"].(bool)` has complex nested blocks (complexity: 8) (nestif)
+	if b.Settings["matchbrace"].(bool) {
+	^
+internal/display/infowindow.go:256:2: `if i.HasSuggestions && len(i.Suggestions) > 1` has complex nested blocks (complexity: 8) (nestif)
+	if i.HasSuggestions && len(i.Suggestions) > 1 {
+	^
+internal/display/uiwindow.go:61:4: `if c.Kind == views.STVert` has complex nested blocks (complexity: 7) (nestif)
+			if c.Kind == views.STVert {
+			^
+internal/display/statusline.go:111:2: `if b.HasSuggestions && len(b.Suggestions) > 1` has complex nested blocks (complexity: 5) (nestif)
+	if b.HasSuggestions && len(b.Suggestions) > 1 {
+	^
+internal/action/command.go:482:2: `if !local` has complex nested blocks (complexity: 29) (nestif)
+	if !local {
+	^
+internal/action/termpane.go:123:2: `if ok` has complex nested blocks (complexity: 18) (nestif)
+	if e, ok := event.(*tcell.EventKey); ok {
+	^
+internal/action/actions.go:831:2: `if err != nil` has complex nested blocks (complexity: 16) (nestif)
+	if err != nil {
+	^
+internal/action/actions.go:782:3: `if !canceled` has complex nested blocks (complexity: 14) (nestif)
+		if !canceled {
+		^
+internal/action/bindings.go:250:2: `if e == nil` has complex nested blocks (complexity: 11) (nestif)
+	if _, e = os.Stat(filename); e == nil {
+	^
+internal/action/actions.go:56:2: `if h.mouseReleased` has complex nested blocks (complexity: 10) (nestif)
+	if h.mouseReleased {
+	^
+internal/action/bufpane.go:543:2: `if (!isMulti && cursor == 0) || isMulti` has complex nested blocks (complexity: 10) (nestif)
+	if (!isMulti && cursor == 0) || isMulti {
+	^
+internal/action/bufpane.go:405:2: `if h.Buf.ExternallyModified() && !h.Buf.ReloadDisabled` has complex nested blocks (complexity: 9) (nestif)
+	if h.Buf.ExternallyModified() && !h.Buf.ReloadDisabled {
+	^
+internal/action/command.go:211:2: `if len(args) > 0` has complex nested blocks (complexity: 9) (nestif)
+	if len(args) > 0 {
+	^
+internal/action/command.go:285:2: `if len(args) > 0` has complex nested blocks (complexity: 9) (nestif)
+	if len(args) > 0 {
+	^
+internal/action/bindings.go:300:2: `if e == nil` has complex nested blocks (complexity: 8) (nestif)
+	if _, e = os.Stat(filename); e == nil {
+	^
+internal/action/command.go:812:2: `if all` has complex nested blocks (complexity: 8) (nestif)
+	if all {
+	^
+internal/action/actions.go:1170:2: `if h.Cursor.HasSelection()` has complex nested blocks (complexity: 7) (nestif)
+	if h.Cursor.HasSelection() {
+	^
+internal/action/bufpane.go:106:3: `if strings.HasPrefix(a, "command:")` has complex nested blocks (complexity: 7) (nestif)
+		if strings.HasPrefix(a, "command:") {
+		^
+internal/action/actions.go:187:2: `if h.Cursor.HasSelection()` has complex nested blocks (complexity: 6) (nestif)
+	if h.Cursor.HasSelection() {
+	^
+internal/action/actions.go:212:2: `if h.Cursor.HasSelection()` has complex nested blocks (complexity: 6) (nestif)
+	if h.Cursor.HasSelection() {
+	^
+internal/action/actions.go:609:2: `if h.Cursor.HasSelection()` has complex nested blocks (complexity: 6) (nestif)
+	if h.Cursor.HasSelection() {
+	^
+internal/action/actions.go:1552:2: `if h.Buf.Modified()` has complex nested blocks (complexity: 6) (nestif)
+	if h.Buf.Modified() {
+	^
+internal/action/actions.go:1103:2: `if h.freshClip` has complex nested blocks (complexity: 5) (nestif)
+	if h.freshClip {
+	^
+internal/action/actions.go:1214:2: `if h.Cursor.HasSelection()` has complex nested blocks (complexity: 5) (nestif)
+	if h.Cursor.HasSelection() {
+	^
+internal/action/command.go:239:2: `if len(args) > 0` has complex nested blocks (complexity: 5) (nestif)
+	if len(args) > 0 {
+	^
+internal/action/command.go:394:2: `if len(args) < 1` has complex nested blocks (complexity: 5) (nestif)
+	if len(args) < 1 {
+	^
+internal/action/command.go:944:3: `if p.ID() == h.ID()` has complex nested blocks (complexity: 5) (nestif)
+		if p.ID() == h.ID() {
+		^
+internal/buffer/buffer_test.go:49:2: Consider pre-allocating `cursors` (prealloc)
+	var cursors []*Cursor
+	^
+pkg/highlight/highlighter.go:9:2: redefines-builtin-id: redefinition of the built-in function len (revive)
+	len := len(slc)
+	^
+pkg/highlight/highlighter.go:26:2: redefines-builtin-id: redefinition of the built-in function len (revive)
+	len := len(slc)
+	^
+internal/views/splits_test.go:8:17: unused-parameter: parameter 't' seems to be unused, consider removing or renaming it as _ (revive)
+func TestHSplit(t *testing.T) {
+                ^
+internal/config/settings.go:467:26: unused-parameter: parameter 'option' seems to be unused, consider removing or renaming it as _ (revive)
+func validateColorscheme(option string, value interface{}) error {
+                         ^
+internal/config/settings.go:497:25: unused-parameter: parameter 'option' seems to be unused, consider removing or renaming it as _ (revive)
+func validateLineEnding(option string, value interface{}) error {
+                        ^
+internal/config/settings.go:511:23: unused-parameter: parameter 'option' seems to be unused, consider removing or renaming it as _ (revive)
+func validateEncoding(option string, value interface{}) error {
+                      ^
+internal/util/util.go:62:2: redefines-builtin-id: redefinition of the built-in function len (revive)
+	len := len(slc)
+	^
+internal/clipboard/clipboard.go:25:19: var-declaration: should omit type Method from declaration of var CurrentMethod; it will be inferred from the right-hand side (revive)
+var CurrentMethod Method = Internal
+                  ^
+internal/buffer/line_array.go:158:10: superfluous-else: if block ends with a break statement, so drop this else and outdent its block (revive)
+		} else {
+			la.lines = Append(la.lines, Line{
+				data:        data[:dlen-1],
+				state:       nil,
+				match:       nil,
+				rehighlight: false,
+			})
+		}
+internal/display/bufwindow.go:651:12: superfluous-else: if block ends with a break statement, so drop this else and outdent its block (revive)
+				} else {
+					vloc.Y++
+					if vloc.Y >= w.bufHeight {
+						break
+					}
+					wrap()
+				}
+internal/display/bufwindow.go:684:12: superfluous-else: if block ends with a break statement, so drop this else and outdent its block (revive)
+				} else {
+					vloc.Y++
+					if vloc.Y >= w.bufHeight {
+						break
+					}
+					wrap()
+				}
+internal/display/statusline.go:158:10: indent-error-flow: if block ends with a return statement, so drop this else and outdent its block (revive)
+		} else {
+			if fn, ok := statusInfo[string(name)]; ok {
+				return []byte(fn(s.win.Buf))
+			}
+			return []byte{}
+		}
+internal/display/uiwindow.go:85:27: unused-parameter: parameter 'width' seems to be unused, consider removing or renaming it as _ (revive)
+func (w *UIWindow) Resize(width, height int) {}
+                          ^
+internal/display/tabwindow.go:27:35: unused-parameter: parameter 'height' seems to be unused, consider removing or renaming it as _ (revive)
+func (w *TabWindow) Resize(width, height int) {
+                                  ^
+internal/display/uiwindow.go:86:30: unused-parameter: parameter 'b' seems to be unused, consider removing or renaming it as _ (revive)
+func (w *UIWindow) SetActive(b bool)         {}
+                             ^
+internal/display/infowindow.go:64:30: unused-parameter: parameter 'v' seems to be unused, consider removing or renaming it as _ (revive)
+func (i *InfoWindow) SetView(v *View)  {}
+                             ^
+internal/display/infowindow.go:65:32: unused-parameter: parameter 'b' seems to be unused, consider removing or renaming it as _ (revive)
+func (i *InfoWindow) SetActive(b bool) {}
+                               ^
+internal/display/infowindow.go:86:37: unused-parameter: parameter 'n' seems to be unused, consider removing or renaming it as _ (revive)
+func (i *InfoWindow) Scroll(s SLoc, n int) SLoc        { return s }
+                                    ^
+internal/display/infowindow.go:87:27: unused-parameter: parameter 's1' seems to be unused, consider removing or renaming it as _ (revive)
+func (i *InfoWindow) Diff(s1, s2 SLoc) int             { return 0 }
+                          ^
+internal/display/infowindow.go:88:34: unused-parameter: parameter 'loc' seems to be unused, consider removing or renaming it as _ (revive)
+func (i *InfoWindow) SLocFromLoc(loc buffer.Loc) SLoc  { return SLoc{0, 0} }
+                                 ^
+internal/action/bindings.go:108:23: var-declaration: should drop = nil from declaration of var events; it is the zero value (revive)
+	var events []Event = nil
+	                     ^
+internal/action/bufpane.go:177:15: unused-parameter: parameter 'k' seems to be unused, consider removing or renaming it as _ (revive)
+func BufUnmap(k Event) {
+              ^
+internal/action/command.go:118:28: unused-parameter: parameter 'args' seems to be unused, consider removing or renaming it as _ (revive)
+func (h *BufPane) RetabCmd(args []string) {
+                           ^
+internal/action/keytree.go:243:33: unused-parameter: parameter 'e' seems to be unused, consider removing or renaming it as _ (revive)
+func (k *KeyTree) DeleteBinding(e Event) {
+                                ^
+internal/action/bufpane.go:567:31: unused-parameter: parameter 'e' seems to be unused, consider removing or renaming it as _ (revive)
+func (h *BufPane) HasKeyEvent(e Event) bool {
+                              ^
+internal/action/command.go:124:26: unused-parameter: parameter 'args' seems to be unused, consider removing or renaming it as _ (revive)
+func (h *BufPane) RawCmd(args []string) {
+                         ^
+internal/action/keytree.go:249:37: unused-parameter: parameter 'e' seems to be unused, consider removing or renaming it as _ (revive)
+func (k *KeyTree) DeleteAllBindings(e Event) {
+                                    ^
+internal/action/command.go:269:31: unused-parameter: parameter 'args' seems to be unused, consider removing or renaming it as _ (revive)
+func (h *BufPane) MemUsageCmd(args []string) {
+                              ^
+internal/action/termpane.go:162:106: empty-block: this block is empty, you can remove it (revive)
+	} else if e, ok := event.(*tcell.EventMouse); e != nil && (!ok || t.State.Mode(terminal.ModeMouseMask)) {
+		// t.WriteString(event.EscSeq())
+	} else if e != nil {
+internal/action/termpane.go:225:34: unused-parameter: parameter 'input' seems to be unused, consider removing or renaming it as _ (revive)
+func (t *TermPane) HandleCommand(input string) {
+                                 ^
+cmd/micro/micro_test.go:331:22: unused-parameter: parameter 't' seems to be unused, consider removing or renaming it as _ (revive)
+func TestMultiCursor(t *testing.T) {
+                     ^
+cmd/micro/micro_test.go:335:30: unused-parameter: parameter 't' seems to be unused, consider removing or renaming it as _ (revive)
+func TestSettingsPersistence(t *testing.T) {
+                             ^
+cmd/micro/debug.go:14:25: unused-parameter: parameter 'data' seems to be unused, consider removing or renaming it as _ (revive)
+func (NullWriter) Write(data []byte) (n int, err error) {
+                        ^
+internal/buffer/search.go:180:7: Using the variable on range scope `i` in function literal (scopelint)
+			if i == end.Y {
+			   ^
+internal/action/command.go:948:12: Using the variable on range scope `i` in function literal (scopelint)
+						term(i, false)
+						     ^
+internal/action/command.go:951:12: Using the variable on range scope `i` in function literal (scopelint)
+						term(i, false)
+						     ^
+internal/buffer/buffer.go:126:2: `origHash` is unused (structcheck)
+	origHash [md5.Size]byte
+	^
+internal/buffer/buffer.go:104:2: `diff` is unused (structcheck)
+	diff              map[int]DiffStatus
+	^
+internal/buffer/buffer.go:100:2: `updateDiffTimer` is unused (structcheck)
+	updateDiffTimer   *time.Timer
+	^
+internal/buffer/buffer.go:106:2: `requestedBackup` is unused (structcheck)
+	requestedBackup bool
+	^
+internal/buffer/buffer.go:101:2: `diffBase` is unused (structcheck)
+	diffBase          []byte
+	^
+internal/buffer/buffer.go:89:2: `toStdout` is unused (structcheck)
+	toStdout bool
+	^
+internal/buffer/buffer.go:103:2: `diffLock` is unused (structcheck)
+	diffLock          sync.RWMutex
+	^
+internal/buffer/buffer.go:102:2: `diffBaseLineCount` is unused (structcheck)
+	diffBaseLineCount int
+	^
+internal/buffer/buffer.go:87:2: `name` is unused (structcheck)
+	name string
+	^
+internal/info/gutter.go:5:2: `lineNum` is unused (structcheck)
+	lineNum int
+	^
+internal/info/gutter.go:6:2: `msg` is unused (structcheck)
+	msg     string
+	^
+internal/info/gutter.go:7:2: `kind` is unused (structcheck)
+	kind    int
+	^
+cmd/micro/micro_test.go:118:21: `injectMouse` - `y` always receives `0` (unparam)
+func injectMouse(x, y int, buttons tcell.ButtonMask, mod tcell.ModMask) {
+                    ^
+internal/config/rtfiles.go:62:6: type `namedFile` is unused (unused)
+type namedFile struct {
+     ^
+internal/config/rtfiles.go:98:21: func `namedFile.Name` is unused (unused)
+func (nf namedFile) Name() string {
+                    ^
+internal/buffer/line_array.go:288:22: func `(*LineArray).deleteByte` is unused (unused)
+func (la *LineArray) deleteByte(pos Loc) {
+                     ^
+internal/display/infowindow.go:122: unnecessary trailing newline (whitespace)
+
+			}
+pkg/highlight/highlighter.go:12:2: only one cuddle assignment allowed before for statement (wsl)
+	for totalSize < len {
+	^
+pkg/highlight/highlighter.go:29:2: only one cuddle assignment allowed before for statement (wsl)
+	for totalSize < len {
+	^
+pkg/highlight/highlighter.go:48:2: if statements should only be cuddled with assignments (wsl)
+	if p >= len(str) {
+	^
+pkg/highlight/highlighter.go:51:2: return statements should not be cuddled if block has more than two lines (wsl)
+	return CharacterCount(str[:p])
+	^
+pkg/highlight/highlighter.go:64:2: return statements should not be cuddled if block has more than two lines (wsl)
+	return dst
+	^
+pkg/highlight/highlighter.go:92:2: return statements should not be cuddled if block has more than two lines (wsl)
+	return h
+	^
+pkg/highlight/highlighter.go:129:2: if statements should only be cuddled with assignments used in the if statement itself (wsl)
+	if start == 0 {
+	^
+pkg/highlight/highlighter.go:138:2: assignments should only be cuddled with other assignments (wsl)
+	firstLoc := []int{lineLen, 0}
+	^
+pkg/highlight/highlighter.go:141:2: only one cuddle assignment allowed before if statement (wsl)
+	if endLoc != nil {
+	^
+pkg/highlight/highlighter.go:148:2: if statements should only be cuddled with assignments (wsl)
+	if searchNesting {
+	^
+pkg/highlight/highlighter.go:163:3: expressions should not be cuddled with blocks (wsl)
+		h.highlightEmptyRegion(highlights, start+firstLoc[1], canMatchEnd, lineNum, sliceStart(line, firstLoc[1]), statesOnly)
+		^
+pkg/highlight/highlighter.go:159:2: if statements should only be cuddled with assignments (wsl)
+	if firstRegion != nil && firstLoc[0] != lineLen {
+	^
+pkg/highlight/highlighter.go:188:3: ranges should only be cuddled with assignments used in the iteration (wsl)
+		for i, h := range fullHighlights {
+		^
+pkg/highlight/highlighter.go:204:4: expressions should not be cuddled with blocks (wsl)
+			h.highlightEmptyRegion(highlights, start+loc[1], canMatchEnd, lineNum, sliceStart(line, loc[1]), statesOnly)
+			^
+pkg/highlight/highlighter.go:231:2: assignments should only be cuddled with other assignments (wsl)
+	firstLoc := []int{lineLen, 0}
+	^
+pkg/highlight/highlighter.go:232:2: only one cuddle assignment allowed before range statement (wsl)
+	for _, r := range h.Def.rules.regions {
+	^
+pkg/highlight/highlighter.go:245:3: expressions should not be cuddled with blocks (wsl)
+		h.highlightEmptyRegion(highlights, start, false, lineNum, sliceEnd(line, firstLoc[0]), statesOnly)
+		^
+pkg/highlight/highlighter.go:259:2: ranges should only be cuddled with assignments used in the iteration (wsl)
+	for _, p := range h.Def.rules.patterns {
+	^
+pkg/highlight/highlighter.go:272:3: block should not end with a whitespace (or comment) (wsl)
+		}
+		^
+pkg/highlight/highlighter.go:267:2: only one cuddle assignment allowed before range statement (wsl)
+	for i, h := range fullHighlights {
+	^
+pkg/highlight/highlighter.go:288:2: declarations should never be cuddled (wsl)
+	var lineMatches []LineMatch
+	^
+pkg/highlight/highlighter.go:348:78: block should not start with a whitespace (wsl)
+func (h *Highlighter) ReHighlightStates(input LineStates, startline int) int {
+                                                                             ^
+pkg/highlight/highlighter.go:365:3: assignments should only be cuddled with other assignments (wsl)
+		curState := h.lastRegion
+		^
+pkg/highlight/highlighter.go:355:2: only one cuddle assignment allowed before for statement (wsl)
+	for i := startline; i < input.LinesNum(); i++ {
+	^
+pkg/highlight/parser.go:104:2: declarations should never be cuddled (wsl)
+	var err error
+	^
+pkg/highlight/parser.go:128:2: only one cuddle assignment allowed before if statement (wsl)
+	if err != nil {
+	^
+pkg/highlight/parser.go:155:4: only one cuddle assignment allowed before if statement (wsl)
+			if !ok {
+			^
+pkg/highlight/parser.go:174:4: branch statements should not be cuddled if block has more than two lines (wsl)
+			break
+			^
+pkg/highlight/parser.go:265:2: ranges should only be cuddled with assignments used in the iteration (wsl)
+	for _, r := range d.rules.regions {
+	^
+pkg/highlight/parser.go:329:5: append only allowed to cuddle with appended value (wsl)
+				ru.regions = append(ru.regions, region)
+				^
+pkg/highlight/parser.go:351:2: if statements should only be cuddled with assignments used in the if statement itself (wsl)
+	if _, ok := Groups[group]; !ok {
+	^
+internal/views/splits.go:147:2: declarations should never be cuddled (wsl)
+	var c1, c2 *Node
+	^
+internal/views/splits.go:193:2: only one cuddle assignment allowed before range statement (wsl)
+	for i, c := range n.parent.children {
+	^
+internal/config/plugin_installer.go:104:4: only cuddled expressions if assigning variable or using from line above (wsl)
+			wgQuery.Done()
+			^
+internal/config/plugin_installer.go:107:2: only one cuddle assignment allowed before go statement (wsl)
+	go func() {
+	^
+internal/config/plugin_installer.go:167:1: block should not end with a whitespace (or comment) (wsl)
+}
+^
+internal/config/plugin_installer.go:386:3: block should not end with a whitespace (or comment) (wsl)
+		}
+		^
+internal/config/plugin_installer.go:547:4: if statements should only be cuddled with assignments used in the if statement itself (wsl)
+			if pv := currentlyInstalled.find(sel.pack.Name); pv != nil {
+			^
+internal/config/plugin_installer.go:584:4: branch statements should not be cuddled if block has more than two lines (wsl)
+			break
+			^
+internal/config/plugin_installer.go:611:4: append only allowed to cuddle with appended value (wsl)
+			plugins = append(plugins, p.Name)
+			^
+internal/config/plugin_installer.go:676:6: branch statements should not be cuddled if block has more than two lines (wsl)
+					continue
+					^
+internal/config/plugin_installer.go:689:3: only cuddled expressions if assigning variable or using from line above (wsl)
+		fmt.Fprintln(out, "The following plugins are currently installed:")
+		^
+internal/config/rtfiles.go:215:4: append only allowed to cuddle with appended value (wsl)
+			Plugins = append(Plugins, p)
+			^
+internal/config/settings.go:92:2: switch statements should only be cuddled with variables switched (wsl)
+	switch option {
+	^
+internal/util/lua.go:7:2: for statements should only be cuddled with assignments used in the iteration (wsl)
+	for len(str) > 0 {
+	^
+internal/util/lua.go:24:2: for statements should only be cuddled with assignments used in the iteration (wsl)
+	for len(s) > 0 {
+	^
+internal/util/profile.go:15:2: expressions should not be cuddled with declarations or returns (wsl)
+	runtime.ReadMemStats(&memstats)
+	^
+internal/util/util.go:144:3: switch statements should only be cuddled with variables switched (wsl)
+		switch r {
+		^
+internal/util/util.go:353:2: for statements should only be cuddled with assignments used in the iteration (wsl)
+	for len(b) > 0 {
+	^
+internal/buffer/buffer.go:140:2: only one cuddle assignment allowed before defer statement (wsl)
+	defer b.MarkModified(start.Y, end.Y)
+	^
+internal/lua/lua.go:45:1: calculated cyclomatic complexity for function Import is 20, max is 10 (cyclop)
+func Import(pkg string) *lua.LTable {
+^
+pkg/highlight/parser.go:287:1: calculated cyclomatic complexity for function parseRules is 12, max is 10 (cyclop)
+func parseRules(input []interface{}, curRegion *region) (ru *rules, err error) {
+^
+internal/display/bufwindow.go:112:1: calculated cyclomatic complexity for function updateDisplayInfo is 14, max is 10 (cyclop)
+func (w *BufWindow) updateDisplayInfo() {
+^
+internal/display/bufwindow.go:208:1: calculated cyclomatic complexity for function Relocate is 12, max is 10 (cyclop)
+func (w *BufWindow) Relocate() bool {
+^
+internal/display/termwindow.go:67:1: calculated cyclomatic complexity for function Display is 15, max is 10 (cyclop)
+func (w *TermWindow) Display() {
+^
+internal/display/uiwindow.go:56:1: calculated cyclomatic complexity for function GetMouseSplitNode is 14, max is 10 (cyclop)
+func (w *UIWindow) GetMouseSplitNode(vloc buffer.Loc) *views.Node {
+^
+internal/action/bindings.go:33:1: calculated cyclomatic complexity for function InitBindings is 14, max is 10 (cyclop)
+func InitBindings() {
+^
+internal/action/bindings.go:244:1: calculated cyclomatic complexity for function TryBindKey is 12, max is 10 (cyclop)
+func TryBindKey(k, v string, overwrite bool) (bool, error) {
+^
+internal/action/bufpane.go:537:1: calculated cyclomatic complexity for function execAction is 12, max is 10 (cyclop)
+func (h *BufPane) execAction(action func(*BufPane) bool, name string, cursor int) bool {
+^
+internal/action/events.go:47:1: calculated cyclomatic complexity for function Name is 12, max is 10 (cyclop)
+func (k KeyEvent) Name() string {
+^
+internal/action/infopane.go:84:1: calculated cyclomatic complexity for function HandleEvent is 19, max is 10 (cyclop)
+func (h *InfoPane) HandleEvent(event tcell.Event) {
+^
+internal/action/tab.go:102:1: calculated cyclomatic complexity for function HandleEvent is 15, max is 10 (cyclop)
+func (t *TabList) HandleEvent(event tcell.Event) {
+^
+internal/buffer/backup.go:67:1: calculated cyclomatic complexity for function Backup is 12, max is 10 (cyclop)
+func (b *Buffer) Backup() error {
+^
+internal/buffer/buffer.go:220:1: calculated cyclomatic complexity for function NewBufferFromFileAtLoc is 16, max is 10 (cyclop)
+func NewBufferFromFileAtLoc(path string, btype BufType, cursorLoc Loc) (*Buffer, error) {
+^
+internal/buffer/buffer.go:1226:1: calculated cyclomatic complexity for function FindNextDiffLine is 11, max is 10 (cyclop)
+func (b *Buffer) FindNextDiffLine(startLine int, forward bool) (int, error) {
+^
+internal/buffer/line_array.go:389:1: calculated cyclomatic complexity for function SearchMatch is 15, max is 10 (cyclop)
+func (la *LineArray) SearchMatch(b *Buffer, pos Loc) bool {
+^
+internal/buffer/save.go:30:1: calculated cyclomatic complexity for function overwriteFile is 15, max is 10 (cyclop)
+func overwriteFile(name string, enc encoding.Encoding, fn func(io.Writer) error, withSudo bool) (err error) {
+^
+internal/config/colorscheme.go:121:1: calculated cyclomatic complexity for function StringToStyle is 12, max is 10 (cyclop)
+func StringToStyle(str string) tcell.Style {
+^
+internal/config/settings.go:159:1: calculated cyclomatic complexity for function WriteSettings is 12, max is 10 (cyclop)
+func WriteSettings(filename string) error {
+^
+internal/lua/lua.go:24:2: import 'github.com/dustin/go-humanize' is not allowed from list 'Main' (depguard)
+	humanize "github.com/dustin/go-humanize"
+	^
+internal/lua/lua.go:25:2: import 'github.com/yuin/gopher-lua' is not allowed from list 'Main' (depguard)
+	lua "github.com/yuin/gopher-lua"
+	^
+internal/lua/lua.go:26:2: import 'layeh.com/gopher-luar' is not allowed from list 'Main' (depguard)
+	luar "layeh.com/gopher-luar"
+	^
+internal/screen/screen.go:9:2: import 'github.com/zyedidia/micro/v2/internal/config' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/config"
+	^
+internal/screen/screen.go:10:2: import 'github.com/zyedidia/micro/v2/internal/util' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/util"
+	^
+internal/screen/screen.go:11:2: import 'github.com/zyedidia/tcell/v2' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/tcell/v2"
+	^
+internal/clipboard/clipboard.go:6:2: import 'github.com/zyedidia/clipper' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/clipper"
+	^
+internal/clipboard/terminal.go:7:2: import 'github.com/zyedidia/micro/v2/internal/screen' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/screen"
+	^
+internal/clipboard/terminal.go:8:2: import 'github.com/zyedidia/tcell/v2' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/tcell/v2"
+	^
+internal/info/history.go:9:2: import 'github.com/zyedidia/micro/v2/internal/config' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/config"
+	^
+internal/info/history.go:10:2: import 'github.com/zyedidia/micro/v2/internal/util' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/util"
+	^
+internal/info/infobuffer.go:6:2: import 'github.com/zyedidia/micro/v2/internal/buffer' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/buffer"
+	^
+internal/shell/shell.go:12:2: import 'github.com/kballard/go-shellquote' is not allowed from list 'Main' (depguard)
+	shellquote "github.com/kballard/go-shellquote"
+	^
+internal/shell/shell.go:13:2: import 'github.com/zyedidia/micro/v2/internal/screen' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/screen"
+	^
+internal/shell/terminal.go:8:2: import 'github.com/zyedidia/micro/v2/internal/buffer' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/buffer"
+	^
+internal/shell/terminal.go:9:2: import 'github.com/zyedidia/micro/v2/internal/screen' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/screen"
+	^
+internal/shell/terminal.go:10:2: import 'github.com/zyedidia/terminal' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/terminal"
+	^
+internal/display/bufwindow.go:6:2: import 'github.com/mattn/go-runewidth' is not allowed from list 'Main' (depguard)
+	runewidth "github.com/mattn/go-runewidth"
+	^
+internal/display/bufwindow.go:7:2: import 'github.com/zyedidia/micro/v2/internal/buffer' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/buffer"
+	^
+internal/display/bufwindow.go:8:2: import 'github.com/zyedidia/micro/v2/internal/config' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/config"
+	^
+internal/display/bufwindow.go:10:2: import 'github.com/zyedidia/micro/v2/internal/util' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/util"
+	^
+internal/display/bufwindow.go:11:2: import 'github.com/zyedidia/tcell/v2' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/tcell/v2"
+	^
+internal/display/infowindow.go:4:2: import 'github.com/mattn/go-runewidth' is not allowed from list 'Main' (depguard)
+	runewidth "github.com/mattn/go-runewidth"
+	^
+internal/display/infowindow.go:7:2: import 'github.com/zyedidia/micro/v2/internal/info' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/info"
+	^
+internal/display/softwrap.go:4:2: import 'github.com/mattn/go-runewidth' is not allowed from list 'Main' (depguard)
+	runewidth "github.com/mattn/go-runewidth"
+	^
+internal/display/statusline.go:13:2: import 'github.com/yuin/gopher-lua' is not allowed from list 'Main' (depguard)
+	lua "github.com/yuin/gopher-lua"
+	^
+internal/display/statusline.go:16:2: import 'github.com/zyedidia/micro/v2/internal/lua' is not allowed from list 'Main' (depguard)
+	ulua "github.com/zyedidia/micro/v2/internal/lua"
+	^
+internal/display/termwindow.go:7:2: import 'github.com/zyedidia/micro/v2/internal/shell' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/shell"
+	^
+internal/display/termwindow.go:10:2: import 'github.com/zyedidia/terminal' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/terminal"
+	^
+internal/display/uiwindow.go:8:2: import 'github.com/zyedidia/micro/v2/internal/views' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/views"
+	^
+internal/action/actions.go:13:2: import 'github.com/kballard/go-shellquote' is not allowed from list 'Main' (depguard)
+	shellquote "github.com/kballard/go-shellquote"
+	^
+internal/action/actions.go:15:2: import 'github.com/zyedidia/micro/v2/internal/clipboard' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/clipboard"
+	^
+internal/action/actions.go:17:2: import 'github.com/zyedidia/micro/v2/internal/display' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/display"
+	^
+internal/action/actions.go:19:2: import 'github.com/zyedidia/micro/v2/internal/shell' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/shell"
+	^
+internal/action/bindings.go:14:2: import 'github.com/zyedidia/json5' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/json5"
+	^
+internal/action/bufpane.go:9:2: import 'github.com/yuin/gopher-lua' is not allowed from list 'Main' (depguard)
+	lua "github.com/yuin/gopher-lua"
+	^
+internal/action/bufpane.go:11:2: import 'github.com/zyedidia/micro/v2/internal/clipboard' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/clipboard"
+	^
+internal/action/bufpane.go:13:2: import 'github.com/zyedidia/micro/v2/internal/display' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/display"
+	^
+internal/action/bufpane.go:14:2: import 'github.com/zyedidia/micro/v2/internal/lua' is not allowed from list 'Main' (depguard)
+	ulua "github.com/zyedidia/micro/v2/internal/lua"
+	^
+internal/action/command.go:14:2: import 'github.com/kballard/go-shellquote' is not allowed from list 'Main' (depguard)
+	shellquote "github.com/kballard/go-shellquote"
+	^
+internal/action/command.go:16:2: import 'github.com/zyedidia/micro/v2/internal/clipboard' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/clipboard"
+	^
+internal/action/command.go:19:2: import 'github.com/zyedidia/micro/v2/internal/shell' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/shell"
+	^
+internal/action/infopane.go:8:2: import 'github.com/zyedidia/micro/v2/internal/display' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/display"
+	^
+internal/action/infopane.go:9:2: import 'github.com/zyedidia/micro/v2/internal/info' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/info"
+	^
+internal/action/tab.go:9:2: import 'github.com/zyedidia/micro/v2/internal/lua' is not allowed from list 'Main' (depguard)
+	ulua "github.com/zyedidia/micro/v2/internal/lua"
+	^
+internal/action/tab.go:11:2: import 'github.com/zyedidia/micro/v2/internal/views' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/views"
+	^
+internal/action/termpane.go:13:2: import 'github.com/zyedidia/terminal' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/terminal"
+	^
+cmd/micro/initlua.go:9:2: import 'github.com/zyedidia/micro/v2/internal/action' is not allowed from list 'Main' (depguard)
+	"github.com/zyedidia/micro/v2/internal/action"
+	^
+cmd/micro/micro.go:19:2: import 'github.com/go-errors/errors' is not allowed from list 'Main' (depguard)
+	"github.com/go-errors/errors"
+	^
+cmd/micro/micro.go:20:2: import 'github.com/mattn/go-isatty' is not allowed from list 'Main' (depguard)
+	isatty "github.com/mattn/go-isatty"
+	^
+internal/action/actions.go:984:2: Duplicate words (at) found (dupword)
+	// at all which would be bad
+	^
+internal/action/actions.go:1010:2: Duplicate words (at) found (dupword)
+	// at all which would be bad
+	^
+cmd/micro/micro_test.go:274:19: Duplicate words (foo) found (dupword)
+var srTestStart = `foo
+                  ^
+cmd/micro/micro_test.go:279:15: Duplicate words (test_string) found (dupword)
+var srTest2 = `test_string
+              ^
+internal/action/bindings.go:287:13: Error return value of `encoding/json.MarshalIndent` is not checked: unsafe type `interface{}` found (errchkjson)
+		txt, _ := json.MarshalIndent(parsed, "", "    ")
+		          ^
+internal/action/bindings.go:333:13: Error return value of `encoding/json.MarshalIndent` is not checked: unsafe type `interface{}` found (errchkjson)
+		txt, _ := json.MarshalIndent(parsed, "", "    ")
+		          ^
+internal/config/settings.go:191:13: Error return value of `encoding/json.MarshalIndent` is not checked: unsafe type `interface{}` found (errchkjson)
+		txt, _ := json.MarshalIndent(parsedSettings, "", "    ")
+		          ^
+internal/action/command.go:521:24: comparing with != will fail on wrapped errors. Use errors.Is to check for a specific error (errorlint)
+						if err != nil && err != config.ErrNoSuchFunction {
+						                 ^
+internal/action/command.go:526:24: comparing with != will fail on wrapped errors. Use errors.Is to check for a specific error (errorlint)
+						if err != nil && err != config.ErrNoSuchFunction {
+						                 ^
+internal/action/command.go:589:5: comparing with == will fail on wrapped errors. Use errors.Is to check for a specific error (errorlint)
+	if err == config.ErrInvalidOption {
+	   ^
+cmd/micro/micro.go:455:6: comparing with == will fail on wrapped errors. Use errors.Is to check for a specific error (errorlint)
+		if e.Err() == io.EOF {
+		   ^
+internal/buffer/settings.go:15:8: comparing with == will fail on wrapped errors. Use errors.Is to check for a specific error (errorlint)
+				if e == ErrFileTooLarge {
+				   ^
+internal/buffer/settings.go:66:23: comparing with != will fail on wrapped errors. Use errors.Is to check for a specific error (errorlint)
+					if err != nil && err != config.ErrNoSuchFunction {
+					                 ^
+internal/action/termpane.go:145:4: missing cases in switch of type tcell.Key: tcell.KeyRune, tcell.KeyUp, tcell.KeyDown, tcell.KeyRight, tcell.KeyLeft, tcell.KeyUpLeft, tcell.KeyUpRight, tcell.KeyDownLeft, tcell.KeyDownRight, tcell.KeyCenter, tcell.KeyPgUp, tcell.KeyPgDn, tcell.KeyHome, tcell.KeyEnd, tcell.KeyInsert, tcell.KeyDelete, tcell.KeyHelp, tcell.KeyExit, tcell.KeyClear, tcell.KeyCancel, tcell.KeyPrint, tcell.KeyPause, tcell.KeyBacktab, tcell.KeyF1, tcell.KeyF2, tcell.KeyF3, tcell.KeyF4, tcell.KeyF5, tcell.KeyF6, tcell.KeyF7, tcell.KeyF8, tcell.KeyF9, tcell.KeyF10, tcell.KeyF11, tcell.KeyF12, tcell.KeyF13, tcell.KeyF14, tcell.KeyF15, tcell.KeyF16, tcell.KeyF17, tcell.KeyF18, tcell.KeyF19, tcell.KeyF20, tcell.KeyF21, tcell.KeyF22, tcell.KeyF23, tcell.KeyF24, tcell.KeyF25, tcell.KeyF26, tcell.KeyF27, tcell.KeyF28, tcell.KeyF29, tcell.KeyF30, tcell.KeyF31, tcell.KeyF32, tcell.KeyF33, tcell.KeyF34, tcell.KeyF35, tcell.KeyF36, tcell.KeyF37, tcell.KeyF38, tcell.KeyF39, tcell.KeyF40, tcell.KeyF41, tcell.KeyF42, tcell.KeyF43, tcell.KeyF44, tcell.KeyF45, tcell.KeyF46, tcell.KeyF47, tcell.KeyF48, tcell.KeyF49, tcell.KeyF50, tcell.KeyF51, tcell.KeyF52, tcell.KeyF53, tcell.KeyF54, tcell.KeyF55, tcell.KeyF56, tcell.KeyF57, tcell.KeyF58, tcell.KeyF59, tcell.KeyF60, tcell.KeyF61, tcell.KeyF62, tcell.KeyF63, tcell.KeyF64, tcell.KeyCtrlSpace|tcell.KeyNUL, tcell.KeyCtrlA|tcell.KeySOH, tcell.KeyCtrlB|tcell.KeySTX, tcell.KeyCtrlC|tcell.KeyETX, tcell.KeyCtrlD|tcell.KeyEOT, tcell.KeyCtrlE|tcell.KeyENQ, tcell.KeyCtrlF|tcell.KeyACK, tcell.KeyCtrlG|tcell.KeyBEL, tcell.KeyCtrlH|tcell.KeyBS|tcell.KeyBackspace, tcell.KeyCtrlI|tcell.KeyTAB|tcell.KeyTab, tcell.KeyCtrlJ|tcell.KeyLF, tcell.KeyCtrlK|tcell.KeyVT, tcell.KeyCtrlL|tcell.KeyFF, tcell.KeyCtrlN|tcell.KeySO, tcell.KeyCtrlO|tcell.KeySI, tcell.KeyCtrlP|tcell.KeyDLE, tcell.KeyCtrlR|tcell.KeyDC2, tcell.KeyCtrlS|tcell.KeyDC3, tcell.KeyCtrlT|tcell.KeyDC4, tcell.KeyCtrlU|tcell.KeyNAK, tcell.KeyCtrlV|tcell.KeySYN, tcell.KeyCtrlW|tcell.KeyETB, tcell.KeyCtrlX|tcell.KeyCAN, tcell.KeyCtrlY|tcell.KeyEM, tcell.KeyCtrlZ|tcell.KeySUB, tcell.KeyCtrlBackslash|tcell.KeyFS, tcell.KeyCtrlRightSq|tcell.KeyGS, tcell.KeyCtrlCarat|tcell.KeyRS, tcell.KeyCtrlUnderscore|tcell.KeyUS, tcell.KeyDEL|tcell.KeyBackspace2 (exhaustive)
+			switch e.Key() {
+			^
+pkg/highlight/highlighter.go:71:26: regions, patterns, includes are missing in rules (exhaustivestruct)
+var EmptyDef = Def{nil, &rules{}}
+                         ^
+internal/action/actions.go:1746:32: X, Y are missing in Loc (exhaustivestruct)
+		c := buffer.NewCursor(h.Buf, buffer.Loc{})
+		                             ^
+internal/action/bindings.go:126:11: keys is missing in KeySequenceEvent (exhaustivestruct)
+			return KeySequenceEvent{}, false, nil
+			       ^
+internal/action/bindings.go:166:10: code, mod, r, any are missing in KeyEvent (exhaustivestruct)
+		return KeyEvent{}, false
+		       ^
+internal/action/bindings.go:182:11: any is missing in KeyEvent (exhaustivestruct)
+			return KeyEvent{
+			       ^
+internal/action/bindings.go:214:10: any is missing in KeyEvent (exhaustivestruct)
+		return KeyEvent{
+		       ^
+internal/action/bindings.go:222:9: code, mod, r, any are missing in KeyEvent (exhaustivestruct)
+	return KeyEvent{}, false
+	       ^
+internal/action/bufpane.go:438:9: any is missing in KeyEvent (exhaustivestruct)
+		ke := KeyEvent{
+		      ^
+internal/action/keytree.go:94:16: recordedEvents is missing in KeyTreeCursor (exhaustivestruct)
+	tree.cursor = KeyTreeCursor{
+	              ^
+internal/buffer/cursor.go:38:8: LastVisualX, CurSelection, OrigSelection, Num are missing in Cursor (exhaustivestruct)
+	c := &Cursor{
+	      ^
+internal/buffer/line_array.go:149:33: lock, search are missing in Line (exhaustivestruct)
+				la.lines = Append(la.lines, Line{
+				                            ^
+internal/buffer/line_array.go:159:32: lock, search are missing in Line (exhaustivestruct)
+			la.lines = Append(la.lines, Line{
+			                            ^
+internal/buffer/line_array.go:192:30: lock, search are missing in Line (exhaustivestruct)
+	la.lines = append(la.lines, Line{
+	                            ^
+internal/buffer/stack_test.go:12:9: C, Deltas are missing in TextEvent (exhaustivestruct)
+	e1 := &TextEvent{
+	       ^
+internal/buffer/stack_test.go:16:9: C, Deltas are missing in TextEvent (exhaustivestruct)
+	e2 := &TextEvent{
+	       ^
+internal/config/plugin_installer.go:349:9: Url, Require are missing in PluginVersion (exhaustivestruct)
+	pv := &PluginVersion{
+	       ^
+internal/util/util.go:500:12: Transport, CheckRedirect, Jar, Timeout are missing in Client (exhaustivestruct)
+	client := http.Client{}
+	          ^
+internal/screen/screen.go:83:28: type assertion must be checked (forcetypeassert)
+	return util.FakeCursor || config.GetGlobalOption("fakecursor").(bool)
+	                          ^
+internal/screen/screen.go:159:5: type assertion must be checked (forcetypeassert)
+	if config.GetGlobalOption("xterm").(bool) {
+	   ^
+internal/screen/screen.go:179:18: type assertion must be checked (forcetypeassert)
+	Screen.SetPaste(config.GetGlobalOption("paste").(bool))
+	                ^
+internal/lua/lua.go:30:5: Lock is a global variable (gochecknoglobals)
+var Lock sync.Mutex
+    ^
+internal/screen/screen.go:20:5: Screen is a global variable (gochecknoglobals)
+var Screen tcell.Screen
+    ^
+internal/screen/screen.go:23:5: Events is a global variable (gochecknoglobals)
+var Events chan (tcell.Event)
+    ^
+internal/screen/screen.go:26:5: lock is a global variable (gochecknoglobals)
+var lock sync.Mutex
+    ^
+internal/screen/screen.go:30:5: drawChan is a global variable (gochecknoglobals)
+var drawChan chan bool
+    ^
+internal/screen/screen.go:63:5: lastCursor is a global variable (gochecknoglobals)
+var lastCursor screenCell
+    ^
+internal/clipboard/clipboard.go:38:5: clipboard is a global variable (gochecknoglobals)
+var clipboard clipper.Clipboard
+    ^
+internal/clipboard/internal.go:5:5: internal is a global variable (gochecknoglobals)
+var internal internalClipboard
+    ^
+internal/clipboard/multi.go:10:5: multi is a global variable (gochecknoglobals)
+var multi multiClipboard
+    ^
+internal/clipboard/terminal.go:13:5: terminal is a global variable (gochecknoglobals)
+var terminal terminalClipboard
+    ^
+pkg/highlight/parser.go:18:5: numGroups is a global variable (gochecknoglobals)
+var numGroups Group
+    ^
+pkg/highlight/unicode.go:8:5: minMark is a global variable (gochecknoglobals)
+var minMark = rune(unicode.Mark.R16[0].Lo)
+    ^
+internal/shell/job.go:9:5: Jobs is a global variable (gochecknoglobals)
+var Jobs chan JobFunction
+    ^
+internal/shell/terminal.go:22:5: CloseTerms is a global variable (gochecknoglobals)
+var CloseTerms chan bool
+    ^
+internal/display/statusline.go:31:5: statusInfo is a global variable (gochecknoglobals)
+var statusInfo = map[string]func(*buffer.Buffer) string{
+    ^
+internal/action/actions.go:1691:5: recordingMacro is a global variable (gochecknoglobals)
+var recordingMacro bool
+    ^
+internal/action/bindings.go:20:5: Binder is a global variable (gochecknoglobals)
+var Binder = map[string]func(e Event, action string){
+    ^
+internal/action/bindings.go:339:5: mouseEvents is a global variable (gochecknoglobals)
+var mouseEvents = map[string]tcell.ButtonMask{
+    ^
+internal/action/bindings.go:349:5: keyEvents is a global variable (gochecknoglobals)
+var keyEvents = map[string]tcell.Key{
+    ^
+internal/action/bufpane.go:27:5: BufBindings is a global variable (gochecknoglobals)
+var BufBindings *KeyTree
+    ^
+internal/action/bufpane.go:686:5: BufKeyActions is a global variable (gochecknoglobals)
+var BufKeyActions = map[string]BufKeyAction{
+    ^
+internal/action/bufpane.go:805:5: BufMouseActions is a global variable (gochecknoglobals)
+var BufMouseActions = map[string]BufMouseAction{
+    ^
+internal/action/bufpane.go:814:5: MultiActions is a global variable (gochecknoglobals)
+var MultiActions = map[string]bool{
+    ^
+internal/action/command.go:30:5: commands is a global variable (gochecknoglobals)
+var commands map[string]Command
+    ^
+internal/action/command.go:100:5: PluginCmds is a global variable (gochecknoglobals)
+var PluginCmds = []string{"install", "remove", "update", "available", "list", "search"}
+    ^
+internal/action/defaults.go:3:5: termdefaults is a global variable (gochecknoglobals)
+var termdefaults = map[string]string{
+    ^
+internal/action/defaults_other.go:6:5: bufdefaults is a global variable (gochecknoglobals)
+var bufdefaults = map[string]string{
+    ^
+internal/action/defaults_other.go:113:5: infodefaults is a global variable (gochecknoglobals)
+var infodefaults = map[string]string{
+    ^
+internal/action/globals.go:6:5: InfoBar is a global variable (gochecknoglobals)
+var InfoBar *InfoPane
+    ^
+internal/action/globals.go:9:5: LogBufPane is a global variable (gochecknoglobals)
+var LogBufPane *BufPane
+    ^
+internal/action/infopane.go:17:5: InfoBufBindings is a global variable (gochecknoglobals)
+var InfoBufBindings *KeyTree
+    ^
+internal/action/infopane.go:216:5: InfoKeyActions is a global variable (gochecknoglobals)
+var InfoKeyActions = map[string]InfoKeyAction{
+    ^
+internal/action/tab.go:151:5: Tabs is a global variable (gochecknoglobals)
+var Tabs *TabList
+    ^
+internal/action/termpane.go:18:5: TermBindings is a global variable (gochecknoglobals)
+var TermBindings *KeyTree
+    ^
+internal/action/termpane.go:230:5: TermKeyActions is a global variable (gochecknoglobals)
+var TermKeyActions = map[string]TermKeyAction{
+    ^
+cmd/micro/micro.go:38:2: flagVersion is a global variable (gochecknoglobals)
+	flagVersion   = flag.Bool("version", false, "Show the version number and information")
+	^
+cmd/micro/micro.go:39:2: flagConfigDir is a global variable (gochecknoglobals)
+	flagConfigDir = flag.String("config-dir", "", "Specify a custom location for the configuration directory")
+	^
+cmd/micro/micro.go:40:2: flagOptions is a global variable (gochecknoglobals)
+	flagOptions   = flag.Bool("options", false, "Show all option help")
+	^
+cmd/micro/micro.go:41:2: flagDebug is a global variable (gochecknoglobals)
+	flagDebug     = flag.Bool("debug", false, "Enable debug mode (prints debug info to ./log.txt)")
+	^
+cmd/micro/micro.go:42:2: flagProfile is a global variable (gochecknoglobals)
+	flagProfile   = flag.Bool("profile", false, "Enable CPU profiling (writes profile info to ./micro.prof)")
+	^
+cmd/micro/micro.go:43:2: flagPlugin is a global variable (gochecknoglobals)
+	flagPlugin    = flag.String("plugin", "", "Plugin command")
+	^
+cmd/micro/micro.go:44:2: flagClean is a global variable (gochecknoglobals)
+	flagClean     = flag.Bool("clean", false, "Clean configuration directory")
+	^
+cmd/micro/micro.go:45:2: optionFlags is a global variable (gochecknoglobals)
+	optionFlags   map[string]*string
+	^
+cmd/micro/micro.go:47:2: sigterm is a global variable (gochecknoglobals)
+	sigterm chan os.Signal
+	^
+cmd/micro/micro.go:48:2: sighup is a global variable (gochecknoglobals)
+	sighup  chan os.Signal
+	^
+cmd/micro/micro_test.go:20:5: sim is a global variable (gochecknoglobals)
+var sim tcell.SimulationScreen
+    ^
+cmd/micro/micro_test.go:284:5: srTest3 is a global variable (gochecknoglobals)
+var srTest3 = `test_foo
+    ^
+internal/buffer/backup.go:33:5: backupRequestChan is a global variable (gochecknoglobals)
+var backupRequestChan chan *Buffer
+    ^
+internal/buffer/buffer.go:37:2: OpenBuffers is a global variable (gochecknoglobals)
+	OpenBuffers []*Buffer
+	^
+internal/buffer/buffer.go:40:2: LogBuf is a global variable (gochecknoglobals)
+	LogBuf *Buffer
+	^
+internal/screen/screen.go:201:15: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Failed to get a simulation screen\")" (goerr113)
+		return nil, errors.New("Failed to get a simulation screen")
+		            ^
+internal/clipboard/terminal.go:26:15: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"No clipboard received from terminal\")" (goerr113)
+			return "", errors.New("No clipboard received from terminal")
+			           ^
+pkg/highlight/parser.go:101:15: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Header file has incorrect format\")" (goerr113)
+		return nil, errors.New("Header file has incorrect format")
+		            ^
+pkg/highlight/parser.go:156:11: err113: do not define dynamic errors, use wrapped static errors instead: "fmt.Errorf(\"pkg: %v\", r)" (goerr113)
+				err = fmt.Errorf("pkg: %v", r)
+				      ^
+pkg/highlight/parser.go:189:11: err113: do not define dynamic errors, use wrapped static errors instead: "fmt.Errorf(\"pkg: %v\", r)" (goerr113)
+				err = fmt.Errorf("pkg: %v", r)
+				      ^
+pkg/highlight/parser.go:293:11: err113: do not define dynamic errors, use wrapped static errors instead: "fmt.Errorf(\"pkg: %v\", r)" (goerr113)
+				err = fmt.Errorf("pkg: %v", r)
+				      ^
+pkg/highlight/parser.go:331:17: err113: do not define dynamic errors, use wrapped static errors instead: "fmt.Errorf(\"Bad type %T\", object)" (goerr113)
+				return nil, fmt.Errorf("Bad type %T", object)
+				            ^
+internal/shell/shell.go:40:14: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"No arguments\")" (goerr113)
+		return "", errors.New("No arguments")
+		           ^
+internal/shell/shell.go:56:15: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"No arguments\")" (goerr113)
+		return nil, errors.New("No arguments")
+		            ^
+internal/shell/shell.go:77:14: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"No arguments\")" (goerr113)
+		return "", errors.New("No arguments")
+		           ^
+internal/action/bindings.go:119:39: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Invalid event \" + k[groups[2]:groups[3]])" (goerr113)
+				return KeySequenceEvent{}, false, errors.New("Invalid event " + k[groups[2]:groups[3]])
+				                                  ^
+internal/action/bindings.go:235:16: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(k + \" is not a bindable event\")" (goerr113)
+			return nil, errors.New(k + " is not a bindable event")
+			            ^
+internal/action/bindings.go:253:18: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error reading bindings.json file: \" + err.Error())" (goerr113)
+			return false, errors.New("Error reading bindings.json file: " + err.Error())
+			              ^
+internal/action/bindings.go:258:18: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error reading bindings.json: \" + err.Error())" (goerr113)
+			return false, errors.New("Error reading bindings.json: " + err.Error())
+			              ^
+internal/action/bindings.go:303:11: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error reading bindings.json file: \" + err.Error())" (goerr113)
+			return errors.New("Error reading bindings.json file: " + err.Error())
+			       ^
+internal/action/bindings.go:308:11: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error reading bindings.json: \" + err.Error())" (goerr113)
+			return errors.New("Error reading bindings.json: " + err.Error())
+			       ^
+internal/action/command.go:378:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(fmt.Sprint(\"Unable to load help text\", page, \"\\n\", err))" (goerr113)
+		return errors.New(fmt.Sprint("Unable to load help text", page, "\n", err))
+		       ^
+internal/action/termpane.go:64:15: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Terminal emulator is not supported on this system\")" (goerr113)
+		return nil, errors.New("Terminal emulator is not supported on this system")
+		            ^
+internal/buffer/buffer.go:246:15: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error: \" + filename + \" is a directory and cannot be opened\")" (goerr113)
+		return nil, errors.New("Error: " + filename + " is a directory and cannot be opened")
+		            ^
+internal/buffer/buffer.go:263:16: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"could not open file\")" (goerr113)
+			return nil, errors.New("could not open file")
+			            ^
+internal/buffer/buffer.go:1228:13: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"no diff data\")" (goerr113)
+		return 0, errors.New("no diff data")
+		          ^
+internal/buffer/buffer.go:1241:14: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"no next diff hunk\")" (goerr113)
+			return 0, errors.New("no next diff hunk")
+			          ^
+internal/buffer/save.go:112:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Cannot save readonly buffer\")" (goerr113)
+		return errors.New("Cannot save readonly buffer")
+		       ^
+internal/buffer/save.go:115:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Cannot save scratch buffer\")" (goerr113)
+		return errors.New("Cannot save scratch buffer")
+		       ^
+internal/buffer/save.go:118:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Save with sudo not supported on Windows\")" (goerr113)
+		return errors.New("Save with sudo not supported on Windows")
+		       ^
+internal/buffer/save.go:160:12: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Parent dirs don't exist, enable 'mkparents' for auto creation\")" (goerr113)
+				return errors.New("Parent dirs don't exist, enable 'mkparents' for auto creation")
+				       ^
+internal/config/colorscheme.go:67:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(colorschemeName + \" is not a valid colorscheme\")" (goerr113)
+		return errors.New(colorschemeName + " is not a valid colorscheme")
+		       ^
+internal/config/colorscheme.go:70:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error loading colorscheme: \" + err.Error())" (goerr113)
+		return errors.New("Error loading colorscheme: " + err.Error())
+		       ^
+internal/config/colorscheme.go:111:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Color-link statement is not valid: \" + line)" (goerr113)
+			err = errors.New("Color-link statement is not valid: " + line)
+			      ^
+internal/config/config.go:26:12: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error finding your home directory\\nCan't load config files: \" + err.Error())" (goerr113)
+				return errors.New("Error finding your home directory\nCan't load config files: " + err.Error())
+				       ^
+internal/config/config.go:37:8: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error: \" + flagConfigDir + \" does not exist. Defaulting to \" + ConfigDir + \".\")" (goerr113)
+			e = errors.New("Error: " + flagConfigDir + " does not exist. Defaulting to " + ConfigDir + ".")
+			    ^
+internal/config/config.go:48:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error creating configuration directory: \" + err.Error())" (goerr113)
+		return errors.New("Error creating configuration directory: " + err.Error())
+		       ^
+internal/config/plugin.go:57:13: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Plugin \" + p.Name + \": \" + err.Error())" (goerr113)
+			reterr = errors.New("Plugin " + p.Name + ": " + err.Error())
+			         ^
+internal/config/rtfiles.go:276:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Plugin \" + plugin + \" does not exist\")" (goerr113)
+		return errors.New("Plugin " + plugin + " does not exist")
+		       ^
+internal/config/rtfiles.go:293:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Plugin \" + plugin + \" does not exist\")" (goerr113)
+		return errors.New("Plugin " + plugin + " does not exist")
+		       ^
+internal/config/settings.go:64:11: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error reading settings.json file: \" + err.Error())" (goerr113)
+			return errors.New("Error reading settings.json file: " + err.Error())
+			       ^
+internal/config/settings.go:71:12: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error reading settings.json: \" + err.Error())" (goerr113)
+				return errors.New("Error reading settings.json: " + err.Error())
+				       ^
+internal/config/settings.go:139:19: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error with glob setting \" + k + \": \" + err.Error())" (goerr113)
+					parseError = errors.New("Error with glob setting " + k + ": " + err.Error())
+					             ^
+internal/config/settings.go:247:11: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error writing settings.json file: \" + err.Error())" (goerr113)
+			return errors.New("Error writing settings.json file: " + err.Error())
+			       ^
+internal/config/settings.go:262:11: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Error writing settings.json file: \" + err.Error())" (goerr113)
+			return errors.New("Error writing settings.json file: " + err.Error())
+			       ^
+internal/config/settings.go:443:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Expected numeric type for \" + option)" (goerr113)
+		return errors.New("Expected numeric type for " + option)
+		       ^
+internal/config/settings.go:447:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(option + \" must be greater than 0\")" (goerr113)
+		return errors.New(option + " must be greater than 0")
+		       ^
+internal/config/settings.go:457:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Expected numeric type for \" + option)" (goerr113)
+		return errors.New("Expected numeric type for " + option)
+		       ^
+internal/config/settings.go:461:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(option + \" must be non-negative\")" (goerr113)
+		return errors.New(option + " must be non-negative")
+		       ^
+internal/config/settings.go:471:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Expected string type for colorscheme\")" (goerr113)
+		return errors.New("Expected string type for colorscheme")
+		       ^
+internal/config/settings.go:475:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(colorscheme + \" is not a valid colorscheme\")" (goerr113)
+		return errors.New(colorscheme + " is not a valid colorscheme")
+		       ^
+internal/config/settings.go:485:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Expected string type for clipboard\")" (goerr113)
+		return errors.New("Expected string type for clipboard")
+		       ^
+internal/config/settings.go:491:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(option + \" must be 'internal', 'external', or 'terminal'\")" (goerr113)
+		return errors.New(option + " must be 'internal', 'external', or 'terminal'")
+		       ^
+internal/config/settings.go:501:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"Expected string type for file format\")" (goerr113)
+		return errors.New("Expected string type for file format")
+		       ^
+internal/config/settings.go:505:10: err113: do not define dynamic errors, use wrapped static errors instead: "errors.New(\"File format must be either 'unix' or 'dos'\")" (goerr113)
+		return errors.New("File format must be either 'unix' or 'dos'")
+		       ^
+internal/screen/screen.go:142:29: mnd: Magic number: 8, in <argument> detected (gomnd)
+	drawChan = make(chan bool, 8)
+	                           ^
+internal/screen/screen.go:195:29: mnd: Magic number: 8, in <argument> detected (gomnd)
+	drawChan = make(chan bool, 8)
+	                           ^
+internal/screen/screen.go:207:12: mnd: Magic number: 80, in <argument> detected (gomnd)
+	s.SetSize(80, 24)
+	          ^
+internal/clipboard/terminal.go:25:21: mnd: Magic number: 200, in <argument> detected (gomnd)
+		case <-time.After(200 * time.Millisecond):
+		                  ^
+pkg/highlight/parser.go:100:18: mnd: Magic number: 3, in <condition> detected (gomnd)
+	if len(lines) < 3 {
+	                ^
+internal/info/history.go:47:16: mnd: Magic number: 100, in <condition> detected (gomnd)
+			if len(v) > 100 {
+			            ^
+internal/info/history.go:81:21: mnd: Magic number: 2, in <operation> detected (gomnd)
+		for j := len(h) - 2; j >= 0; j-- {
+		                  ^
+internal/info/infobuffer.go:157:23: mnd: Magic number: 2, in <operation> detected (gomnd)
+				for j := len(h) - 2; j >= 0; j-- {
+				                  ^
+internal/shell/job.go:12:32: mnd: Magic number: 100, in <argument> detected (gomnd)
+	Jobs = make(chan JobFunction, 100)
+	                              ^
+internal/display/tabwindow.go:82:30: mnd: Magic number: 4, in <argument> detected (gomnd)
+				w.hscroll = util.Clamp(x-4, 0, s-w.Width)
+				                         ^
+internal/display/tabwindow.go:161:14: mnd: Magic number: 2, in <argument> detected (gomnd)
+			draw(' ', 2, true, globalTabReverse)
+			          ^
+internal/display/tabwindow.go:164:14: mnd: Magic number: 2, in <argument> detected (gomnd)
+			draw(' ', 2, false, globalTabReverse)
+			          ^
+internal/display/bufwindow.go:733:47: mnd: Magic number: 2, in <condition> detected (gomnd)
+		if util.CharacterCountInString(divchars) != 2 {
+		                                            ^
+internal/display/uiwindow.go:29:46: mnd: Magic number: 2, in <condition> detected (gomnd)
+	if util.CharacterCountInString(divchars) != 2 {
+	                                            ^
+internal/display/tabwindow.go:62:37: mnd: Magic number: 4, in <operation> detected (gomnd)
+		sum += runewidth.StringWidth(n) + 4
+		                                  ^
+internal/action/actions.go:124:74: mnd: Magic number: 2, in <argument> detected (gomnd)
+	v.StartLine = h.Scroll(h.SLocFromLoc(h.Cursor.Loc), -h.BufView().Height/2)
+	                                                                        ^
+internal/action/bindings.go:114:31: mnd: Magic number: 3, in <argument> detected (gomnd)
+				events = make([]Event, 0, 3)
+				                          ^
+internal/action/bufpane.go:355:40: mnd: Magic number: 4, in <argument> detected (gomnd)
+		v.StartLine = h.Scroll(sloc, -height/4)
+		                                     ^
+internal/action/bufpane.go:372:40: mnd: Magic number: 4, in <argument> detected (gomnd)
+		v.StartLine = h.Scroll(sloc, -height/4)
+		                                     ^
+internal/action/bindings.go:112:20: mnd: Magic number: 3, in <condition> detected (gomnd)
+		if len(groups) > 3 {
+		                 ^
+internal/action/command.go:580:17: mnd: Magic number: 2, in <condition> detected (gomnd)
+	if len(args) < 2 {
+	               ^
+cmd/micro/micro.go:389:20: mnd: Magic number: 10, in <argument> detected (gomnd)
+	case <-time.After(10 * time.Millisecond):
+	                  ^
+internal/buffer/backup.go:37:28: mnd: Magic number: 8, in <argument> detected (gomnd)
+		time.Sleep(time.Second * 8)
+		                         ^
+internal/buffer/backup.go:50:41: mnd: Magic number: 10, in <argument> detected (gomnd)
+	backupRequestChan = make(chan *Buffer, 10)
+	                                       ^
+internal/buffer/buffer.go:1189:38: mnd: Magic number: 500, in <argument> detected (gomnd)
+		b.updateDiffTimer = time.AfterFunc(500*time.Millisecond, func() {
+		                                   ^
+internal/buffer/line_array.go:86:42: mnd: Magic number: 10000, in <argument> detected (gomnd)
+		newSlice := make([]Line, (l+len(data))+10000)
+		                                       ^
+internal/buffer/line_array.go:101:29: mnd: Magic number: 1000, in <argument> detected (gomnd)
+	la.lines = make([]Line, 0, 1000)
+	                           ^
+internal/buffer/line_array.go:136:58: mnd: Magic number: 10000, in <argument> detected (gomnd)
+			newSlice := make([]Line, len(la.lines), totalLinesNum+10000)
+			                                                      ^
+internal/buffer/line_array.go:177:27: mnd: Magic number: 4096, in <argument> detected (gomnd)
+	b.Grow(int(la.initsize + 4096))
+	                         ^
+internal/buffer/buffer.go:1188:24: mnd: Magic number: 30000, in <condition> detected (gomnd)
+	} else if lineCount < 30000 {
+	                      ^
+internal/config/settings.go:305:28: mnd: Magic number: 3, in <argument> detected (gomnd)
+	"scrollmargin":   float64(3),
+	                          ^
+internal/config/colorscheme.go:100:22: mnd: Magic number: 3, in <condition> detected (gomnd)
+		if len(matches) == 3 {
+		                   ^
+internal/clipboard/multi.go:50:28: S1019: should use make([]string, ncursors) instead (gosimple)
+		content = make([]string, ncursors, ncursors)
+		                         ^
+internal/display/bufwindow.go:166:10: composites: github.com/zyedidia/micro/v2/internal/buffer.Loc struct literal uses unkeyed fields (govet)
+	bloc := buffer.Loc{0, lineN}
+	        ^
+internal/display/infowindow.go:90:65: composites: github.com/zyedidia/micro/v2/internal/buffer.Loc struct literal uses unkeyed fields (govet)
+func (i *InfoWindow) LocFromVLoc(vloc VLoc) buffer.Loc { return buffer.Loc{vloc.VisualX, 0} }
+                                                                ^
+internal/action/actions.go:54:30: composites: github.com/zyedidia/micro/v2/internal/buffer.Loc struct literal uses unkeyed fields (govet)
+	mouseLoc := h.LocFromVisual(buffer.Loc{mx, my})
+	                            ^
+internal/action/actions.go:1350:16: composites: github.com/zyedidia/micro/v2/internal/display.SLoc struct literal uses unkeyed fields (govet)
+	v.StartLine = display.SLoc{0, 0}
+	              ^
+internal/action/bufpane.go:369:12: composites: github.com/zyedidia/micro/v2/internal/display.SLoc struct literal uses unkeyed fields (govet)
+	if h.Diff(display.SLoc{0, 0}, sloc) < height {
+	          ^
+internal/action/bufpane.go:370:17: composites: github.com/zyedidia/micro/v2/internal/display.SLoc struct literal uses unkeyed fields (govet)
+		v.StartLine = display.SLoc{0, 0}
+		              ^
+internal/buffer/backup.go:95:10: copylocks: range var l copies lock: github.com/zyedidia/micro/v2/internal/buffer.Line contains sync.Mutex (govet)
+		for _, l := range b.lines[1:] {
+		       ^
+internal/buffer/buffer.go:656:10: copylocks: range var l copies lock: github.com/zyedidia/micro/v2/internal/buffer.Line contains sync.Mutex (govet)
+		for _, l := range b.lines[1:] {
+		       ^
+internal/buffer/line_array.go:92:16: copylocks: assignment copies lock value to slice[l+i]: github.com/zyedidia/micro/v2/internal/buffer.Line contains sync.Mutex (govet)
+		slice[l+i] = c
+		             ^
+internal/buffer/save.go:122:10: copylocks: range var l copies lock: github.com/zyedidia/micro/v2/internal/buffer.Line contains sync.Mutex (govet)
+		for i, l := range b.lines {
+		       ^
+pkg/highlight/parser.go:106:2: variable 'fnameRgx' is only used in the if-statement (pkg/highlight/parser.go:109:2); consider using short syntax (ifshort)
+	fnameRgx := string(lines[1])
+	^
+internal/action/actions.go:278:2: variable 'count' is only used in the if-statement (internal/action/actions.go:279:2); consider using short syntax (ifshort)
+	count := h.Buf.End()
+	^
+internal/action/actions.go:294:2: variable 'count' is only used in the if-statement (internal/action/actions.go:295:2); consider using short syntax (ifshort)
+	count := h.Buf.End()
+	^
+internal/action/actions.go:1652:2: variable 'ok' is only used in the if-statement (internal/action/actions.go:1653:2); consider using short syntax (ifshort)
+	ok := n.Unsplit()
+	^
+internal/action/bufpane.go:352:2: variable 'height' is only used in the if-statement (internal/action/bufpane.go:353:2); consider using short syntax (ifshort)
+	height := h.BufView().Height
+	^
+internal/action/bufpane.go:364:2: variable 'height' is only used in the if-statement (internal/action/bufpane.go:369:2); consider using short syntax (ifshort)
+	height := h.BufView().Height
+	^
+internal/action/bufpane.go:542:5: variable 'isMulti' is only used in the if-statement (internal/action/bufpane.go:543:2); consider using short syntax (ifshort)
+	_, isMulti := MultiActions[name]
+	   ^
+internal/action/command.go:150:2: variable 'err' is only used in the if-statement (internal/action/command.go:151:2); consider using short syntax (ifshort)
+	err := cmd.Run()
+	^
+internal/action/command.go:676:2: variable 'err' is only used in the if-statement (internal/action/command.go:677:2); consider using short syntax (ifshort)
+	err := UnbindKey(args[0])
+	^
+internal/action/command.go:973:2: variable 'inputCmd' is only used in the if-statement (internal/action/command.go:975:2); consider using short syntax (ifshort)
+	inputCmd := args[0]
+	^
+internal/action/events.go:66:2: variable 'ok' is only used in the if-statement (internal/action/events.go:67:2); consider using short syntax (ifshort)
+	ok := false
+	^
+cmd/micro/micro_test.go:105:2: variable 'e' is only used in the if-statement (cmd/micro/micro_test.go:107:2); consider using short syntax (ifshort)
+	e := screen.Screen.PollEvent()
+	^
+internal/buffer/buffer.go:573:2: variable 'line' is only used in the if-statement (internal/buffer/buffer.go:574:2); consider using short syntax (ifshort)
+	line := b.LineBytes(loc.Y)
+	^
+internal/buffer/eventhandler.go:289:2: variable 'teCursor' is only used in the if-statement (internal/buffer/eventhandler.go:290:2); consider using short syntax (ifshort)
+	teCursor := t.C
+	^
+internal/buffer/eventhandler.go:332:2: variable 'teCursor' is only used in the if-statement (internal/buffer/eventhandler.go:333:2); consider using short syntax (ifshort)
+	teCursor := t.C
+	^
+internal/config/plugin_installer.go:480:2: variable 'p' is only used in the if-statement (internal/config/plugin_installer.go:481:2); consider using short syntax (ifshort)
+	p := pl.Get(name)
+	^
+internal/action/events.go:162:14: interface method HandleEvent must have named param for type tcell.Event (inamedparam)
+	HandleEvent(tcell.Event)
+	            ^
+internal/action/events.go:163:16: interface method HandleCommand must have named param for type string (inamedparam)
+	HandleCommand(string)
+	              ^
+internal/config/plugin.go:109:1: Call returns interface (github.com/yuin/gopher-lua.LValue) (ireturn)
+func (p *Plugin) Call(fn string, args ...lua.LValue) (lua.LValue, error) {
+^
+internal/config/rtfiles.go:141:1: FindRuntimeFile returns interface (github.com/zyedidia/micro/v2/internal/config.RuntimeFile) (ireturn)
+func FindRuntimeFile(fileType RTFiletype, name string) RuntimeFile {
+^
+internal/screen/screen.go:194:1: InitSimScreen returns interface (github.com/zyedidia/tcell/v2.SimulationScreen) (ireturn)
+func InitSimScreen() (tcell.SimulationScreen, error) {
+^
+internal/action/bindings.go:225:1: findEvent returns interface (github.com/zyedidia/micro/v2/internal/action.Event) (ireturn)
+func findEvent(k string) (Event, error) {
+^
+internal/action/events.go:138:1: ConstructEvent returns interface (github.com/zyedidia/micro/v2/internal/action.Event) (ireturn)
+func ConstructEvent(event tcell.Event) (Event, error) {
+^
+internal/buffer/save.go:39:4: naked return in func `overwriteFile` with 59 lines of code (nakedret)
+			return
+			^
+internal/buffer/save.go:58:3: naked return in func `overwriteFile` with 59 lines of code (nakedret)
+		return
+		^
+internal/buffer/save.go:88:2: naked return in func `overwriteFile` with 59 lines of code (nakedret)
+	return
+	^
+internal/buffer/save.go:55:4: error is nil (line 38) but it returns error (nilerr)
+			return err
+			^
+internal/lua/lua.go:40:3: return with no blank line before (nlreturn)
+		return L.PCall(0, lua.MultRet, nil)
+		^
+internal/clipboard/clipboard.go:106:2: return with no blank line before (nlreturn)
+	return write(multi.getAllText(r), r, m)
+	^
+internal/clipboard/clipboard.go:115:4: return with no blank line before (nlreturn)
+			return string(b), e
+			^
+internal/info/history.go:84:5: break with no blank line before (nlreturn)
+				break
+				^
+internal/info/history.go:138:5: break with no blank line before (nlreturn)
+				break
+				^
+internal/info/history.go:145:5: break with no blank line before (nlreturn)
+				break
+				^
+internal/action/bindings.go:68:5: continue with no blank line before (nlreturn)
+				continue
+				^
+internal/action/bufpane.go:119:5: continue with no blank line before (nlreturn)
+				continue
+				^
+internal/action/bufpane.go:134:4: continue with no blank line before (nlreturn)
+			continue
+			^
+internal/config/plugin_installer.go:129:23: net/http.Get must not be called (noctx)
+	resp, err := http.Get(string(pc))
+	                     ^
+internal/config/plugin_installer.go:149:23: net/http.Get must not be called (noctx)
+	resp, err := http.Get(string(pr))
+	                     ^
+internal/config/plugin_installer.go:394:23: net/http.Get must not be called (noctx)
+	resp, err := http.Get(pv.Url)
+	                     ^
+internal/util/util.go:501:29: should rewrite http.NewRequestWithContext or add (*Request).WithContext (noctx)
+	req, err := http.NewRequest(method, url, nil)
+	                           ^
+pkg/highlight/parser.go:149:1: named return "f" with type "*File" found (nonamedreturns)
+func ParseFile(input []byte) (f *File, err error) {
+^
+pkg/highlight/parser.go:182:1: named return "s" with type "*Def" found (nonamedreturns)
+func ParseDef(f *File, header *Header) (s *Def, err error) {
+^
+internal/action/bindings.go:107:1: named return "b" with type "KeySequenceEvent" found (nonamedreturns)
+func findEvents(k string) (b KeySequenceEvent, ok bool, err error) {
+^
+internal/buffer/backup.go:82:42: named return "e" with type "error" found (nonamedreturns)
+	err = overwriteFile(name, encoding.Nop, func(file io.Writer) (e error) {
+	                                        ^
+internal/buffer/buffer.go:529:1: named return "err" with type "error" found (nonamedreturns)
+func (b *Buffer) UpdateModTime() (err error) {
+^
+internal/buffer/buffer.go:1124:1: named return "n" with type "int" found (nonamedreturns)
+func (b *Buffer) Write(bytes []byte) (n int, err error) {
+^
+internal/buffer/save.go:172:13: named return "e" with type "error" found (nonamedreturns)
+	fwriter := func(file io.Writer) (e error) {
+	           ^
+internal/buffer/stack.go:28:1: named return "value" with type "*TextEvent" found (nonamedreturns)
+func (s *TEStack) Pop() (value *TextEvent) {
+^
+internal/config/plugin_installer.go:315:1: named return "plugins" with type "PluginPackages" found (nonamedreturns)
+func SearchPlugin(out io.Writer, texts []string) (plugins PluginPackages) {
+^
+internal/lua/lua.go:362:45: O_APPEND contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+	L.SetField(pkg, "O_APPEND", luar.New(L, os.O_APPEND))
+	                                           ^
+internal/lua/lua.go:363:45: O_CREATE contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+	L.SetField(pkg, "O_CREATE", luar.New(L, os.O_CREATE))
+	                                           ^
+internal/lua/lua.go:364:43: O_EXCL contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+	L.SetField(pkg, "O_EXCL", luar.New(L, os.O_EXCL))
+	                                         ^
+internal/lua/lua.go:365:45: O_RDONLY contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+	L.SetField(pkg, "O_RDONLY", luar.New(L, os.O_RDONLY))
+	                                           ^
+internal/lua/lua.go:366:43: O_RDWR contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+	L.SetField(pkg, "O_RDWR", luar.New(L, os.O_RDWR))
+	                                         ^
+internal/lua/lua.go:367:43: O_SYNC contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+	L.SetField(pkg, "O_SYNC", luar.New(L, os.O_SYNC))
+	                                         ^
+internal/lua/lua.go:368:44: O_TRUNC contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+	L.SetField(pkg, "O_TRUNC", luar.New(L, os.O_TRUNC))
+	                                          ^
+internal/lua/lua.go:369:45: O_WRONLY contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+	L.SetField(pkg, "O_WRONLY", luar.New(L, os.O_WRONLY))
+	                                           ^
+internal/buffer/buffer.go:237:37: O_WRONLY contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+	f, err := os.OpenFile(filename, os.O_WRONLY, 0)
+	                                   ^
+internal/buffer/line_array_test.go:19:30: unicode_txt contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+	reader := strings.NewReader(unicode_txt)
+	                            ^
+internal/buffer/line_array_test.go:20:31: unicode_txt contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+	la = NewLineArray(uint64(len(unicode_txt)), FFAuto, reader)
+	                             ^
+internal/buffer/line_array_test.go:40:18: unicode_txt contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+	assert.Equal(t, unicode_txt, string(bytes))
+	                ^
+internal/util/util.go:474:35: O_WRONLY contains underscore. You should use mixedCap or MixedCap. (nosnakecase)
+			f, err := os.OpenFile(path, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, f.Mode())
+			                               ^
+cmd/micro/micro_test.go:181:1: Function TestSimpleEdit missing the call to method parallel (paralleltest)
+func TestSimpleEdit(t *testing.T) {
+^
+cmd/micro/micro_test.go:227:1: Function TestMouse missing the call to method parallel (paralleltest)
+func TestMouse(t *testing.T) {
+^
+cmd/micro/micro_test.go:290:1: Function TestSearchAndReplace missing the call to method parallel (paralleltest)
+func TestSearchAndReplace(t *testing.T) {
+^
+internal/buffer/line_array_test.go:23:1: Function TestSplit missing the call to method parallel (paralleltest)
+func TestSplit(t *testing.T) {
+^
+internal/buffer/line_array_test.go:33:1: Function TestJoin missing the call to method parallel (paralleltest)
+func TestJoin(t *testing.T) {
+^
+internal/buffer/line_array_test.go:43:1: Function TestInsert missing the call to method parallel (paralleltest)
+func TestInsert(t *testing.T) {
+^
+internal/buffer/line_array_test.go:55:1: Function TestRemove missing the call to method parallel (paralleltest)
+func TestRemove(t *testing.T) {
+^
+internal/buffer/stack_test.go:10:1: Function TestStack missing the call to method parallel (paralleltest)
+func TestStack(t *testing.T) {
+^
+internal/config/colorscheme_test.go:10:1: Function TestSimpleStringToStyle missing the call to method parallel (paralleltest)
+func TestSimpleStringToStyle(t *testing.T) {
+^
+internal/config/colorscheme_test.go:19:1: Function TestAttributeStringToStyle missing the call to method parallel (paralleltest)
+func TestAttributeStringToStyle(t *testing.T) {
+^
+internal/config/colorscheme_test.go:29:1: Function TestMultiAttributesStringToStyle missing the call to method parallel (paralleltest)
+func TestMultiAttributesStringToStyle(t *testing.T) {
+^
+internal/config/colorscheme_test.go:41:1: Function TestColor256StringToStyle missing the call to method parallel (paralleltest)
+func TestColor256StringToStyle(t *testing.T) {
+^
+internal/config/colorscheme_test.go:50:1: Function TestColorHexStringToStyle missing the call to method parallel (paralleltest)
+func TestColorHexStringToStyle(t *testing.T) {
+^
+internal/config/colorscheme_test.go:59:1: Function TestColorschemeParser missing the call to method parallel (paralleltest)
+func TestColorschemeParser(t *testing.T) {
+^
+internal/config/plugin_installer_test.go:11:1: Function TestDependencyResolving missing the call to method parallel (paralleltest)
+func TestDependencyResolving(t *testing.T) {
+^
+internal/config/rtfiles_test.go:13:1: Function TestAddFile missing the call to method parallel (paralleltest)
+func TestAddFile(t *testing.T) {
+^
+internal/config/rtfiles_test.go:32:1: Function TestFindFile missing the call to method parallel (paralleltest)
+func TestFindFile(t *testing.T) {
+^
+internal/util/util_test.go:9:1: Function TestStringWidth missing the call to method parallel (paralleltest)
+func TestStringWidth(t *testing.T) {
+^
+internal/util/util_test.go:16:1: Function TestSliceVisualEnd missing the call to method parallel (paralleltest)
+func TestSliceVisualEnd(t *testing.T) {
+^
+internal/buffer/eventhandler.go:163:35: param new has same name as predeclared identifier (predeclared)
+func (eh *EventHandler) ApplyDiff(new string) {
+                                  ^
+internal/lua/lua.go:437:43: SA1019: filepath.HasPrefix has been deprecated since Go 1.0 because it shouldn't be used: HasPrefix does not respect path boundaries and does not ignore case when required. (staticcheck)
+	L.SetField(pkg, "HasPrefix", luar.New(L, filepath.HasPrefix))
+	                                         ^
+internal/buffer/buffer.go:70:20: ST1005: error strings should not be capitalized (stylecheck)
+	ErrFileTooLarge = errors.New("File is too large to hash")
+	                  ^
+internal/config/plugin.go:12:25: ST1005: error strings should not be capitalized (stylecheck)
+var ErrNoSuchFunction = errors.New("No such function exists")
+                        ^
+internal/config/plugin_manager.go:10:19: ST1005: error strings should not be capitalized (stylecheck)
+	ErrMissingName = errors.New("Missing or empty name field")
+	                 ^
+internal/config/plugin_installer.go:469:26: ST1016: methods on the same type should have the same receiver name (seen 1x "all", 2x "pl") (stylecheck)
+func (pl PluginPackages) Get(name string) *PluginPackage {
+                         ^
+internal/config/plugin_manager.go:27:14: json(camel): got 'Name' want 'name' (tagliatelle)
+	Name string `json:"Name"`
+	            ^
+internal/config/plugin_manager.go:28:14: json(camel): got 'Description' want 'description' (tagliatelle)
+	Desc string `json:"Description"`
+	            ^
+internal/config/plugin_manager.go:29:14: json(camel): got 'Website' want 'website' (tagliatelle)
+	Site string `json:"Website"`
+	            ^
+internal/buffer/buffer_test.go:34:2: bool-compare: use assert.False (testifylint)
+	assert.Equal(false, b.ExternallyModified())
+	^
+internal/buffer/buffer_test.go:35:2: bool-compare: use assert.False (testifylint)
+	assert.Equal(false, b.Modified())
+	^
+internal/buffer/buffer_test.go:40:3: len: use assert.Len (testifylint)
+		assert.Equal(len(lines), b.LinesNum())
+		^
+internal/buffer/line_array_test.go:25:2: len: use assert.Len (testifylint)
+	assert.Equal(t, len(la.lines), 6)
+	^
+internal/buffer/line_array_test.go:35:2: len: use assert.Len (testifylint)
+	assert.Equal(t, len(la.lines), 5)
+	^
+internal/buffer/stack_test.go:24:2: expected-actual: need to reverse actual and expected values (testifylint)
+	assert.Equal(t, p.EventType, TextEventInsert)
+	^
+internal/buffer/stack_test.go:26:2: expected-actual: need to reverse actual and expected values (testifylint)
+	assert.Equal(t, p.EventType, TextEventInsert)
+	^
+internal/buffer/stack_test.go:28:2: expected-actual: need to reverse actual and expected values (testifylint)
+	assert.Equal(t, p.EventType, TextEventReplace)
+	^
+internal/config/colorscheme_test.go:69:2: error-nil: use assert.NoError (testifylint)
+	assert.Nil(t, err)
+	^
+internal/config/rtfiles_test.go:21:2: error-nil: use assert.NoError (testifylint)
+	assert.Nil(t, err)
+	^
+internal/config/rtfiles_test.go:28:2: error-nil: use assert.NoError (testifylint)
+	assert.Nil(t, err)
+	^
+runtime/runtime_test.go:13:2: require-error: for error assertions use require (testifylint)
+	assert.NoError(t, err)
+	^
+runtime/runtime_test.go:15:2: compares: use assert.Greater (testifylint)
+	assert.True(t, len(entries) > 5)
+	^
+internal/buffer/buffer_test.go:1:9: package should be `buffer_test` instead of `buffer` (testpackage)
+package buffer
+        ^
+internal/buffer/line_array_test.go:1:9: package should be `buffer_test` instead of `buffer` (testpackage)
+package buffer
+        ^
+internal/buffer/stack_test.go:1:9: package should be `buffer_test` instead of `buffer` (testpackage)
+package buffer
+        ^
+internal/config/colorscheme_test.go:1:9: package should be `config_test` instead of `config` (testpackage)
+package config
+        ^
+internal/config/plugin_installer_test.go:1:9: package should be `config_test` instead of `config` (testpackage)
+package config
+        ^
+internal/config/rtfiles_test.go:1:9: package should be `config_test` instead of `config` (testpackage)
+package config
+        ^
+internal/util/util_test.go:1:9: package should be `util_test` instead of `util` (testpackage)
+package util
+        ^
+internal/views/splits_test.go:1:9: package should be `views_test` instead of `views` (testpackage)
+package views
+        ^
+internal/buffer/buffer_test.go:118:6: parameter *testing.B should have name b (thelper)
+func benchCreateAndClose(testingB *testing.B, nLines int) {
+     ^
+internal/buffer/buffer_test.go:131:6: parameter *testing.B should have name b (thelper)
+func benchRead(testingB *testing.B, nLines int) {
+     ^
+internal/buffer/buffer_test.go:151:6: parameter *testing.B should have name b (thelper)
+func benchEdit(testingB *testing.B, nLines, nCursors int) {
+     ^
+internal/screen/screen.go:107:17: parameter name 'x' is too short for the scope of its usage (varnamelen)
+func SetContent(x, y int, mainc rune, combc []rune, style tcell.Style) {
+                ^
+internal/clipboard/clipboard.go:109:11: parameter name 'r' is too short for the scope of its usage (varnamelen)
+func read(r Register, m Method) (string, error) {
+          ^
+internal/clipboard/multi.go:38:33: parameter name 'r' is too short for the scope of its usage (varnamelen)
+func (c multiClipboard) isValid(r Register, clipboard string, ncursors int) bool {
+                                ^
+internal/clipboard/clipboard.go:139:25: parameter name 'r' is too short for the scope of its usage (varnamelen)
+func write(text string, r Register, m Method) error {
+                        ^
+pkg/highlight/highlighter.go:306:6: variable name 'i' is too short for the scope of its usage (varnamelen)
+	for i := 0; i < input.LinesNum(); i++ {
+	    ^
+pkg/highlight/highlighter.go:55:6: variable name 'v' is too short for the scope of its usage (varnamelen)
+	for k, v := range src {
+	    ^
+pkg/highlight/unicode.go:76:2: variable name 's' is too short for the scope of its usage (varnamelen)
+	s := 0
+	^
+pkg/highlight/highlighter.go:175:8: variable name 'p' is too short for the scope of its usage (varnamelen)
+			for _, p := range curRegion.rules.patterns {
+			    ^
+pkg/highlight/unicode.go:42:2: variable name 's' is too short for the scope of its usage (varnamelen)
+	c, s := utf8.DecodeRuneInString(str)
+	^
+pkg/highlight/unicode.go:23:2: variable name 'c' is too short for the scope of its usage (varnamelen)
+	c, s := utf8.DecodeRune(b)
+	^
+pkg/highlight/unicode.go:21:2: variable name 'r' is too short for the scope of its usage (varnamelen)
+	r, size := utf8.DecodeRune(b)
+	^
+pkg/highlight/highlighter.go:326:6: variable name 'i' is too short for the scope of its usage (varnamelen)
+	for i := startline; i <= endline; i++ {
+	    ^
+pkg/highlight/parser.go:310:6: variable name 'r' is too short for the scope of its usage (varnamelen)
+					r, err := regexp.Compile(object)
+					^
+pkg/highlight/highlighter.go:27:2: variable name 'i' is too short for the scope of its usage (varnamelen)
+	i := 0
+	^
+pkg/highlight/unicode.go:40:2: variable name 'r' is too short for the scope of its usage (varnamelen)
+	r, size := utf8.DecodeRuneInString(str)
+	^
+pkg/highlight/unicode.go:59:2: variable name 's' is too short for the scope of its usage (varnamelen)
+	s := 0
+	^
+pkg/highlight/unicode.go:20:22: parameter name 'b' is too short for the scope of its usage (varnamelen)
+func DecodeCharacter(b []byte) (rune, []rune, int) {
+                     ^
+pkg/highlight/highlighter.go:44:14: parameter name 'p' is too short for the scope of its usage (varnamelen)
+func runePos(p int, str []byte) int {
+             ^
+pkg/highlight/unicode.go:58:21: parameter name 'b' is too short for the scope of its usage (varnamelen)
+func CharacterCount(b []byte) int {
+                    ^
+pkg/highlight/parser.go:255:42: parameter name 'd' is too short for the scope of its usage (varnamelen)
+func resolveIncludesInDef(files []*File, d *Def) {
+                                         ^
+internal/info/infobuffer.go:153:5: variable name 'h' is too short for the scope of its usage (varnamelen)
+				h := i.History[i.PromptType]
+				^
+internal/info/history.go:126:2: variable name 'c' is too short for the scope of its usage (varnamelen)
+	c := i.Buffer.GetActiveCursor()
+	^
+internal/info/infobuffer.go:43:2: variable name 'ib' is too short for the scope of its usage (varnamelen)
+	ib := new(InfoBuf)
+	^
+internal/display/softwrap.go:250:3: variable name 'rc' is too short for the scope of its usage (varnamelen)
+		rc := w.getRowCount(s.Line)
+		^
+internal/display/infowindow.go:277:5: variable name 'c' is too short for the scope of its usage (varnamelen)
+				c := r
+				^
+internal/display/bufwindow.go:35:2: variable name 'w' is too short for the scope of its usage (varnamelen)
+	w := new(BufWindow)
+	^
+internal/display/bufwindow.go:366:2: variable name 'b' is too short for the scope of its usage (varnamelen)
+	b := w.Buf
+	^
+internal/display/statusline.go:105:2: variable name 'y' is too short for the scope of its usage (varnamelen)
+	y := s.win.Height + s.win.Y - 1
+	^
+internal/display/infowindow.go:43:2: variable name 'iw' is too short for the scope of its usage (varnamelen)
+	iw := new(InfoWindow)
+	^
+internal/display/infowindow.go:206:2: variable name 'x' is too short for the scope of its usage (varnamelen)
+	x := 0
+	^
+internal/display/termwindow.go:75:4: variable name 'b' is too short for the scope of its usage (varnamelen)
+			c, f, b := w.State.Cell(x, y)
+			^
+internal/display/tabwindow.go:95:2: variable name 'x' is too short for the scope of its usage (varnamelen)
+	x := -w.hscroll
+	^
+internal/display/softwrap.go:274:2: variable name 'n' is too short for the scope of its usage (varnamelen)
+	n := 0
+	^
+internal/display/statusline.go:64:2: variable name 'pl' is too short for the scope of its usage (varnamelen)
+	pl := config.FindPlugin(plName)
+	^
+internal/display/bufwindow.go:237:3: variable name 'rw' is too short for the scope of its usage (varnamelen)
+		rw := runewidth.RuneWidth(activeC.RuneUnder(activeC.X))
+		^
+internal/display/statusline.go:187:6: variable name 'x' is too short for the scope of its usage (varnamelen)
+	for x := 0; x < s.win.Width; x++ {
+	    ^
+internal/display/bufwindow.go:259:2: variable name 'vx' is too short for the scope of its usage (varnamelen)
+	vx := svloc.X - w.X - w.gutterOffset
+	^
+internal/display/bufwindow.go:209:2: variable name 'b' is too short for the scope of its usage (varnamelen)
+	b := w.Buf
+	^
+internal/display/bufwindow.go:395:7: variable name 'bp' is too short for the scope of its usage (varnamelen)
+		for _, bp := range buffer.BracePairs {
+		    ^
+internal/display/termwindow.go:77:4: variable name 'bg' is too short for the scope of its usage (varnamelen)
+			fg, bg := int(f), int(b)
+			^
+internal/display/infowindow.go:274:4: variable name 'y' is too short for the scope of its usage (varnamelen)
+			y := i.Y - keymenuOffset - 1
+			^
+internal/display/uiwindow.go:59:3: variable name 'cs' is too short for the scope of its usage (varnamelen)
+		cs := n.Children()
+		^
+internal/display/uiwindow.go:22:2: variable name 'cs' is too short for the scope of its usage (varnamelen)
+	cs := n.Children()
+	^
+internal/display/termwindow.go:71:6: variable name 'l' is too short for the scope of its usage (varnamelen)
+	var l buffer.Loc
+	    ^
+internal/display/bufwindow.go:236:3: variable name 'cx' is too short for the scope of its usage (varnamelen)
+		cx := activeC.GetVisualX()
+		^
+internal/display/bufwindow.go:178:3: variable name 'w' is too short for the scope of its usage (varnamelen)
+		w := 0
+		^
+internal/display/softwrap.go:248:32: parameter name 's' is too short for the scope of its usage (varnamelen)
+func (w *BufWindow) scrollDown(s SLoc, n int) SLoc {
+                               ^
+internal/display/softwrap.go:273:26: parameter name 's1' is too short for the scope of its usage (varnamelen)
+func (w *BufWindow) diff(s1, s2 SLoc) int {
+                         ^
+internal/display/tabwindow.go:71:31: parameter name 'a' is too short for the scope of its usage (varnamelen)
+func (w *TabWindow) SetActive(a int) {
+                              ^
+internal/display/softwrap.go:307:26: parameter name 's1' is too short for the scope of its usage (varnamelen)
+func (w *BufWindow) Diff(s1, s2 SLoc) int {
+                         ^
+internal/display/bufwindow.go:619:4: assigned to width, but reassigned without using the value (wastedassign)
+			width := 0
+			^
+internal/display/infowindow.go:147:3: assigned to width, but reassigned without using the value (wastedassign)
+		width := 0
+		^
+internal/display/softwrap.go:95:3: assigned to width, but reassigned without using the value (wastedassign)
+		width := 0
+		^
+internal/action/command.go:186:2: assigned to idxTo, but reassigned without using the value (wastedassign)
+	idxTo := 0
+	^
+internal/lua/lua.go:37:10: error returned from external package is unwrapped: sig: func (*github.com/yuin/gopher-lua.LState).Load(reader io.Reader, name string) (*github.com/yuin/gopher-lua.LFunction, error) (wrapcheck)
+		return err
+		       ^
+internal/screen/screen.go:172:11: error returned from external package is unwrapped: sig: func github.com/zyedidia/tcell/v2.NewScreen() (github.com/zyedidia/tcell/v2.Screen, error) (wrapcheck)
+			return err
+			       ^
+internal/screen/screen.go:176:10: error returned from interface method should be wrapped: sig: func (github.com/zyedidia/tcell/v2.Screen).Init() error (wrapcheck)
+		return err
+		       ^
+internal/screen/screen.go:204:15: error returned from interface method should be wrapped: sig: func (github.com/zyedidia/tcell/v2.Screen).Init() error (wrapcheck)
+		return nil, err
+		            ^
+internal/clipboard/clipboard.go:144:11: error returned from interface method should be wrapped: sig: func (github.com/zyedidia/clipper.Clipboard).WriteAll(reg string, p []byte) error (wrapcheck)
+			return clipboard.WriteAll(clipper.RegClipboard, []byte(text))
+			       ^
+internal/clipboard/clipboard.go:146:11: error returned from interface method should be wrapped: sig: func (github.com/zyedidia/clipper.Clipboard).WriteAll(reg string, p []byte) error (wrapcheck)
+			return clipboard.WriteAll(clipper.RegPrimary, []byte(text))
+			       ^
+internal/clipboard/terminal.go:32:9: error returned from interface method should be wrapped: sig: func (github.com/zyedidia/tcell/v2.Screen).SetClipboard(string, string) error (wrapcheck)
+	return screen.Screen.SetClipboard(text, reg)
+	       ^
+pkg/highlight/parser.go:117:15: error returned from external package is unwrapped: sig: func regexp.Compile(expr string) (*regexp.Regexp, error) (wrapcheck)
+		return nil, err
+		            ^
+pkg/highlight/parser.go:129:15: error returned from external package is unwrapped: sig: func gopkg.in/yaml.v2.Unmarshal(in []byte, out interface{}) (err error) (wrapcheck)
+		return nil, err
+		            ^
+pkg/highlight/parser.go:143:15: error returned from external package is unwrapped: sig: func regexp.Compile(expr string) (*regexp.Regexp, error) (wrapcheck)
+		return nil, err
+		            ^
+pkg/highlight/parser.go:163:15: error returned from external package is unwrapped: sig: func gopkg.in/yaml.v2.Unmarshal(in []byte, out interface{}) (err error) (wrapcheck)
+		return nil, err
+		            ^
+pkg/highlight/parser.go:178:12: error returned from external package is unwrapped: sig: func gopkg.in/yaml.v2.Unmarshal(in []byte, out interface{}) (err error) (wrapcheck)
+	return f, err
+	          ^
+pkg/highlight/parser.go:312:19: error returned from external package is unwrapped: sig: func regexp.Compile(expr string) (*regexp.Regexp, error) (wrapcheck)
+						return nil, err
+						            ^
+internal/shell/shell.go:26:14: error returned from external package is unwrapped: sig: func (*os/exec.Cmd).Start() error (wrapcheck)
+		return "", err
+		           ^
+internal/shell/shell.go:37:14: error returned from external package is unwrapped: sig: func github.com/kballard/go-shellquote.Split(input string) (words []string, err error) (wrapcheck)
+		return "", err
+		           ^
+internal/shell/shell.go:53:15: error returned from external package is unwrapped: sig: func github.com/kballard/go-shellquote.Split(input string) (words []string, err error) (wrapcheck)
+		return nil, err
+		            ^
+internal/shell/shell.go:74:14: error returned from external package is unwrapped: sig: func github.com/kballard/go-shellquote.Split(input string) (words []string, err error) (wrapcheck)
+		return "", err
+		           ^
+internal/shell/shell.go:120:17: error returned from external package is unwrapped: sig: func (*os/exec.Cmd).Wait() error (wrapcheck)
+	return output, err
+	               ^
+internal/shell/terminal.go:85:10: error returned from external package is unwrapped: sig: func github.com/zyedidia/terminal.Start(state *github.com/zyedidia/terminal.State, cmd *os/exec.Cmd) (*github.com/zyedidia/terminal.VT, *os.File, error) (wrapcheck)
+		return err
+		       ^
+internal/action/actions.go:893:10: error returned from external package is unwrapped: sig: func (*github.com/zyedidia/micro/v2/internal/buffer.Buffer).FindNext(s string, start github.com/zyedidia/micro/v2/internal/buffer.Loc, end github.com/zyedidia/micro/v2/internal/buffer.Loc, from github.com/zyedidia/micro/v2/internal/buffer.Loc, down bool, useRegex bool) ([2]github.com/zyedidia/micro/v2/internal/buffer.Loc, bool, error) (wrapcheck)
+		return err
+		       ^
+internal/action/command.go:513:12: error returned from external package is unwrapped: sig: func github.com/zyedidia/micro/v2/internal/clipboard.Initialize(m github.com/zyedidia/micro/v2/internal/clipboard.Method) error (wrapcheck)
+				return err
+				       ^
+internal/action/command.go:539:9: error returned from external package is unwrapped: sig: func github.com/zyedidia/micro/v2/internal/config.WriteSettings(filename string) error (wrapcheck)
+	return config.WriteSettings(filepath.Join(config.ConfigDir, "settings.json"))
+	       ^
+internal/action/command.go:549:10: error returned from external package is unwrapped: sig: func github.com/zyedidia/micro/v2/internal/config.GetNativeValue(option string, realValue interface{}, value string) (interface{}, error) (wrapcheck)
+		return err
+		       ^
+internal/action/terminal_supported.go:29:10: error returned from external package is unwrapped: sig: func (*github.com/zyedidia/micro/v2/internal/shell.Terminal).Start(execCmd []string, getOutput bool, wait bool, callback func(out string, userargs []interface{}), userargs []interface{}) error (wrapcheck)
+		return err
+		       ^
+cmd/micro/initlua.go:134:10: error returned from external package is unwrapped: sig: func github.com/zyedidia/micro/v2/internal/buffer.NewBufferFromFile(path string, btype github.com/zyedidia/micro/v2/internal/buffer.BufType) (*github.com/zyedidia/micro/v2/internal/buffer.Buffer, error) (wrapcheck)
+		return buffer.NewBufferFromFile(path, buffer.BTDefault)
+		       ^
+cmd/micro/micro_test.go:31:15: error returned from external package is unwrapped: sig: func io/ioutil.TempDir(dir string, pattern string) (name string, err error) (wrapcheck)
+		return nil, err
+		            ^
+cmd/micro/micro_test.go:35:15: error returned from external package is unwrapped: sig: func github.com/zyedidia/micro/v2/internal/config.InitConfigDir(flagConfigDir string) error (wrapcheck)
+		return nil, err
+		            ^
+cmd/micro/micro_test.go:41:15: error returned from external package is unwrapped: sig: func github.com/zyedidia/micro/v2/internal/config.ReadSettings() error (wrapcheck)
+		return nil, err
+		            ^
+cmd/micro/micro_test.go:45:15: error returned from external package is unwrapped: sig: func github.com/zyedidia/micro/v2/internal/config.InitGlobalSettings() error (wrapcheck)
+		return nil, err
+		            ^
+cmd/micro/micro_test.go:50:15: error returned from external package is unwrapped: sig: func github.com/zyedidia/micro/v2/internal/screen.InitSimScreen() (github.com/zyedidia/tcell/v2.SimulationScreen, error) (wrapcheck)
+		return nil, err
+		            ^
+cmd/micro/micro_test.go:76:15: error returned from external package is unwrapped: sig: func github.com/zyedidia/micro/v2/internal/config.InitColorscheme() error (wrapcheck)
+		return nil, err
+		            ^
+cmd/micro/micro_test.go:90:15: error returned from external package is unwrapped: sig: func github.com/zyedidia/micro/v2/internal/config.RunPluginFn(fn string, args ...github.com/yuin/gopher-lua.LValue) error (wrapcheck)
+		return nil, err
+		            ^
+cmd/micro/micro_test.go:155:14: error returned from external package is unwrapped: sig: func io/ioutil.TempFile(dir string, pattern string) (f *os.File, err error) (wrapcheck)
+		return "", err
+		           ^
+cmd/micro/micro_test.go:159:14: error returned from external package is unwrapped: sig: func (*os.File).Write(b []byte) (n int, err error) (wrapcheck)
+		return "", err
+		           ^
+cmd/micro/micro_test.go:162:14: error returned from external package is unwrapped: sig: func (*os.File).Close() error (wrapcheck)
+		return "", err
+		           ^
+internal/buffer/buffer.go:234:15: error returned from external package is unwrapped: sig: func github.com/zyedidia/micro/v2/internal/util.ReplaceHome(path string) (string, error) (wrapcheck)
+		return nil, err
+		            ^
+internal/buffer/buffer.go:243:15: error returned from external package is unwrapped: sig: func os.Stat(name string) (io/fs.FileInfo, error) (wrapcheck)
+		return nil, serr
+		            ^
+internal/buffer/buffer.go:259:15: error returned from external package is unwrapped: sig: func os.Open(name string) (*os.File, error) (wrapcheck)
+		return nil, err
+		            ^
+internal/buffer/buffer.go:538:10: error returned from external package is unwrapped: sig: func os.Open(name string) (*os.File, error) (wrapcheck)
+		return err
+		       ^
+internal/buffer/buffer.go:543:10: error returned from external package is unwrapped: sig: func golang.org/x/text/encoding/htmlindex.Get(name string) (golang.org/x/text/encoding.Encoding, error) (wrapcheck)
+		return err
+		       ^
+internal/buffer/buffer.go:551:10: error returned from external package is unwrapped: sig: func io/ioutil.ReadAll(r io.Reader) ([]byte, error) (wrapcheck)
+		return err
+		       ^
+internal/buffer/buffer.go:652:11: error returned from interface method should be wrapped: sig: func (io.Writer).Write(p []byte) (n int, err error) (wrapcheck)
+			return e
+			       ^
+internal/buffer/buffer.go:659:12: error returned from interface method should be wrapped: sig: func (io.Writer).Write(p []byte) (n int, err error) (wrapcheck)
+				return e
+				       ^
+internal/buffer/buffer.go:664:12: error returned from interface method should be wrapped: sig: func (io.Writer).Write(p []byte) (n int, err error) (wrapcheck)
+				return e
+				       ^
+internal/buffer/buffer.go:1116:19: error returned from external package is unwrapped: sig: func strconv.Atoi(s string) (int, error) (wrapcheck)
+	return startpos, err
+	                 ^
+internal/buffer/save.go:84:11: error returned from external package is unwrapped: sig: func (*os/exec.Cmd).Wait() error (wrapcheck)
+			return err
+			       ^
+internal/buffer/save.go:157:13: error returned from external package is unwrapped: sig: func os.MkdirAll(path string, perm io/fs.FileMode) error (wrapcheck)
+					return mkdirallErr
+					       ^
+internal/buffer/save.go:169:10: error returned from external package is unwrapped: sig: func golang.org/x/text/encoding/htmlindex.Get(name string) (golang.org/x/text/encoding.Encoding, error) (wrapcheck)
+		return err
+		       ^
+internal/buffer/settings.go:94:10: error returned from external package is unwrapped: sig: func github.com/zyedidia/micro/v2/internal/config.GetNativeValue(option string, realValue interface{}, value string) (interface{}, error) (wrapcheck)
+		return err
+		       ^
+internal/config/plugin.go:96:11: error returned from interface method should be wrapped: sig: func (github.com/zyedidia/micro/v2/internal/config.RuntimeFile).Data() ([]byte, error) (wrapcheck)
+			return err
+			       ^
