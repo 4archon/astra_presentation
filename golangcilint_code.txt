@@ -1,0 +1,219 @@
+$$$
+	bloc := buffer.Loc{0, lineN}
+	        ^
+$$$
+	return buffer.Loc{c.GetCharPosInLine(l, vloc.X-n), 0}
+	       ^
+$$$
+func (i *InfoWindow) LocFromVLoc(vloc VLoc) buffer.Loc { return buffer.Loc{vloc.VisualX, 0} }
+                                                                ^
+$$$
+	L.SetField(pkg, "HasPrefix", luar.New(L, filepath.HasPrefix))
+	                                         ^
+$$$
+func combineLineMatch(src, dst LineMatch) LineMatch {
+     ^
+$$$
+				b.Backup()
+				        ^
+$$$
+		os.Mkdir(backupdir, os.ModePerm)
+		        ^
+$$$
+		config.InitLocalSettings(settings, absPath)
+		                        ^
+$$$
+		b.UpdateModTime()
+		               ^
+$$$
+	config.InitLocalSettings(b.Settings, b.Path)
+	                        ^
+$$$
+		os.Mkdir(filepath.Join(config.ConfigDir, "buffers"), os.ModePerm)
+		        ^
+$$$
+			calcHash(b, &b.origHash)
+			        ^
+$$$
+		b.Serialize()
+		           ^
+$$$
+		calcHash(b, &b.origHash)
+		        ^
+$$$
+	calcHash(b, &buff)
+	        ^
+$$$
+	config.InitGlobalSettings()
+	                         ^
+$$$
+			clipboard.WriteMulti(string(c.GetSelection()), target, c.Num, c.buf.NumCursors())
+			                    ^
+$$$
+			cmd.Process.Kill()
+			                ^
+$$$
+		config.InitLocalSettings(b.Settings, b.Path)
+		                        ^
+$$$
+						pl.Load()
+						       ^
+$$$
+const backupTime = 8000
+      ^
+$$$
+	toStdout bool
+	^
+$$$
+func (la *LineArray) deleteByte(pos Loc) {
+                     ^
+$$$
+		for _, l := range b.lines[1:] {
+		       ^
+$$$
+		for _, l := range b.lines[1:] {
+		       ^
+$$$
+	for i, c := range data {
+	       ^
+$$$
+		slice[l+i] = c
+		             ^
+$$$
+	for i, l := range la.lines {
+	       ^
+$$$
+		proc.Run()
+		        ^
+$$$
+	j.Process.Kill()
+	              ^
+$$$
+	j.Stdin.Write([]byte(data))
+	             ^
+$$$
+			cmd.Process.Kill()
+			                ^
+$$$
+	cmd.Start()
+	         ^
+$$$
+				Term.Write([]byte("Press enter to close"))
+				          ^
+$$$
+	t.Term.File().WriteString(str)
+	                         ^
+$$$
+	reader.ReadString('\n')
+	                 ^
+$$$
+	screen.Screen.GetClipboard(reg)
+	                          ^
+$$$
+		content = make([]string, ncursors, ncursors)
+		                         ^
+$$$
+	lineNum int
+	^
+$$$
+	msg     string
+	^
+$$$
+	kind    int
+	^
+$$$
+		b.Save()
+		      ^
+$$$
+				clipboard.WriteMulti(clip+string(h.Cursor.GetSelection()), clipboard.ClipboardReg, h.Cursor.Num, h.Buf.NumCursors())
+				                    ^
+$$$
+		h.openHelp("help")
+		          ^
+$$$
+			shell.RunInteractiveShell(resp, true, false)
+			                         ^
+$$$
+		ioutil.WriteFile(fname, []byte("{}"), 0644)
+		                ^
+$$$
+	config.RunPluginFn("onBufPaneOpen", luar.New(ulua.L, h))
+	                  ^
+$$$
+					h.Buf.UpdateModTime()
+					                   ^
+$$$
+					h.Buf.ReOpen()
+					            ^
+$$$
+			h.Buf.ReOpen()
+			            ^
+$$$
+				h.Buf.ReOpen()
+				            ^
+$$$
+		h.openHelp("help")
+		          ^
+$$$
+			config.InitColorscheme()
+			                      ^
+$$$
+						pl.Load()
+						       ^
+$$$
+		b.SetOptionNative(option, nativeValue)
+		                 ^
+$$$
+		h.Buf.SetOptionNative(option, defaultLocals[option])
+		                     ^
+$$$
+		h.Buf.SaveAs(args[0])
+		            ^
+$$$
+			clipboard.Write(t.GetSelection(t.GetView().Width), clipboard.ClipboardReg)
+			               ^
+$$$
+func contains(s []string, e string) bool {
+     ^
+$$$
+	v.StartLine = display.SLoc{0, 0}
+	              ^
+$$$
+	if h.Diff(display.SLoc{0, 0}, sloc) < height {
+	          ^
+$$$
+		v.StartLine = display.SLoc{0, 0}
+		              ^
+$$$
+	config.WriteSettings(filepath.Join(config.ConfigDir, "settings.json"))
+	                    ^
+$$$
+		config.LoadAllPlugins()
+		                     ^
+$$$
+				b.Backup()
+				        ^
+$$$
+			b.Save()
+			      ^
+$$$
+				b.Backup()
+				        ^
+$$$
+	autosave chan bool
+	^
+$$$
+type namedFile struct {
+     ^
+$$$
+func (nf namedFile) Name() string {
+                    ^
+$$$
+	os.MkdirAll(dest, 0755)
+	           ^
+$$$
+			os.MkdirAll(path, f.Mode())
+			           ^
+$$$
+			os.MkdirAll(filepath.Dir(path), f.Mode())
+			           ^

@@ -1,0 +1,456 @@
+
+
+Security Report
+
+=====================================
+
+Rules: 
+https://docs.bearer.com/reference/rules [v0.32.0]
+
+Language  Default Rules  Custom Rules  Files  
+Go        55             0             95     
+
+
+HIGH: Unsanitized dynamic input in OS command [CWE-78]
+https://docs.bearer.com/reference/rules/go_gosec_injection_subproc_injection
+To ignore this finding, run: bearer ignore add 3ec452176b6ffa5248fbd92448220c45_0
+
+File: micro/internal/action/command.go:146
+
+ 146 	cmd := exec.Command(args[0], args[1:]...)
+
+HIGH: Unsanitized dynamic input in OS command [CWE-78]
+https://docs.bearer.com/reference/rules/go_gosec_injection_subproc_injection
+To ignore this finding, run: bearer ignore add cff73d62736c07e9cf0aefd39413d9fd_0
+
+File: micro/internal/buffer/save.go:36
+
+ 36 		cmd = exec.Command(config.GlobalSettings["sucmd"].(string), "dd", "bs=4k", "of="+name)
+
+HIGH: Unsanitized dynamic input in OS command [CWE-78]
+https://docs.bearer.com/reference/rules/go_gosec_injection_subproc_injection
+To ignore this finding, run: bearer ignore add 1d6b6afdc0ac65c5f1506a1b18ff1290_0
+
+File: micro/internal/shell/job.go:64
+
+ 64 	proc := exec.Command(cmdName, cmdArgs...)
+
+HIGH: Unsanitized dynamic input in OS command [CWE-78]
+https://docs.bearer.com/reference/rules/go_gosec_injection_subproc_injection
+To ignore this finding, run: bearer ignore add 536066f654ed5c14f070ee614260132e_0
+
+File: micro/internal/shell/terminal.go:77
+
+ 77 	cmd := exec.Command(execCmd[0], execCmd[1:]...)
+
+HIGH: Usage of weak hashing library (MD5) [CWE-328]
+https://docs.bearer.com/reference/rules/go_lang_weak_hash_md5
+To ignore this finding, run: bearer ignore add 925e358b4ca94123d9b3b2a23cbb7cdf_0
+
+File: micro/internal/buffer/buffer.go:674
+
+ 674 	h.Sum((*out)[:0])
+
+LOW: Import of weak hashing library (MD5) [CWE-328]
+https://docs.bearer.com/reference/rules/go_gosec_blocklist_md5
+To ignore this finding, run: bearer ignore add fc126037eb82de685fb913b81a4970ca_0
+
+File: micro/internal/buffer/buffer.go:6
+
+ 6 	"crypto/md5"
+
+LOW: Usage of weak hashing library [CWE-327]
+https://docs.bearer.com/reference/rules/go_gosec_crypto_weak_crypto
+To ignore this finding, run: bearer ignore add 806a13d2056ff0a78671c094e0e9ec28_0
+
+File: micro/internal/buffer/buffer.go:646
+
+ 646 	h := md5.New()
+
+LOW: Permissive file assignment [CWE-276]
+https://docs.bearer.com/reference/rules/go_gosec_file_permissions_file_perm
+To ignore this finding, run: bearer ignore add 55840dafa30f29cf5d5703d42bc4d74f_0
+
+File: micro/cmd/micro/debug.go:21
+
+ 21 		f, err := os.OpenFile("log.txt", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0666)
+
+LOW: Permissive file assignment [CWE-276]
+https://docs.bearer.com/reference/rules/go_gosec_file_permissions_file_perm
+To ignore this finding, run: bearer ignore add 61d96badf006e88017fb3dafdcc6230d_0
+
+File: micro/internal/buffer/save.go:57
+
+ 57 	} else if writeCloser, err = os.OpenFile(name, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644); err != nil {
+
+LOW: Missing configuration against decompression bomb [CWE-327]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_decompression_bomb
+To ignore this finding, run: bearer ignore add f944646590a5d06a6f7682d45af786b2_0
+
+File: micro/internal/config/plugin_installer.go:461
+
+ 461 			if _, err = io.Copy(target, content); err != nil {
+
+LOW: Unsanitized user input in file path [CWE-73]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_filereadtaint
+To ignore this finding, run: bearer ignore add d4f74c519b2fc98b7210177cfd4c80b0_0
+
+File: micro/internal/buffer/buffer.go:237
+
+ 237 	f, err := os.OpenFile(filename, os.O_WRONLY, 0)
+
+LOW: Unsanitized user input in file path [CWE-73]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_filereadtaint
+To ignore this finding, run: bearer ignore add d4f74c519b2fc98b7210177cfd4c80b0_1
+
+File: micro/internal/buffer/buffer.go:249
+
+ 249 	file, err := os.Open(filename)
+
+LOW: Unsanitized user input in file path [CWE-73]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_filereadtaint
+To ignore this finding, run: bearer ignore add 7b6e8233976c9c0e8a89b7e39bdc9c12_0
+
+File: micro/internal/buffer/save.go:57
+
+ 57 	} else if writeCloser, err = os.OpenFile(name, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644); err != nil {
+
+LOW: Unsanitized user input in file path [CWE-73]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_filereadtaint
+To ignore this finding, run: bearer ignore add a34e0217ea9316531aae2251d3e052bd_0
+
+File: micro/runtime/syntax/make_headers.go:46
+
+ 46 	source, err := ioutil.ReadFile(filename)
+
+LOW: Unsanitized user input in file path [CWE-73]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_filereadtaint
+To ignore this finding, run: bearer ignore add a34e0217ea9316531aae2251d3e052bd_1
+
+File: micro/runtime/syntax/make_headers.go:67
+
+ 67 	data, _ := ioutil.ReadFile(name + ".hdr")
+
+LOW: Unsanitized user input in file path [CWE-73]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_filereadtaint
+To ignore this finding, run: bearer ignore add d4fbc66830025a115ba3ce844602b5b2_0
+
+File: micro/tools/testgen.go:213
+
+ 213 		source, err := ioutil.ReadFile(filename)
+
+LOW: Permissive file creation [CWE-276]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_poor_write_permissions
+To ignore this finding, run: bearer ignore add 80693bdf38eb57459f030be63562565c_0
+
+File: micro/internal/action/bindings.go:28
+
+ 28 		ioutil.WriteFile(fname, []byte("{}"), 0644)
+
+LOW: Permissive file creation [CWE-276]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_poor_write_permissions
+To ignore this finding, run: bearer ignore add 80693bdf38eb57459f030be63562565c_1
+
+File: micro/internal/action/bindings.go:288
+
+ 288 		return true, ioutil.WriteFile(filename, append(txt, '\n'), 0644)
+
+LOW: Permissive file creation [CWE-276]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_poor_write_permissions
+To ignore this finding, run: bearer ignore add 80693bdf38eb57459f030be63562565c_2
+
+File: micro/internal/action/bindings.go:334
+
+ 334 		return ioutil.WriteFile(filename, append(txt, '\n'), 0644)
+
+LOW: Permissive file creation [CWE-276]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_poor_write_permissions
+To ignore this finding, run: bearer ignore add 261391048edaf8164c79ca8692e04e5d_0
+
+File: micro/internal/config/settings.go:192
+
+ 192 		err = ioutil.WriteFile(filename, append(txt, '\n'), 0644)
+
+LOW: Permissive file creation [CWE-276]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_poor_write_permissions
+To ignore this finding, run: bearer ignore add 261391048edaf8164c79ca8692e04e5d_1
+
+File: micro/internal/config/settings.go:214
+
+ 214 		err = ioutil.WriteFile(filename, append(txt, '\n'), 0644)
+
+LOW: Permissive file creation [CWE-276]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_poor_write_permissions
+To ignore this finding, run: bearer ignore add a882627ab3ca2c10e4c5f6bb50207890_0
+
+File: micro/tools/info-plist.go:44
+
+ 44 			err := ioutil.WriteFile("/tmp/micro-info.plist", infoPlistData, 0644)
+
+LOW: Permissive temporary file creation [CWE-378]
+https://docs.bearer.com/reference/rules/go_gosec_filesystem_tempfile
+To ignore this finding, run: bearer ignore add 68dda117713db822fb709ad135768b4c_0
+
+File: micro/tools/info-plist.go:44
+
+ 44 			err := ioutil.WriteFile("/tmp/micro-info.plist", infoPlistData, 0644)
+
+LOW: Unsanitized user input in HTTP request (SSRF) [CWE-918]
+https://docs.bearer.com/reference/rules/go_gosec_injection_ssrf_injection
+To ignore this finding, run: bearer ignore add 074e54e098ad067872c2c4f80b811f75_0
+
+File: micro/internal/util/util.go:501
+
+ 501 	req, err := http.NewRequest(method, url, nil)
+
+LOW: Unsanitized user input in deserialization method [CWE-502]
+https://docs.bearer.com/reference/rules/go_lang_deserialization_of_user_input
+To ignore this finding, run: bearer ignore add cf303ded359e053c6a75265515a7967c_0
+
+File: micro/pkg/highlight/parser.go:127
+
+ 127 	err := yaml.Unmarshal(data, &hdrYaml)
+
+LOW: Unsanitized user input in deserialization method [CWE-502]
+https://docs.bearer.com/reference/rules/go_lang_deserialization_of_user_input
+To ignore this finding, run: bearer ignore add cf303ded359e053c6a75265515a7967c_1
+
+File: micro/pkg/highlight/parser.go:162
+
+ 162 	if err = yaml.Unmarshal(input, &rules); err != nil {
+
+LOW: Unsanitized user input in deserialization method [CWE-502]
+https://docs.bearer.com/reference/rules/go_lang_deserialization_of_user_input
+To ignore this finding, run: bearer ignore add 931ae402df6db397e99742b21a2500d7_0
+
+File: micro/runtime/syntax/make_headers.go:50
+
+ 50 	err = yaml.Unmarshal(source, &hdr)
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 4dd5ce08a64fdc86820b4049e8114c8b_0
+
+File: micro/cmd/micro/micro.go:172
+
+ 172 	flagr := regexp.MustCompile(`^\+(\d+)(?::(\d+))?$`)
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add f65ba6ec9b9bb649ab23a36029b80d0b_0
+
+File: micro/internal/action/bindings.go:105
+
+ 105 var r = regexp.MustCompile("<(.+?)>")
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 0f3c8780647578ee600cd5b2bb40852b_0
+
+File: micro/internal/action/command.go:794
+
+ 794 		regex, err = regexp.Compile("(?im)" + search)
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 0f3c8780647578ee600cd5b2bb40852b_1
+
+File: micro/internal/action/command.go:796
+
+ 796 		regex, err = regexp.Compile("(?m)" + search)
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 8b149d15f6d7581134a2d3d7707efeb9_0
+
+File: micro/internal/buffer/search.go:123
+
+ 123 		r, err = regexp.Compile("(?i)" + s)
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 99ce6bb7b55d8f2ba7bb21c2c7273f3b_0
+
+File: micro/internal/config/colorscheme.go:86
+
+ 86 	parser := regexp.MustCompile(`color-link\s+(\S*)\s+"(.*)"`)
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 90987968e09e07a3a9fc378602398aee_0
+
+File: micro/internal/config/rtfiles.go:186
+
+ 186 	isID := regexp.MustCompile(`^[_A-Za-z0-9]+$`).MatchString
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 09ed8c1ea93bb38c523754214f8505b4_0
+
+File: micro/internal/display/statusline.go:100
+
+ 100 var formatParser = regexp.MustCompile(`\$\(.+?\)`)
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 0d6f5a9edc7413ffb051c77f4472a833_0
+
+File: micro/internal/util/util.go:318
+
+ 318 	re := regexp.MustCompile(`([\s\S]+?)(?::(\d+))(?::(\d+))?`)
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 57989cfdda6e605a15f24a5ab1367027_0
+
+File: micro/runtime/syntax/syntax_converter.go:36
+
+ 36 	syntaxParser := regexp.MustCompile(`syntax "(.*?)"\s+"(.*)"+`)
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 57989cfdda6e605a15f24a5ab1367027_1
+
+File: micro/runtime/syntax/syntax_converter.go:38
+
+ 38 	headerParser := regexp.MustCompile(`header "(.*)"`)
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 57989cfdda6e605a15f24a5ab1367027_2
+
+File: micro/runtime/syntax/syntax_converter.go:41
+
+ 41 	ruleParser := regexp.MustCompile(`color (.*?)\s+(?:\((.+?)?\)\s+)?"(.*)"`)
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 57989cfdda6e605a15f24a5ab1367027_3
+
+File: micro/runtime/syntax/syntax_converter.go:43
+
+ 43 	ruleStartEndParser := regexp.MustCompile(`color (.*?)\s+(?:\((.+?)?\)\s+)?start="(.*)"\s+end="(.*)"`)
+
+LOW: Missing validation for regular expression [CWE-625]
+https://docs.bearer.com/reference/rules/go_lang_permissive_regex_validation
+To ignore this finding, run: bearer ignore add 3dd093459ad67aa1a372e13cb276da53_0
+
+File: micro/tools/testgen.go:235
+
+ 235 	re := regexp.MustCompile(`[^\w]`)
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add 0abc7b5006ee8327cc6df0d29ab646a0_0
+
+File: micro/cmd/micro/debug.go:23
+
+ 23 			log.Fatalf("error opening file: %v", err)
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add b9f5363069485ed24aca8022e7a2332f_0
+
+File: micro/cmd/micro/micro.go:244
+
+ 244 			log.Fatal("error creating CPU profile: ", err)
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add b9f5363069485ed24aca8022e7a2332f_1
+
+File: micro/cmd/micro/micro.go:247
+
+ 247 			log.Fatal("error starting CPU profile: ", err)
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add b9f5363069485ed24aca8022e7a2332f_2
+
+File: micro/cmd/micro/micro.go:352
+
+ 352 		log.Println(clipErr, " or change 'clipboard' option")
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add b9f5363069485ed24aca8022e7a2332f_3
+
+File: micro/cmd/micro/micro.go:453
+
+ 453 		log.Println("tcell event error: ", e.Error())
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add 8ae2d74c918c72aef847a415452223a2_0
+
+File: micro/internal/config/plugin.go:112
+
+ 112 		log.Println("Plugin does not exist:", p.Name, "at", p.DirName, ":", p)
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add 9a75c1f7e43c42f4a25d3566a73addc6_0
+
+File: micro/internal/config/rtfiles.go:212
+
+ 212 				log.Println(p.Name, "is not a plugin")
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add 9a75c1f7e43c42f4a25d3566a73addc6_1
+
+File: micro/internal/config/rtfiles.go:243
+
+ 243 					log.Println(p.Name, "is not a plugin")
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add 251667195454cabeeb2a17be3fa11dbd_0
+
+File: micro/internal/screen/screen.go:167
+
+ 167 		log.Println("Warning: during screen initialization:", err)
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add 08fe96e1cec7bfef79d1b71fd6609bfc_0
+
+File: micro/internal/util/profile.go:20
+
+ 20 	log.Println("START:", s)
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add 08fe96e1cec7bfef79d1b71fd6609bfc_1
+
+File: micro/internal/util/profile.go:26
+
+ 26 	log.Println("END: ElapsedTime in seconds:", end.Sub(start))
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add f786ee833bf9fc3805a93590e8890c37_0
+
+File: micro/tools/testgen.go:215
+
+ 215 			log.Fatalln(err)
+
+WARNING: Leakage of information in logger message [CWE-532]
+https://docs.bearer.com/reference/rules/go_lang_logger_leak
+To ignore this finding, run: bearer ignore add f786ee833bf9fc3805a93590e8890c37_1
+
+File: micro/tools/testgen.go:220
+
+ 220 			log.Fatalln(err)
+=====================================
+
+55 checks, 54 findings
+
+CRITICAL: 0
+HIGH: 5 (CWE-328, CWE-78)
+MEDIUM: 0
+LOW: 36 (CWE-276, CWE-327, CWE-328, CWE-378, CWE-502, CWE-625, CWE-73, CWE-918)
+WARNING: 13 (CWE-532)
+
+Need help or want to discuss the output? Join the Community https://discord.gg/eaHZBJUXRF
+

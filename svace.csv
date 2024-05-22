@@ -1,0 +1,100 @@
+error;;desc;;row;;file
+DEREF_OF_NULL.EX;;After having been assigned to a nil value at buffer.go:304, pointer '&b.SharedBuffer.Settings' is dereferenced at buffer.go:381.;;381;;micro/internal/buffer/buffer.go
+DEREF_OF_NULL.GLOBAL;;Uninitialized data is read from global variable 'github.com/zyedidia/micro/v2/internal/lua.L' at lua.go:34.;;34;;micro/internal/lua/lua.go
+DEREF_OF_NULL.GLOBAL;;Uninitialized data is read from global variable 'github.com/zyedidia/micro/v2/internal/buffer.LogBuf' at buffer.go:1421.;;1421;;micro/internal/buffer/buffer.go
+DEREF_OF_NULL.RET;;Pointer 'n', returned from function 'views.Node.GetNode' at tab.go:365, may be nil and is dereferenced at tab.go:368.;;368;;micro/internal/action/tab.go
+DEREF_OF_NULL.RET;;Pointer 'n', returned from function 'views.Node.GetNode' at termpane.go:114, may be nil and is passed as implicit 'this' parameter in call to function 'views.Node.Unsplit' at termpane.go:115, where it is dereferenced at splits.go:464.;;115;;micro/internal/action/termpane.go
+DEREF_OF_NULL.RET;;Pointer 'n', returned from function 'views.Node.GetNode' at actions.go:1691, may be nil and is passed as implicit 'this' parameter in call to function 'views.Node.Unsplit' at actions.go:1692, where it is dereferenced at splits.go:464.;;1692;;micro/internal/action/actions.go
+DEREF_OF_NULL.RET;;Pointer 'n', returned from function 'views.Node.GetNode' at bufpane.go:323, may be nil and is passed as implicit 'this' parameter in call to function 'views.Node.ResizeSplit' at bufpane.go:324, where it is dereferenced at splits.go:189.;;324;;micro/internal/action/bufpane.go
+DEREF_OF_NULL.RET;;Pointer 'github.com/zyedidia/micro/v2/pkg/highlight.ParseDef(searchFile, nil)', returned from function 'highlight.ParseDef' at parser.go:311, may be nil and is dereferenced at parser.go:312.;;312;;micro/pkg/highlight/parser.go
+DEREF_OF_NULL.RET;;Pointer 'github.com/zyedidia/micro/v2/pkg/highlight.ParseDef(searchFile, nil)', returned from function 'highlight.ParseDef' at parser.go:327, may be nil and is dereferenced at parser.go:328.;;328;;micro/pkg/highlight/parser.go
+DEREF_OF_NULL.RET;;Pointer '(*github.com/zyedidia/micro/v2/internal/action.Tab).CurPane(github.com/zyedidia/micro/v2/internal/action.MainTab())', returned from function 'action.Tab.CurPane' at command.go:519, may be nil and is dereferenced at command.go:519.;;519;;micro/internal/action/command.go
+DEREF_OF_NULL.RET;;Pointer '(*github.com/zyedidia/micro/v2/internal/action.Tab).CurPane(github.com/zyedidia/micro/v2/internal/action.MainTab())', returned from function 'action.Tab.CurPane' at tab.go:208, may be nil and is passed as implicit 'this' parameter in call to function 'action.BufPane.HSplitBuf' at tab.go:208, where it is dereferenced at bufpane.go:694.;;208;;zyedidia/micro/v2/internal/action.Tab).CurPane(github.com/zyedidia/micro/v2/internal/action.MainTab())' is returned from function 'action.BufPane.HSplitBuf' at /micro/internal/action/tab.go
+DEREF_OF_NULL.RET;;Pointer '(*github.com/zyedidia/micro/v2/internal/action.Tab).CurPane(github.com/zyedidia/micro/v2/internal/action.MainTab())', returned from function 'action.Tab.CurPane' at tab.go:206, may be nil and is passed as implicit 'this' parameter in call to function 'action.BufPane.VSplitBuf' at tab.go:206, where it is dereferenced at bufpane.go:689.;;206;;zyedidia/micro/v2/internal/action.Tab).CurPane(github.com/zyedidia/micro/v2/internal/action.MainTab())' is returned from function 'action.BufPane.VSplitBuf' at /micro/internal/action/tab.go
+DEREF_OF_NULL.RET;;Pointer '(*github.com/zyedidia/micro/v2/internal/views.Node).GetNode(github.com/zyedidia/micro/v2/internal/action.MainTab().Node, h.splitID)', returned from function 'views.Node.GetNode' at bufpane.go:680, may be nil and is passed as implicit 'this' parameter in call to function 'views.Node.HSplit' at bufpane.go:680, where it is dereferenced at splits.go:413.;;680;;zyedidia/micro/v2/internal/views.Node).GetNode(github.com/zyedidia/micro/v2/internal/action.MainTab().Node, h.splitID)' is returned from function 'views.Node.HSplit' at /micro/internal/action/bufpane.go
+DEREF_OF_NULL.RET;;Pointer '(*github.com/zyedidia/micro/v2/internal/views.Node).GetNode(github.com/zyedidia/micro/v2/internal/action.MainTab().Node, h.splitID)', returned from function 'views.Node.GetNode' at bufpane.go:670, may be nil and is passed as implicit 'this' parameter in call to function 'views.Node.VSplit' at bufpane.go:670, where it is dereferenced at splits.go:429.;;670;;zyedidia/micro/v2/internal/views.Node).GetNode(github.com/zyedidia/micro/v2/internal/action.MainTab().Node, h.splitID)' is returned from function 'views.Node.VSplit' at /micro/internal/action/bufpane.go
+DIVISION_BY_ZERO.EX;;Variable tabsLen, whose possible value set allows a zero value at actions.go:1659 by calling function 'builtin.len', is used as a denominator at actions.go:1661.;;1661;;micro/internal/action/actions.go
+DIVISION_BY_ZERO.EX;;Variable tabBytes, whose possible value set allows a zero value at actions.go:777 by calling function 'builtin.len', is used as a denominator at actions.go:778.;;778;;micro/internal/action/actions.go
+DIVISION_BY_ZERO.EX;;Variable len(Tabs.List), whose possible value set allows a zero value at actions.go:1669 by calling function 'builtin.len', is used as a denominator at actions.go:1669.;;1669;;micro/internal/action/actions.go
+DIVISION_BY_ZERO.EX;;Variable (*github.com/zyedidia/micro/v2/internal/buffer.LineArray).LinesNum(b.SharedBuffer.LineArray), whose possible value set allows a zero value at line_array.go:316 by calling function 'buffer.LineArray.LinesNum' at statusline.go:54, is used as a denominator at statusline.go:54.;;54;;micro/internal/display/statusline.go
+DIVISION_BY_ZERO.EX.FLOAT;;Variable float64(loaded) with a floating-point type whose possible value set allows a zero value at line_array.go:135 is used as a denominator at line_array.go:135, leading to undefined program behaviour.;;135;;micro/internal/buffer/line_array.go
+DIVISION_BY_ZERO.EX.FLOAT;;Variable float64((*github.com/zyedidia/micro/v2/internal/buffer.LineArray).LinesNum(w.Buf.SharedBuffer.LineArray)) with a floating-point type whose possible value set allows a zero value at bufwindow.go:817 is used as a denominator at bufwindow.go:817, leading to undefined program behaviour.;;817;;micro/internal/display/bufwindow.go
+DIVISION_BY_ZERO.EX.FLOAT;;Variable float64((*github.com/zyedidia/micro/v2/internal/buffer.LineArray).LinesNum(w.Buf.SharedBuffer.LineArray)) with a floating-point type whose possible value set allows a zero value at bufwindow.go:821 is used as a denominator at bufwindow.go:821, leading to undefined program behaviour.;;821;;micro/internal/display/bufwindow.go
+DOUBLE_CLOSE;;Handler 'cmd.Process' is passed to a function at shell.go:103 by calling function 'os.Process.Kill' after the handler is closed again at shell.go:103 by calling function 'os.Process.Kill'.;;103;;micro/internal/shell/shell.go
+HANDLE_LEAK;;The handle 'file' is created at history.go:18 by calling function 'os.Open' and lost at history.go:39.;;18;;micro/internal/info/history.go
+HANDLE_LEAK;;The handle 'file' is created at buffer.go:536 by calling function 'os.Open' and lost at buffer.go:543.;;536;;micro/internal/buffer/buffer.go
+HANDLE_LEAK;;The handle 'backup' is created at backup.go:126 by calling function 'os.Open' and lost at backup.go:148.;;126;;micro/internal/buffer/backup.go
+HANDLE_LEAK;;The handle 'file' is created at history.go:52 by calling function 'os.Create' and lost at history.go:64.;;52;;micro/internal/info/history.go
+HANDLE_LEAK;;The handle 'os.OpenFile(name, 577, 438)'s value 0' is created at save.go:57 by calling function 'os.OpenFile' and lost at save.go:84.;;57;;micro/internal/buffer/save.go
+INFINITE_LOOP.GOROUTINE: The loop is infinite at micro.go:371 since all exit conditions are false. Note;;The loop is infinite at micro.go:371 since all exit conditions are false. Note: function 'main.main$3' is used as a go routine.;;371;;micro/cmd/micro/micro.go
+INFINITE_LOOP.GOROUTINE: The loop is infinite at backup.go:35 since all exit conditions are false. Note;;The loop is infinite at backup.go:35 since all exit conditions are false. Note: function 'buffer.backupThread' is used as a go routine.;;35;;micro/internal/buffer/backup.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'b' at bufpane.go:335 without error checking. The tuple is created at bufpane.go:331.;;335;;micro/internal/action/bufpane.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'b' at bufpane.go:344 without error checking. The tuple is created at bufpane.go:340.;;344;;micro/internal/action/bufpane.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'p' at command.go:255 without error checking. The tuple is created at command.go:255.;;255;;micro/internal/action/command.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'fi' at util.go:218 without error checking. The tuple is created at util.go:217.;;218;;micro/internal/util/util.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'wd' at command.go:254 without error checking. The tuple is created at command.go:251.;;254;;micro/internal/action/command.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'data' at line_array.go:116 without error checking. The tuple is created at line_array.go:111.;;116;;micro/internal/buffer/line_array.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'resp' at message.go:43 without error checking. The tuple is created at message.go:42.;;43;;micro/internal/screen/message.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'srcs' at rtfiles.go:218 without error checking. The tuple is created at rtfiles.go:214.;;218;;micro/internal/config/rtfiles.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'files' at rtfiles.go:121 without error checking. The tuple is created at rtfiles.go:120.;;121;;micro/internal/config/rtfiles.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'files' at autocomplete.go:128 without error checking. The tuple is created at autocomplete.go:118.;;128;;micro/internal/buffer/autocomplete.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'files' at rtfiles.go:211 without error checking. The tuple is created at rtfiles.go:207.;;211;;micro/internal/config/rtfiles.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'regex' at command.go:884 without error checking. The tuple is created at command.go:865.;;884;;micro/internal/action/command.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'Screen' at screen.go:173 without error checking. The tuple is created at screen.go:173.;;173;;micro/internal/screen/screen.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'Screen' at screen.go:178 without error checking. The tuple is created at screen.go:178.;;178;;micro/internal/screen/screen.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'match[0]' at actions.go:954 without error checking. The tuple is created at actions.go:952.;;954;;micro/internal/action/actions.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'match[0]' at actions.go:973 without error checking. The tuple is created at actions.go:968.;;973;;micro/internal/action/actions.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'match[0]' at actions.go:1030 without error checking. The tuple is created at actions.go:1025.;;1030;;micro/internal/action/actions.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'match[0]' at actions.go:1056 without error checking. The tuple is created at actions.go:1051.;;1056;;micro/internal/action/actions.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'match[0]' at actions.go:1787 without error checking. The tuple is created at actions.go:1781.;;1787;;micro/internal/action/actions.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'match[0]' at actions.go:1934 without error checking. The tuple is created at actions.go:1929.;;1934;;micro/internal/action/actions.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'clipboard' at clipboard.go:50 without error checking. The tuple is created at clipboard.go:50.;;50;;micro/internal/clipboard/clipboard.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'SemVersion' at util.go:48 without error checking. The tuple is created at util.go:48.;;48;;micro/internal/util/util.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'directories' at autocomplete.go:118 without error checking. The tuple is created at autocomplete.go:117.;;118;;micro/internal/buffer/autocomplete.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'i.History->[i.PromptType]' at infobuffer.go:154 without error checking. The tuple is created at infobuffer.go:153.;;154;;micro/internal/info/infobuffer.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'i.History->[i.PromptType]' at infobuffer.go:158 without error checking. The tuple is created at infobuffer.go:153.;;158;;micro/internal/info/infobuffer.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'i.History->[i.PromptType]' at infobuffer.go:158 without error checking. The tuple is created at infobuffer.go:153.;;158;;micro/internal/info/infobuffer.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple '(**h.InfoBuf).History->[h.InfoBuf.PromptType]' at infopane.go:115 without error checking. The tuple is created at infopane.go:114.;;115;;micro/internal/action/infopane.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple '(**h.InfoBuf).History->[h.InfoBuf.PromptType]' at infopane.go:117 without error checking. The tuple is created at infopane.go:114.;;117;;micro/internal/action/infopane.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'append(i.History[ptype], (append variadic arguments)[:])' at history.go:82 without error checking. The tuple is created at history.go:80.;;82;;micro/internal/info/history.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'append(i.History[ptype], (append variadic arguments)[:])' at history.go:82 without error checking. The tuple is created at history.go:80.;;82;;micro/internal/info/history.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'github.com/zyedidia/micro/v2/internal/action.commands.[args[0]]' at command.go:1050 without error checking. The tuple is created at command.go:1050.;;1050;;micro/internal/action/command.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'github.com/zyedidia/micro/v2/pkg/highlight.ParseDef(searchFile, nil)' at parser.go:312 without error checking. The tuple is created at parser.go:311.;;312;;micro/pkg/highlight/parser.go
+UNCHECKED_TUPLE.RET;;Using value of a tuple 'github.com/zyedidia/micro/v2/pkg/highlight.ParseDef(searchFile, nil)' at parser.go:328 without error checking. The tuple is created at parser.go:327.;;328;;micro/pkg/highlight/parser.go
+UNREACHABLE_CODE;;This statement in the source code might be unreachable during program execution.;;54;;micro/internal/util/util.go
+UNREACHABLE_CODE;;This statement in the source code might be unreachable during program execution.;;346;;micro/internal/util/util.go
+UNREACHABLE_CODE;;This statement in the source code might be unreachable during program execution.;;356;;micro/internal/config/settings.go
+UNREACHABLE_CODE;;This statement in the source code might be unreachable during program execution.;;397;;micro/cmd/micro/micro.go
+UNREACHABLE_CODE;;This statement in the source code might be unreachable during program execution.;;123;;micro/internal/buffer/save.go
+UNREACHABLE_CODE;;This statement in the source code might be unreachable during program execution.;;384;;micro/cmd/micro/micro.go
+UNSAFE_TYPE_SWITCH;;Default clause in type switch statement is unused.;;27;;micro/internal/action/infopane.go
+UNSAFE_TYPE_SWITCH;;Default clause in type switch statement is unused.;;34;;micro/internal/action/termpane.go
+UNSAFE_TYPE_SWITCH;;Default clause in type switch statement is unused.;;62;;micro/internal/action/bufpane.go
+UNSAFE_TYPE_SWITCH;;Default clause in type switch statement is unused.;;103;;micro/internal/action/tab.go
+UNSAFE_TYPE_SWITCH;;Default clause in type switch statement is unused.;;143;;micro/internal/action/keytree.go
+UNSAFE_TYPE_SWITCH;;Default clause in type switch statement is unused.;;180;;micro/internal/action/bufpane.go
+UNSAFE_TYPE_SWITCH;;Default clause in type switch statement is unused.;;193;;micro/internal/action/keytree.go
+UNSAFE_TYPE_SWITCH;;Default clause in type switch statement is unused.;;217;;micro/internal/action/infocomplete.go
+UNSAFE_TYPE_SWITCH;;Default clause in type switch statement is unused.;;462;;micro/internal/action/bufpane.go
+UNSAFE_TYPE_SWITCH;;Default clause in type switch statement is unused.;;578;;micro/internal/action/bufpane.go
+UNSAFE_TYPE_SWITCH;;Default clause in type switch statement is unused.;;1752;;micro/internal/action/actions.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;42;;micro/internal/screen/message.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;76;;micro/internal/shell/job.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;117;;micro/internal/buffer/autocomplete.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;120;;micro/internal/config/rtfiles.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;146;;micro/internal/buffer/save.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;151;;micro/internal/buffer/save.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;207;;micro/internal/config/rtfiles.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;214;;micro/internal/config/rtfiles.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;217;;micro/internal/util/util.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;221;;micro/internal/buffer/save.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;251;;micro/internal/action/command.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;254;;micro/internal/action/command.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;293;;micro/internal/config/settings.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;311;;micro/pkg/highlight/parser.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;315;;micro/internal/config/settings.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;319;;micro/internal/action/bindings.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;327;;micro/pkg/highlight/parser.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;369;;micro/internal/action/bindings.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;419;;micro/internal/buffer/line_array.go
+UNUSED_ERROR_RETURN.STRICT;;Returned error is ignored via '_'.;;952;;micro/internal/action/actions.go
